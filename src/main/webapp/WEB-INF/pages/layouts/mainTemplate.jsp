@@ -26,6 +26,7 @@
     까페메뉴보드, 카페메뉴판, 커피메뉴보드, 커피숍메뉴보드, 스마트메뉴, 메뉴보드판, 전자메뉴보드, 초크아트, 쵸크아트, 웰컴보드, 모니터메뉴판, 디자인메뉴판,
     디자인메뉴보드"/>
     <meta name="description" content="(주)디지그루브는 노력하고 연구하는 DID 전문가 그룹"/>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Noto+Sans:400,700"/>
     <link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/combinedCSS.css"/>
     <link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/common.css"/>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
