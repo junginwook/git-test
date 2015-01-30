@@ -34,6 +34,7 @@
     <script type="text/javascript" src="${ contextPath }/resources/js/jquery.blockUI.js"></script>
     <script type="text/javascript" src="${contextPath}/resources/js/common.js"></script>
     <script type="text/javascript" src="${contextPath}/resources/js/scrolld.min.js"></script>
+    <script type="text/javascript" src="${contextPath}/resources/js/animatescroll.min.js"></script>
     <script type="text/javascript" src="${contextPath}/resources/js/deferDemo.js"></script>
     <script type="text/javascript" src="${contextPath}/resources/js/jquery.bpopup.min.js"></script>
     <!--[if lt IE 9]>

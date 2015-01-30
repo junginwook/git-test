@@ -15,7 +15,7 @@
             <div class="inquiry-info">
                 <b>모든문의</b>
                 <b class="font32">02-577-0177</b>
-                <span>sales@digigroove.co.kr</span>
+                <span><a href="mailto:sales@digigroove.co.kr">sales@digigroove.co.kr</a> </span>
             </div>
         </div>
     </div>
