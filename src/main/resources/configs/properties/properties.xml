@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <util:properties id="dbConfig">
+        <prop key="url">jdbc:mysql://digigroove.co.kr:3306/intranet?useUnicode=true&amp;characterEncoding=utf8</prop>
+        <prop key="username">digigroove</prop>
+        <prop key="password">going20!@@</prop>
+        <prop key="db_driver">com.mysql.jdbc.Driver</prop>
+    </util:properties>
+
+	<util:properties id="fileConfig">
+		<prop key="filePath">/home/web/data/</prop>
+	</util:properties>
+
+	<util:properties id="mailConfig">
+		<prop key="serviceUrl">http://localhost:8081</prop>
+		<prop key="emailSender">admin@digigroove.co.kr</prop>
+		<prop key="emailSenderName">디지그루브 관리자</prop>
+	</util:properties>
+
+</beans>
