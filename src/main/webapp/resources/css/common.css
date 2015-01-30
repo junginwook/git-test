@@ -1,18 +1,20 @@
 @CHARSET "utf-8";
-@font-face{font-family:NotoSans;src:url('../font/NotoSansKR-Thin-Windows.otf.eot');src:local(※), url('../font/NotoSansKR-Thin-Windows.woff') format('woff');}
-@font-face{font-family:NotoSansLight;src:url('../font/NotoSansKR-Light.otf.eot');src:local(※), url('../font/NotoSansKR-Light.woff') format('woff');}
-@font-face{font-family:NotoSansBold;src:url('../font/NotoSansKR-Bold.otf.eot');src:local(※), url('../font/NotoSansKR-Bold.woff') format('woff');}
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:100,300,400,700&subset=latin,korean);
+/*@font-face{font-family:'Note Sans', sans-serif;src:url('../font/'Note Sans', sans-serifKR-Thin-Windows.otf.eot');src:local(※), url('../font/'Note Sans', sans-serifKR-Thin-Windows.woff') format('woff');}*/
+/*@font-face{font-family:'Note Sans', sans-serif;src:url('../font/'Note Sans', sans-serifKR-Light.otf.eot');src:local(※), url('../font/'Note Sans', sans-serifKR-Light.woff') format('woff');}*/
+/*@font-face{font-family:'Note Sans', sans-serif;src:url('../font/'Note Sans', sans-serifKR-Bold.otf.eot');src:local(※), url('../font/'Note Sans', sans-serifKR-Bold.woff') format('woff');}*/
+@font-face{font-family: 'Note Sans', sans-serif, sans-serif;}
 
 /* 공통 */
 *{margin:0;padding:0;-webkit-text-size-adjust:none}
 html{width:100%;height:100%}
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,form,fieldset,p,button,th,td,input,p,a{margin:0;padding:0;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;}
-body,div,dl,dt,dd,h1,h2,h3,h4,form,fieldset,p,th,td,input,select{font-family:NotoSans, '돋움', Dotum, Verdana, Arial, sans-serif; color:#333; letter-spacing:0px; font-weight:normal;}
+body,div,dl,dt,dd,h1,h2,h3,h4,form,fieldset,p,th,td,input,select{font-family:'Note Sans', sans-serif, '돋움', Dotum, Verdana, Arial, sans-serif; color:#333; letter-spacing:0px; font-weight:normal;}
 body{height:100%;font-size:15px;line-height:normal;background:#ebebeb;}
 img{margin:0;padding:0; border:0; vertical-align:middle;}
 fieldset {border:0;}
-textarea {width:100%;height:330px;color:#333;padding:9px;margin:0;box-shadow:none; border:1px solid #919191;border-radius:5px; font-family:NotoSans,'돋움', Dotum, Verdana, Arial, sans-serif;resize:none;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-appearance: none}
-select, input {color:#333;font-family:NotoSans,'돋움', Dotum, Verdana, Arial, sans-serif; vertical-align:middle;}
+textarea {width:100%;height:330px;color:#333;padding:9px;margin:0;box-shadow:none; border:1px solid #919191;border-radius:5px; font-family:'Note Sans', sans-serif,'돋움', Dotum, Verdana, Arial, sans-serif;resize:none;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-appearance: none}
+select, input {color:#333;font-family:'Note Sans', sans-serif,'돋움', Dotum, Verdana, Arial, sans-serif; vertical-align:middle;}
 input[type="text"], input[type="password"], input[type="tel"], input[type="email"], input[type="number"]{width:100%;height:45px;padding:4px 9px;margin:0;border:1px solid #919191;border-radius:5px;box-shadow:none;-webkit-appearance:none;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;}
 input[type="submit"]{border:0;-webkit-appearance: none;}
 input[type="file"]{width:100%;}
@@ -25,10 +27,10 @@ a:active, a:visited{color:#676767; text-decoration:none;}
 a.underline{text-decoration:underline;}
 legend,caption, hr {display:none;}
 em, address { font-style:normal;}
-button {background:transparent; border:0; font-family:NotoSans,'돋움', Dotum, Verdana, Arial, sans-serif; cursor:pointer; padding:0; overflow:visible; vertical-align:top;}
+button {background:transparent; border:0; font-family:'Note Sans', sans-serif,'돋움', Dotum, Verdana, Arial, sans-serif; cursor:pointer; padding:0; overflow:visible; vertical-align:top;}
 table {width:100%;border-collapse:collapse;}
 label{font-weight:normal;margin:0}
-b{font-family:NotoSansBold;}
+b{font-family:'Note Sans', sans-serif;}
 
 /* 정렬 */
 .over-hidden{overflow:hidden;}
@@ -48,7 +50,7 @@ b{font-family:NotoSansBold;}
 .header .nav{float:left;margin:25px 0 0}
 .header .nav ul{overflow:hidden;}
 .header .nav ul li{float:left;}
-.header .nav ul li a{display:block;font-size:16px;font-family:NotoSansLight;padding:0 24px;}
+.header .nav ul li a{display:block;font-size:16px;font-family:'Note Sans', sans-serif;padding:0 24px;}
 .header .nav ul li:nth-child(1) a{color:#5dace9}
 .header .nav ul li:nth-child(2) a{color:#7fbe25}
 .header .nav ul li:nth-child(3) a{color:#f47920 }
@@ -68,6 +70,7 @@ b{font-family:NotoSansBold;}
 .contents_2 .logo img{vertical-align:top;}
 .contents_2 .smartflat-info{padding:60px 0 40px 90px;}
 .contents_2 .smartflat-info .title{font-size:38px;font-weight:normal;letter-spacing:-1px;padding-bottom:10px;}
+.contents_2 .smartflat-info .title b{font-size:40px;}
 .contents_2 .smartflat-info p{color:#fff;line-height:26px;padding-left:35px;}
 .contents_2 .smartflat-info p .block{display:block;}
 .contents_2 .smartflat-info .img-area{padding:40px 0 0 35px;}
@@ -103,7 +106,7 @@ b{font-family:NotoSansBold;}
 .contents_4 .floatL dd img{width:100%}
 
 .contents_5{padding:40px 0;background:#464646}
-.contents_5 .title{color:#d3d3d3;font-size:48px;font-family:NotoSansBold;text-align:center;padding-bottom:46px;}
+.contents_5 .title{color:#d3d3d3;font-size:48px;font-family:'Note Sans', sans-serif;text-align:center;padding-bottom:46px;}
 .contents_5 .portfolio-area{width:100%;}
 .contents_5 .portfolio-area .portfolio{overflow:hidden;height:640px;margin-bottom:56px;}
 .contents_5 .portfolio-area .portfolio .portfolio-info{width:100%;max-width:640px;margin:0 auto;}
@@ -176,7 +179,7 @@ b{font-family:NotoSansBold;}
     .contents_2 .smartflat-info p .block{display:inline-block}
     .contents_2 .smartflat-info .img-area{padding:20px 10px 0 10px}
     .contents_2 .smartflat-info .img-area img{width:100%}
-    .contents_2 .smartflat-info .img-area .img-left{width:100%;padding-bottom:10ox}
+    .contents_2 .smartflat-info .img-area .img-left{width:100%;padding-bottom:10px}
     .contents_2 .smartflat-info .img-area .img-right{width:100%;margin:0}
 
     .contents_3{padding:30px 0}
