@@ -14,7 +14,6 @@
             e.preventDefault();$(this).scrolld();
         });
         $('.button').click(function(){
-            console.log("test");
             $('#popup').bPopup({
                 easing: 'easeOutBack',
                 speed: 500,
@@ -52,7 +51,9 @@
                     $.unblockUI();
                     if (!CommonUtils.isEmpty(r.message)) {
                         alert(r.message);
-                        $('#popup').bPopup().close();
+                        if(r.code=="Success") {
+                            $('#popup').bPopup().close();
+                        }
                     }
                 },
                 error: CommonUtils.responseError
