@@ -52,16 +52,17 @@
                     if (!CommonUtils.isEmpty(r.message)) {
                         alert(r.message);
                         if(r.code=="Success") {
-                            $('#popup').bPopup().close();
+                            popupClose();
                         }
                     }
                 },
                 error: CommonUtils.responseError
             });
         });
-
     });
-
+    function popupClose() {
+        $('#popup').bPopup().close();
+    }
 </script>
 <div class="area">
     <h1 class="logo"><a href="#demo1" id="demo1Btn"><img src="${contextPath}/resources/img/logo.png" alt="스마트플랫"/></a></h1>
@@ -125,7 +126,7 @@
             </table>
             <div class="btn-area">
                 <input type="button" value="전송" class="btn-blue submit"/>
-                <a href="#" class="btn-gray b-close">취소</a>
+                <a href="javascript:popupClose();" class="btn-gray">취소</a>
             </div>
         </form>
     </div>
