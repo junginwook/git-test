@@ -137,7 +137,7 @@
             <h1 class="title">특화된 기능</h1>
             <div class="portfolio-area">
                 <div class="portfolio">
-                    <div class="portfolio-info">
+                    <div class="portfolio-info info1">
                         <div class="txt-info">
                             <p class="tit">자랑하고<br/>싶으시죠?!</p>
                             <p class="sub-txt">자랑을 어떻게하면<br/>근사하게 할까요?</p>
@@ -145,7 +145,7 @@
                         </div>
                         <div class="img-info"><img src="./resources/img/portfolio/portfolio-01.png" alt=""/></div>
                     </div>
-                    <div class="portfolio-info">
+                    <div class="portfolio-info info2">
                         <div class="txt-info">
                             <p class="tit">자리있나요?</p>
                             <p class="sub-txt">독서실 실장님!! 솔직히<span class="inline-block">자리 체크하는 거</span> 힘드시죠?</p>
@@ -156,7 +156,7 @@
                         </div>
                         <div class="img-info"><img src="./resources/img/portfolio/portfolio-02.png" alt=""/></div>
                     </div>
-                    <div class="portfolio-info">
+                    <div class="portfolio-info info3">
                         <div class="txt-info">
                             <p class="tit">추운날은<br/>핫초코!!</p>
                             <p class="sub-txt">날씨나 기온에 따라 <span class="inline-block">걸맞는 메뉴를 추천해</span> 보거나 <br/>분위기를 바꿔보면 어떨까요?</p>
@@ -169,7 +169,7 @@
                         </div>
                         <div class="img-info"><img src="./resources/img/portfolio/portfolio-03.png" alt=""/></div>
                     </div>
-                    <div class="portfolio-info">
+                    <div class="portfolio-info info4">
                         <div class="txt-info">
                             <p class="tit">와우! 당첨!!</p>
                             <p class="sub-txt">소소한 재미, 소통하는 <br/>게시판이 여기있어요!</p>
@@ -179,7 +179,7 @@
                         </div>
                         <div class="img-info"><img src="./resources/img/portfolio/portfolio-04.png" alt=""/></div>
                     </div>
-                    <div class="portfolio-info">
+                    <div class="portfolio-info info5">
                         <div class="txt-info">
                             <p class="tit">캘린더<span class="font24">를</span> <br/>어디서 <br/>구하나?</p>
                             <p class="sub-txt">요즘 캘린더 구하기 힘들죠<span class="inline-block">은행 로고찍힌</span> 촌스런
@@ -191,7 +191,7 @@
                         </div>
                         <div class="img-info"><img src="./resources/img/portfolio/portfolio-05.png" alt=""/></div>
                     </div>
-                    <div class="portfolio-info">
+                    <div class="portfolio-info info6">
                         <div class="txt-info">
                             <p class="tit">글쎄요?</p>
                             <p class="sub-txt">달랑 사진 한장만으로 <br/>원장님의 실력을 전부 <br/>보여주실 수 있을까요?</p>
@@ -205,15 +205,36 @@
                 </div>
                 <div class="thumb-area">
                     <ul>
-                        <li><a href="#"><img src="./resources/img/portfolio/portfolio-thumb-01.png" alt=""/></a></li>
-                        <li><a href="#"><img src="./resources/img/portfolio/portfolio-thumb-02.png" alt=""/></a></li>
-                        <li><a href="#"><img src="./resources/img/portfolio/portfolio-thumb-03.png" alt=""/></a></li>
-                        <li><a href="#"><img src="./resources/img/portfolio/portfolio-thumb-04.png" alt=""/></a></li>
-                        <li><a href="#"><img src="./resources/img/portfolio/portfolio-thumb-05.png" alt=""/></a></li>
-                        <li><a href="#"><img src="./resources/img/portfolio/portfolio-thumb-06.png" alt=""/></a></li>
+                        <li><a href="javascript:changeImg('info1');" data-target="info1"><img src="./resources/img/portfolio/portfolio-thumb-01.png" alt=""/></a></li>
+                        <li><a href="javascript:changeImg('info2');" data-target="info2"><img src="./resources/img/portfolio/portfolio-thumb-02.png" alt=""/></a></li>
+                        <li><a href="javascript:changeImg('info3');" data-target="info3"><img src="./resources/img/portfolio/portfolio-thumb-03.png" alt=""/></a></li>
+                        <li><a href="javascript:changeImg('info4');" data-target="info4"><img src="./resources/img/portfolio/portfolio-thumb-04.png" alt=""/></a></li>
+                        <li><a href="javascript:changeImg('info5');" data-target="info5"><img src="./resources/img/portfolio/portfolio-thumb-05.png" alt=""/></a></li>
+                        <li><a href="javascript:changeImg('info6');" data-target="info6"><img src="./resources/img/portfolio/portfolio-thumb-06.png" alt=""/></a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<script>
+    $(function(){
+        console.log("================="+$('.info1 .txt-info').height()+"======================");
+        var pheight = (($('.info1 .txt-info').height() > $('.info1 .img-info').height()) ? $('.info1 .txt-info').height() : $('.info1 .img-info').height());
+        $('.portfolio').height(pheight+"px");
+        $('.info1').height(pheight+"px");
+    });
+    var changeImg = function(id){
+
+        var target = $('.'+id);
+        $(".portfolio-info").fadeOut();
+        target.fadeIn();
+        var targetHeight = (($('.'+id+' .txt-info').height() > $('.'+id+' .img-info').height()) ? $('.'+id+' .txt-info').height() : $('.'+id+' .img-info').height());
+        console.log("+++++++++++++++++++++++++++++++++"+targetHeight);
+        $('.portfolio').css('min-height', targetHeight+"px");
+        $('.'+id).height(targetHeight+"px");
+
+
+
+    }
+</script>
