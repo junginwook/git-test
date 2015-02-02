@@ -218,11 +218,6 @@
     </div>
 </div>
 <script>
-    $(function(){
-        var pheight = (($('.info1 .txt-info').height() > $('.info1 .img-info').height()) ? $('.info1 .txt-info').height() : $('.info1 .img-info').height());
-        $('.portfolio').height(pheight+"px");
-        $('.info1').height(pheight+"px");
-    });
     var changeImg = function(id){
         $('#demo5').animatescroll({scrollSpeed:500, padding:100,onScrollEnd:function(){
             var target = $('.'+id);
