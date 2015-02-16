@@ -282,36 +282,36 @@
 				e.preventDefault();
 			});
 		});
+
+		var defaultList =
+			'강정선(이화여대 작곡) : 이스트만\n' +
+			'고유미(연세대 성악) : 맨하탄 음대\n' +
+			'곽소정(부산대 피아노) : 인디애나 음대\n' +
+			'김문경(이화여대 피아노) : 뉴욕 메네스\n' +
+			'박지은(연세대 성악) : 피바디 음대\n' +
+			'이귀엽(연세대 오보에) : 피바디 음대\n' +
+			'이영기(플룻) : 신시네티 음대\n' +
+			'송현미(계명대 바이올린) : 신시네티 음\n' +
+			'최성락(서울대 경영) : 뉴욕대 뮤직비즈니스\n' +
+			'하재현(단국대 첼로) : 인디애나 음대\n' +
+			'홍승연(이화여대 성악) : 템플음대';
+
+		var setDefaultList = function () {
+			$('.txt-input textarea').val(defaultList);
+		};
+		setDefaultList();
+		var makeLists = function (texts) {
+			var result = '<ul>';
+			$.each(texts, function (key, value) {
+				result += '<li>' + value + '</li>';
+			});
+			result += '</ul>';
+			return result;
+		};
+		$('.txt-input button').on('click', function () {
+			var texts = $('.txt-input textarea').val().split(/\n/g);
+			var container = $('.txt-view ul');
+			container.replaceWith(makeLists(texts));
+		}).trigger('click');
 	});
-
-	var defaultList = 
-		'강정선(이화여대 작곡) : 이스트만\n' +
-		'고유미(연세대 성악) : 맨하탄 음대\n' +
-		'곽소정(부산대 피아노) : 인디애나 음대\n' +
-		'김문경(이화여대 피아노) : 뉴욕 메네스\n' +
-		'박지은(연세대 성악) : 피바디 음대\n' +
-		'이귀엽(연세대 오보에) : 피바디 음대\n' +
-		'이영기(플룻) : 신시네티 음대\n' +
-		'송현미(계명대 바이올린) : 신시네티 음\n' +
-		'최성락(서울대 경영) : 뉴욕대 뮤직비즈니스\n' +
-		'하재현(단국대 첼로) : 인디애나 음대\n' +
-		'홍승연(이화여대 성악) : 템플음대';
-
-	var setDefaultList = function () {
-		$('.txt-input textarea').val(defaultList);
-	};
-	setDefaultList();
-	var makeLists = function (texts) {
-		var result = '<ul>';
-		$.each(texts, function (key, value) {
-			result += '<li>' + value + '</li>';
-		});
-		result += '</ul>';
-		return result;
-	};
-	$('.txt-input button').on('click', function () {
-		var texts = $('.txt-input textarea').val().split(/\n/g);
-		var container = $('.txt-view ul');
-		container.replaceWith(makeLists(texts));
-	}).trigger('click');
 </script>
