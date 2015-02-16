@@ -27,9 +27,11 @@
     디자인메뉴보드"/>
 	<meta name="description" content="(주)디지그루브는 노력하고 연구하는 DID 전문가 그룹"/>
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Noto+Sans:400,700"/>
+	<link rel="shortcut icon" href='${contextPath}/resources/img/favicon.ico' />
+	<link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/owl.carousel.css"/>
+	<link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/animate.css"/>
 	<link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/combinedCSS.css"/>
 	<link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/common.css"/>
-	<link rel="shortcut icon" href='${contextPath}/resources/img/favicon.ico' />
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="${ contextPath }/resources/js/jquery.blockUI.js"></script>
@@ -38,6 +40,7 @@
 	<script type="text/javascript" src="${contextPath}/resources/js/animatescroll.min.js"></script>
 	<script type="text/javascript" src="${contextPath}/resources/js/deferDemo.js"></script>
 	<script type="text/javascript" src="${contextPath}/resources/js/jquery.bpopup.min.js"></script>
+	<script type="text/javascript" src="${contextPath}/resources/js/owl.carousel.js"></script>
 	<!--[if lt IE 9]>
 	<script type="text/javascript" src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
 	<script type="text/javascript" src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
