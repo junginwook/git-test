@@ -220,6 +220,7 @@
 						</div>
 						<div class="img-info"><img src="${contextPath}/resources/img/portfolio/portfolio-05.png" alt=""/></div>
 					</div>
+                    <%----%>
 					<div class="portfolio-info info6">
 						<div class="txt-info">
 							<p class="tit">글쎄요?</p>
