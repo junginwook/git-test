@@ -31,6 +31,7 @@
 	<link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/owl.carousel.css"/>
 	<link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/animate.css"/>
 	<link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/combinedCSS.css"/>
+	<link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/flipclock.css"/>
 	<link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/common.css"/>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
