@@ -201,9 +201,9 @@ b{font-weight:800;}
 .contents_5 .portfolio-area .portfolio .info-img>div>div.portfolio-date{width:100%;height:208px;background:#f3f3f3}
 .contents_5 .portfolio-area .portfolio .info-img>div>div.portfolio-date .today-date{text-align:center;padding-top:30px;font-size:20px;color:#777;font-weight:800;}
 .contents_5 .portfolio-area .portfolio .info-img>div>div.portfolio-date .weather{margin-top:5px;margin-bottom:10px;line-height:1.2em;height:60px;}
-.contents_5 .portfolio-area .portfolio .info-img>div>div.portfolio-date .weather .temp{font-weight:100;text-align:right;width:50%;float:left;font-size:13px;color:#999;margin-top:15px;}
-.contents_5 .portfolio-area .portfolio .info-img>div>div.portfolio-date .weather .weather-area{width:48%;float:left;margin-left:1%}
-.contents_5 .portfolio-area .portfolio .info-img>div>div.portfolio-date .weather .weather-area .weather-box{width:30px;height:30px;position:relative;}
+.contents_5 .portfolio-area .portfolio .info-img>div>div.portfolio-date .weather .temp{text-align:right;float:left;color:#999;margin-top:15px; padding-left: 25px;}
+/*.contents_5 .portfolio-area .portfolio .info-img>div>div.portfolio-date .weather .weather-area{width:48%;float:left;margin-left:1%}*/
+/*.contents_5 .portfolio-area .portfolio .info-img>div>div.portfolio-date .weather .weather-area .weather-box{width:30px;height:30px;position:relative;}*/
 .contents_5 .portfolio-area .portfolio .info-img>div>div.portfolio-date .clock{}
 .contents_5 .portfolio-area .portfolio .info-img>div>div.portfolio-date .clock .clockTitle{width:235px;margin:5px auto 0}
 .contents_5 .portfolio-area .portfolio .info-img>div>div.portfolio-date .clock .clockTitle span{font-size:13px;color:#999;width:65px;display:inline-block;margin-right:10px;text-align:center}
@@ -671,7 +671,7 @@ b{font-weight:800;}
 	/*2015.02.26수정*/
 	.contents_5 .portfolio-area .portfolio .info-img .board1 .img-board>img{margin-left:18.2%}
 
-	.contents_5 .portfolio-area .portfolio .info-img .board2 .clock{background-position-x:-9px}
+	.contents_5 .portfolio-area .portfolio .info-img .board2 .clock{background-position-x:-9px;}
 	.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .seoul{width:80px;margin:0 auto;}
 	.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .seoul h2{font:20px/1.3em 'Nanum Gothic';}
 	.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .seoul span{font:14px/0.5em 'Nanum Gothic';}
