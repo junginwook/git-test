@@ -1,7 +1,7 @@
 /**
  * Created by jm1218 on 15. 3. 9.
  */
-(function($){
+var Portfolio = (function($){
 	//슬라이드 지연시간
 	var slideDelayInMillis = 3000;
 
@@ -36,7 +36,7 @@
 		});
 	});
 
-	//자랑하기.
+	//***************************** 자랑하기 *****************************//
 	var defaultList = String() +
 		'강정선(이화여대 작곡) : 이스트만\n' +
 		'고유미(연세대 성악) : 맨하탄 음대\n' +
@@ -69,7 +69,7 @@
 		container.replaceWith(makeLists(texts));
 	}).trigger('click');
 
-	//******************* 병원 ****************************//
+	//***************************** 병 *****************************//
 	// 오늘 날짜
 	var now = new Date();
 	var todayHtml = now.getFullYear() +". " + now.getMonth() + ". " + now.getDay();
@@ -92,8 +92,7 @@
 			$("#weather").html('<p>'+error+'</p>');
 		}
 	});
-	
-	
+
 	//병원 이미지슬라이드
 	setInterval(function () {
 		var banner = $("#slide-img").find(".slide-banner");
@@ -113,8 +112,10 @@
 // ... your options here
 	});
 	clock.setTime(getTodayInSeconds());
-	
-	//카페 슬라이드 left
+
+
+	//***************************** 카페 *****************************//
+	//슬라이드 left
 	setInterval(function () {
 		var slideLeft = $("#slide").find(".img-list");
 		var first= slideLeft.find("li").first();
@@ -132,12 +133,5 @@
 			slideTop.css("top","-192px").append(first);
 		});
 	}, slideDelayInMillis);
-
-	//날씨 animation
-	var weatherList = ["clear-day", "clear-night", "partly-cloudy-day", "partly-cloudy-night", "cloudy", "rain", "sleet", "snow", "wind", "fog"];
-	var icons = new Skycons({"color":"gray"});
-
-	icons.set(weatherList[0], weatherList[2]);
-	icons.play();
 
 })(jQuery);
