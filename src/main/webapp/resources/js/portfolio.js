@@ -69,6 +69,31 @@
 		container.replaceWith(makeLists(texts));
 	}).trigger('click');
 
+	//******************* 병원 ****************************//
+	// 오늘 날짜
+	var now = new Date();
+	var todayHtml = now.getFullYear() +". " + now.getMonth() + ". " + now.getDay();
+	$('.today-date').html(todayHtml);
+	// 날씨
+	$.simpleWeather({
+		location: 'Seoul, KR',
+		woeid: '',
+		unit: 'c',
+		success: function(weather) {
+			var html = "";
+			html += '<div>';
+			html += '<p class="temp">'+ weather.low +'°C / '+ weather.high +'°C<br>seoul, korea</p>';
+			html +=	'<h2><i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
+			html += '</div>';
+
+			$("#weather").html(html);
+		},
+		error: function(error) {
+			$("#weather").html('<p>'+error+'</p>');
+		}
+	});
+	
+	
 	//병원 이미지슬라이드
 	setInterval(function () {
 		var banner = $("#slide-img").find(".slide-banner");

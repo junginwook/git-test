@@ -371,11 +371,11 @@
                     </div>
                     <div class="portfolio-info info5">
                         <div class="info-img clear_fix">
-                            <div style="background:none;border:0px"></div>
+                            <div style="background:none;border:0"></div>
                             <div>
                                 <img src="${contextPath}/resources/img/portfolio/portfolio-05.png" alt=""/>
                             </div>
-                            <div style="background:none;border:0px"></div>
+                            <div style="background:none;border:0"></div>
                         </div>
                         <div class="txt-info">
                             <p class="tit">캘린더<span class="font24">를</span> 어디서 구하나?</p>
@@ -397,13 +397,10 @@
                             <div class="bg-board">
                                 <div class="portfolio-date">
                                     <p class="today-date">2015.01.20</p>
-                                    <div class="weather clear_fix">
-                                        <p class="temp">1&#176;C/12&#176;C<br>seoul, korea</p>
-                                        <div class="weather-area">
-                                            <div id="weather"></div>
-                                        </div>
+                                    <div class="weather" id="weather">
+
                                     </div>
-                                    <div class="clock">
+                                    <div class="clock" style="clear: both;">
                                         <div class="clockWidget"></div>
                                     </div>
                                 </div>
