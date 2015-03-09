@@ -10,7 +10,6 @@
 <c:set var="contextPath" value="${pageContext.request.contextPath}" />
 <script type="text/javascript">
 	$(function() {
-//  var pheight = (($('.info1 .txt-info').height() > $('.info1 .img-info').height()) ? $('.info1 .txt-info').height() : $('.info1 .img-info').height());
 		var pheight = $('.portfolio-info').height();
 		$('.portfolio').height(pheight+"px");
 		$('.info1').height(pheight+"px");
