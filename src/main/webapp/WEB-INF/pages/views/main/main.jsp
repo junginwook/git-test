@@ -195,6 +195,7 @@
                                 </div>
                             </div>
                             <div class="board2 bg-board">
+	                            <%--analog clock--%>
                                 <div class="clock">
 	                                <ul class="analog-clock analog">
 		                                <li class="hour"></li>
@@ -202,38 +203,13 @@
 		                                <li class="sec"></li>
 	                                </ul>
                                 </div>
+	                            <%--cafe weather--%>
 	                              <div id="cafe_weather">
 		                              <p class="location"></p>서울
 		                              <p class="today-date"></p>
 		                              <div class="weather"></div>
 	                              </div>
-                                    <%--<div class="seoul">--%>
-                                        <%--<h2>SEOUL</h2>--%>
-                                        <%--<span class="date">2015.02.26</span>--%>
-                                        <%--<span class="time">PM 04:03:25</span>--%>
-                                        <%--<div class="weather">--%>
-                                            <%--<img src="${contextPath}/resources/img/portfolio/clear.png" alt="cloud"/>--%>
-                                            <%--<span>20&#176;C</span>--%>
-                                        <%--</div>--%>
-                                    <%--</div>--%>
-                                    <%--<div class="tokyo">--%>
-                                        <%--<h2>TOKYO</h2>--%>
-                                        <%--<span class="date">2015.02.26</span>--%>
-                                        <%--<span class="time">PM 04:03:25</span>--%>
-                                        <%--<div class="weather">--%>
-                                            <%--<img src="${contextPath}/resources/img/portfolio/clear.png" alt="cloud"/>--%>
-                                            <%--<span>20&#176;C</span>--%>
-                                        <%--</div>--%>
-                                    <%--</div>--%>
-                                    <%--<div class="newYork">--%>
-                                        <%--<h2>NEWYORK</h2>--%>
-                                        <%--<span class="date">2015.02.26</span>--%>
-                                        <%--<span class="time">PM 04:03:25</span>--%>
-                                        <%--<div class="weather">--%>
-                                            <%--<img src="${contextPath}/resources/img/portfolio/clear.png" alt="cloud"/>--%>
-                                            <%--<span>20&#176;C</span>--%>
-                                        <%--</div>--%>
-                                    <%--</div>--%>
+	                            
                                 <div class="text-board clear-fix">
                                     <h2>오늘의 날씨와 잘 맞는<span>추천메뉴</span></h2>
                                     <ul>
@@ -331,53 +307,14 @@
                                             <div id="weather"></div>
                                         </div>
                                     </div>
+	                                <%--digital clock--%>
                                     <div class="clock">
                                         <div class="clockWidget"></div>
                                     </div>
                                 </div>
                                 <img src="${contextPath}/resources/img/portfolio/portfolio-06-2txt.jpg" alt=""/>
-                                <div class="portfolio-calendar">
-                                    <h2>2015<br>Feburary</h2>
-                                    <ol class="clear_fix">
-                                        <li>Sun</li>
-                                        <li>Mon</li>
-                                        <li>Tue</li>
-                                        <li>Wed</li>
-                                        <li>Thu</li>
-                                        <li>Fri</li>
-                                        <li>Sat</li>
-                                    </ol>
-                                    <ol class="clear_fix">
-                                        <li>1</li>
-                                        <li>2</li>
-                                        <li>3</li>
-                                        <li>4</li>
-                                        <li>5</li>
-                                        <li>6</li>
-                                        <li>7</li>
-                                        <li>8</li>
-                                        <li>9</li>
-                                        <li>10</li>
-                                        <li>11</li>
-                                        <li>12</li>
-                                        <li>13</li>
-                                        <li>14</li>
-                                        <li>15</li>
-                                        <li>16</li>
-                                        <li>17</li>
-                                        <li>18</li>
-                                        <li>19</li>
-                                        <li>20</li>
-                                        <li>21</li>
-                                        <li>22</li>
-                                        <li>23</li>
-                                        <li>24</li>
-                                        <li class="on">25</li>
-                                        <li>26</li>
-                                        <li>27</li>
-                                        <li>28</li>
-                                    </ol>
-                                </div>
+	                              <%--calendar--%>
+                                <div class="portfolio-calendar"></div>
                             </div>
                             <div class="slide-viewer">
                                 <div id="slide-img" class="slide-wrap">
@@ -497,4 +434,5 @@
 </div>
 <script type="text/javascript" src="${contextPath}/resources/js/flipclock.min.js"></script>
 <script type="text/javascript" src="${contextPath}/resources/js/jquery.clock.js"></script>
+<script type="text/javascript" src="${contextPath}/resources/js/jquery.calendar-widget.js"></script>
 <script type="text/javascript" src="${contextPath}/resources/js/portfolio.js"></script>

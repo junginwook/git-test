@@ -93,6 +93,7 @@ var Portfolio = (function($){
 		},
 		error: function(error) {
 			$("#weather").html('<p>'+error+'</p>');
+			$("#cafe_weather").find(".weather").html('<p>'+error+'</p>');
 		}
 	});
 
@@ -112,14 +113,16 @@ var Portfolio = (function($){
 	};
 	//reference link ==> http://flipclockjs.com/
 	var clock = $('.clockWidget', '.clock').FlipClock({
-// ... your options here
+	// ... your options here
 	});
 	clock.setTime(getTodayInSeconds());
-
-
+	//병원 달력
+	//portfolio-calendar
+	$(".portfolio-calendar").calendarWidget();
+	
+	
 	//***************************** 카페 *****************************//
 	//시계
-//	.clock({offset: '+5', type: 'analog'});
 	$('.analog-clock').clock({offset: '+9', type: 'analog'});
 	//슬라이드 left
 	setInterval(function () {
