@@ -24,7 +24,7 @@
       {
         var sdegree = seconds * 6;
         var srotate = "rotate(" + sdegree + "deg)";
-        jQuery(_this).find(".sec").css({"-moz-transform" : srotate, "-webkit-transform" : srotate});
+        jQuery(_this).find(".sec").css({"-moz-transform" : srotate, "-webkit-transform" : srotate, "transform" : srotate});
       }
       else
       {
@@ -39,7 +39,7 @@
       {
         var hdegree = hours * 30 + (mins / 2);
         var hrotate = "rotate(" + hdegree + "deg)";
-        jQuery(_this).find(".hour").css({"-moz-transform" : hrotate, "-webkit-transform" : hrotate});
+        jQuery(_this).find(".hour").css({"-moz-transform" : hrotate, "-webkit-transform" : hrotate, "transform" : hrotate});
       }
       else
       {
@@ -55,7 +55,7 @@
       {
         var mdegree = mins * 6;
         var mrotate = "rotate(" + mdegree + "deg)";        
-        jQuery(_this).find(".min").css({"-moz-transform" : mrotate, "-webkit-transform" : mrotate});                
+        jQuery(_this).find(".min").css({"-moz-transform" : mrotate, "-webkit-transform" : mrotate, "transform" : mrotate});
       }
       else
       {
