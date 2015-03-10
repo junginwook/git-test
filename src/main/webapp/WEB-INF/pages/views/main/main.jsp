@@ -395,6 +395,26 @@
                         <div class="info-img clear_fix">
                             <div style="background:none;border:0px"></div>
                             <div>
+                                <img src="${contextPath}/resources/img/portfolio/portfolio-02.png" alt="독서실"/>
+                                <p class="place1 flash animated infinite"></p>
+                                <p class="place2 flash animated infinite"></p>
+                            </div>
+                            <div style="background:none;border:0px"></div>
+                        </div>
+                        <div class="txt-info">
+                            <p class="tit">자리있나요?</p>
+                            <p class="sub-txt">독서실 실장님!! 솔직히<span class="inline-block">자리 체크하는 거</span> 힘드시죠?</p>
+                            <p>독서실의 자리배치는물론 현황까지..
+                                자리있나요? 라고 물어보는 것도<span class="inline-block">입아픕니다.</span>
+                                이용객은 그냥 보면 되죠. 그리고 원하는자리를 고르면 됩니다.
+                                스마트플랫으로 실시간으로 연동되는 좌석 체크 기능과 특화된 위젯으로<span class="inline-block">품격있는</span> 독서실로 거듭나보십시오.</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-info info4">
+                        <div class="info-img clear_fix">
+                            <div style="background:none;border:0px"></div>
+                            <div>
                                 <img src="${contextPath}/resources/img/portfolio/portfolio-01.png" alt="게시판"/>
                                 <div class="txt-view">
                                     <ul>
@@ -413,26 +433,6 @@
                                 </label>
                                 <button>적용</button>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-info info4">
-                        <div class="info-img clear_fix">
-                            <div style="background:none;border:0px"></div>
-                            <div>
-                                <img src="${contextPath}/resources/img/portfolio/portfolio-02.png" alt="병원"/>
-                                <p class="place1 flash animated infinite"></p>
-                                <p class="place2 flash animated infinite"></p>
-                            </div>
-                            <div style="background:none;border:0px"></div>
-                        </div>
-                        <div class="txt-info">
-                            <p class="tit">자리있나요?</p>
-                            <p class="sub-txt">독서실 실장님!! 솔직히<span class="inline-block">자리 체크하는 거</span> 힘드시죠?</p>
-                            <p>독서실의 자리배치는물론 현황까지..
-                                자리있나요? 라고 물어보는 것도<span class="inline-block">입아픕니다.</span>
-                                이용객은 그냥 보면 되죠. 그리고 원하는자리를 고르면 됩니다.
-                                스마트플랫으로 실시간으로 연동되는 좌석 체크 기능과 특화된 위젯으로<span class="inline-block">품격있는</span> 독서실로 거듭나보십시오.</p>
                         </div>
                     </div>
                     <div class="portfolio-info info5">
@@ -476,11 +476,10 @@
                     <ul>
                         <li><a href=""><img src="${contextPath}/resources/img/portfolio/portfolio-thumb-03.png" alt="카페"/></a></li>
                         <li><a href=""><img src="${contextPath}/resources/img/portfolio/portfolio-thumb-06.png" alt="병원"/></a></li>
-                        <li><a href=""><img src="${contextPath}/resources/img/portfolio/portfolio-thumb-01.png" alt="게시판"/></a></li>
                         <li><a href=""><img src="${contextPath}/resources/img/portfolio/portfolio-thumb-02.png" alt="독서실"/></a></li>
+                        <li><a href=""><img src="${contextPath}/resources/img/portfolio/portfolio-thumb-01.png" alt="게시판"/></a></li>
                         <li><a href=""><img src="${contextPath}/resources/img/portfolio/portfolio-thumb-04.png" alt="매장"/></a></li>
                         <li><a href=""><img src="${contextPath}/resources/img/portfolio/portfolio-thumb-05.png" alt="캘린더"/></a></li>
-
                     </ul>
                 </div>
             </div>
