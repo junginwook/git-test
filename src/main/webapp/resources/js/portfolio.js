@@ -115,6 +115,9 @@ var Portfolio = (function($){
 
 
 	//***************************** 카페 *****************************//
+	//시계
+//	.clock({offset: '+5', type: 'analog'});
+	$('.analog-clock').clock({offset: '+9', type: 'analog'});
 	//슬라이드 left
 	setInterval(function () {
 		var slideLeft = $("#slide").find(".img-list");

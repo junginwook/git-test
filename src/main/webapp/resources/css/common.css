@@ -175,24 +175,24 @@ b{font-weight:800;}
 .contents_5 .portfolio-area .portfolio .info-img .board2 .text-info h2{font:23px/1.5em 'Nanum Gothic';color:#fff;font-weight:700;padding:25px 0 30px}
 .contents_5 .portfolio-area .portfolio .info-img .board2 .text-info p:first-of-type{font:11px/1.5em 'Nanum Gothic';color:#fff;letter-spacing:-0.5px}
 .contents_5 .portfolio-area .portfolio .info-img .board2 .text-info p:last-of-type{font:23px/1.5em 'Nanum Gothic';color:#fff;font-weight:600;margin-top:25px;}
-.contents_5 .portfolio-area .portfolio .info-img .board2 .clock{width:100%;height:190px;background:url(../img/portfolio/portfolio-04-clock.jpg)no-repeat 0 0;position:relative;text-align:center;padding-top:10px}
-.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .seoul{width:95px;margin:0 auto;}
-.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .seoul h2{font:23px/1.3em 'Nanum Gothic';color:#ddd;padding-top:10px;font-weight:800;}
-.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .seoul span{color:#958063;font-weight:400;display:inline-block;font:16px/0.5em 'Nanum Gothic';letter-spacing:-1.5px;}
-.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .seoul .date{margin-bottom:90px}
-.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .seoul .time{font-size:14px;letter-spacing:-0.5px;}
-.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .seoul .weather{display:inline-block;}
-.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .seoul .weather img{width:22px;}
-.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .seoul .weather span{padding-top:5px}
-.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .tokyo{width:95px;position:absolute;top:0;right:8%;}
-.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .newYork{width:95px;position:absolute;top:0;left:8%;}
-.contents_5 .portfolio-area .portfolio .info-img .board2 .clock h2{font:15px/1.3em 'Nanum Gothic';color:#aaa;padding-top:30px;font-weight:800;}
-.contents_5 .portfolio-area .portfolio .info-img .board2 .clock span{color:#725d40;font-weight:400;display:inline-block;font:13px/0.5em 'Nanum Gothic';letter-spacing:-1.5px;}
-.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .date{margin-bottom:70px}
-.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .time{font-size:12px;letter-spacing:-0.5px;}
-.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .weather{display:inline-block;}
-.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .weather img{width:22px;}
-.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .weather span{padding-top:5px}
+/*.contents_5 .portfolio-area .portfolio .info-img .board2 .clock{width:100%;height:190px;background:url(../img/portfolio/portfolio-04-clock.jpg)no-repeat 0 0;position:relative;text-align:center;padding-top:10px}*/
+/*.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .seoul{width:95px;margin:0 auto;}*/
+/*.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .seoul h2{font:23px/1.3em 'Nanum Gothic';color:#ddd;padding-top:10px;font-weight:800;}*/
+/*.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .seoul span{color:#958063;font-weight:400;display:inline-block;font:16px/0.5em 'Nanum Gothic';letter-spacing:-1.5px;}*/
+/*.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .seoul .date{margin-bottom:90px}*/
+/*.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .seoul .time{font-size:14px;letter-spacing:-0.5px;}*/
+/*.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .seoul .weather{display:inline-block;}*/
+/*.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .seoul .weather img{width:22px;}*/
+/*.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .seoul .weather span{padding-top:5px}*/
+/*.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .tokyo{width:95px;position:absolute;top:0;right:8%;}*/
+/*.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .newYork{width:95px;position:absolute;top:0;left:8%;}*/
+/*.contents_5 .portfolio-area .portfolio .info-img .board2 .clock h2{font:15px/1.3em 'Nanum Gothic';color:#aaa;padding-top:30px;font-weight:800;}*/
+/*.contents_5 .portfolio-area .portfolio .info-img .board2 .clock span{color:#725d40;font-weight:400;display:inline-block;font:13px/0.5em 'Nanum Gothic';letter-spacing:-1.5px;}*/
+/*.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .date{margin-bottom:70px}*/
+/*.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .time{font-size:12px;letter-spacing:-0.5px;}*/
+/*.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .weather{display:inline-block;}*/
+/*.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .weather img{width:22px;}*/
+/*.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .weather span{padding-top:5px}*/
 
 
 /*portfolio - 6번째 병원이미지 가로3단*/
@@ -671,18 +671,18 @@ b{font-weight:800;}
 	/*2015.02.26수정*/
 	.contents_5 .portfolio-area .portfolio .info-img .board1 .img-board>img{margin-left:18.2%}
 
-	.contents_5 .portfolio-area .portfolio .info-img .board2 .clock{background-position-x:-9px;}
-	.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .seoul{width:80px;margin:0 auto;}
-	.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .seoul h2{font:20px/1.3em 'Nanum Gothic';}
-	.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .seoul span{font:14px/0.5em 'Nanum Gothic';}
-	.contents_5 .portfolio-area .portfolio .info-img .board2 .clock h2{font:13px/1.3em 'Nanum Gothic';}
-	.contents_5 .portfolio-area .portfolio .info-img .board2 .clock span{font:11px/0.5em 'Nanum Gothic';}
+	/*.contents_5 .portfolio-area .portfolio .info-img .board2 .clock{background-position-x:-9px;}*/
+	/*.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .seoul{width:80px;margin:0 auto;}*/
+	/*.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .seoul h2{font:20px/1.3em 'Nanum Gothic';}*/
+	/*.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .seoul span{font:14px/0.5em 'Nanum Gothic';}*/
+	/*.contents_5 .portfolio-area .portfolio .info-img .board2 .clock h2{font:13px/1.3em 'Nanum Gothic';}*/
+	/*.contents_5 .portfolio-area .portfolio .info-img .board2 .clock span{font:11px/0.5em 'Nanum Gothic';}*/
 
 	.contents_5 .portfolio-area .portfolio .info-img .board2 .text-info{background:url(../img/portfolio/coffee.png) no-repeat -10px 0,url(../img/portfolio/portfolio-04-2bg.jpg)no-repeat 0 0} /* 20150303 수정 */
 
 
-	.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .tokyo{width:95px;position:absolute;top:0;right:7%;}
-	.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .newYork{width:95px;position:absolute;top:0;left:7%;}
+	/*.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .tokyo{width:95px;position:absolute;top:0;right:7%;}*/
+	/*.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .newYork{width:95px;position:absolute;top:0;left:7%;}*/
 	.watch{bottom:88px;margin-left:5px;}
 }
 

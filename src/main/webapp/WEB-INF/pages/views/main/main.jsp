@@ -196,33 +196,38 @@
                             </div>
                             <div class="board2 bg-board">
                                 <div class="clock">
-                                    <div class="seoul">
-                                        <h2>SEOUL</h2>
-                                        <span class="date">2015.02.26</span>
-                                        <span class="time">PM 04:03:25</span>
-                                        <div class="weather">
-                                            <img src="${contextPath}/resources/img/portfolio/clear.png" alt="cloud"/>
-                                            <span>20&#176;C</span>
-                                        </div>
-                                    </div>
-                                    <div class="tokyo">
-                                        <h2>TOKYO</h2>
-                                        <span class="date">2015.02.26</span>
-                                        <span class="time">PM 04:03:25</span>
-                                        <div class="weather">
-                                            <img src="${contextPath}/resources/img/portfolio/clear.png" alt="cloud"/>
-                                            <span>20&#176;C</span>
-                                        </div>
-                                    </div>
-                                    <div class="newYork">
-                                        <h2>NEWYORK</h2>
-                                        <span class="date">2015.02.26</span>
-                                        <span class="time">PM 04:03:25</span>
-                                        <div class="weather">
-                                            <img src="${contextPath}/resources/img/portfolio/clear.png" alt="cloud"/>
-                                            <span>20&#176;C</span>
-                                        </div>
-                                    </div>
+	                                <ul class="analog-clock analog">
+		                                <li class="hour"></li>
+		                                <li class="min"></li>
+		                                <li class="sec"></li>
+	                                </ul>
+                                    <%--<div class="seoul">--%>
+                                        <%--<h2>SEOUL</h2>--%>
+                                        <%--<span class="date">2015.02.26</span>--%>
+                                        <%--<span class="time">PM 04:03:25</span>--%>
+                                        <%--<div class="weather">--%>
+                                            <%--<img src="${contextPath}/resources/img/portfolio/clear.png" alt="cloud"/>--%>
+                                            <%--<span>20&#176;C</span>--%>
+                                        <%--</div>--%>
+                                    <%--</div>--%>
+                                    <%--<div class="tokyo">--%>
+                                        <%--<h2>TOKYO</h2>--%>
+                                        <%--<span class="date">2015.02.26</span>--%>
+                                        <%--<span class="time">PM 04:03:25</span>--%>
+                                        <%--<div class="weather">--%>
+                                            <%--<img src="${contextPath}/resources/img/portfolio/clear.png" alt="cloud"/>--%>
+                                            <%--<span>20&#176;C</span>--%>
+                                        <%--</div>--%>
+                                    <%--</div>--%>
+                                    <%--<div class="newYork">--%>
+                                        <%--<h2>NEWYORK</h2>--%>
+                                        <%--<span class="date">2015.02.26</span>--%>
+                                        <%--<span class="time">PM 04:03:25</span>--%>
+                                        <%--<div class="weather">--%>
+                                            <%--<img src="${contextPath}/resources/img/portfolio/clear.png" alt="cloud"/>--%>
+                                            <%--<span>20&#176;C</span>--%>
+                                        <%--</div>--%>
+                                    <%--</div>--%>
                                 </div>
                                 <div class="text-board">
                                     <h2>오늘의 날씨와 잘 맞는<span>추천메뉴</span></h2>
@@ -317,7 +322,6 @@
                                 <div class="portfolio-date">
                                     <p class="today-date">2015.01.20</p>
                                     <div class="weather clear_fix">
-                                        <p class="temp">1&#176;C/12&#176;C<br>seoul, korea</p>
                                         <div class="weather-area">
                                             <div id="weather"></div>
                                         </div>
@@ -486,6 +490,6 @@
         </div>
     </div>
 </div>
-<script src="${contextPath}/resources/js/flipclock.min.js"></script>
-<script src="${contextPath}/resources/js/skycons.js"></script>
-<script src="${contextPath}/resources/js/portfolio.js"></script>
+<script type="text/javascript" src="${contextPath}/resources/js/flipclock.min.js"></script>
+<script type="text/javascript" src="${contextPath}/resources/js/jquery.clock.js"></script>
+<script type="text/javascript" src="${contextPath}/resources/js/portfolio.js"></script>
