@@ -137,9 +137,9 @@ var Portfolio = (function($){
 	//카페 슬라이드 top
 	setInterval(function () {
 		var slideTop = $("#slide2").find(".img-list");
-		var first = slideTop.find("li").first();
+		var last = slideTop.find("li").last();
 		slideTop.animate({top:"0"}, 600, function(){
-			slideTop.css("top","-192px").append(first);
+			slideTop.css("top","-192px").prepend(last);
 		});
 	}, slideDelayInMillis);
 
