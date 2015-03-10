@@ -1,17 +1,18 @@
 .portfolio-calendar td, .portfolio-calendar th {
-	border-left:1px solid #999;
-	border-bottom:1px solid #999;
+	/*border-left:1px solid #999;
+	border-bottom:1px solid #999;*/
 	width:50px;
 	padding:5px 0;
 	text-align:center
 }
 .portfolio-calendar table {
-	border-right:1px solid #999;
-	border-top:1px solid #999
+	/*border-right:1px solid #999;
+	border-top:1px solid #999*/
 }
 .portfolio-calendar th {
 	background:#666;color:#fff
 }
-.portfolio-calendar td.current-month { background:#eee}
-.portfolio-calendar h3#current-month {font-size: 20px; line-height: 31px; color: #fff}
-.portfolio-calendar td.current-month.today {background: #ff0000}
+.portfolio-calendar td.current-month { background:#fff; font-size:12px; color: #778287; line-height:16px;}
+.portfolio-calendar h3#current-month {font-size: 20px; line-height: 41px; color: #778287; font-weight:bold; background:#fff;}
+.portfolio-calendar td.current-month.today {color: #ff7200;}
+.portfolio-calendar td.other-month {color:#becacf; font-size:12px; background:#fff;}

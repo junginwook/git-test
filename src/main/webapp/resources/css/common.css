@@ -171,7 +171,7 @@ b{font-weight:800;}
 .contents_5 .portfolio-area .portfolio .info-img .board2 .text-board dl{width:100%;background:#000000;padding:10px;}/*20150310*/
 .contents_5 .portfolio-area .portfolio .info-img .board2 .text-board dl dt{display:inline-block;font:12px /1.5em 'Nanum Gothic';color:#fff;font-weight:700;margin-left:33px;}
 .contents_5 .portfolio-area .portfolio .info-img .board2 .text-board dl dd{display:inline-block;font:12px /1.5em 'Nanum Gothic';color:#fff;font-weight:700;margin-left:10px;}
-.contents_5 .portfolio-area .portfolio .info-img .board2 .text-info{width:100%;height:252.5px;background:url(../img/portfolio/portfolio-04-2bg.jpg)no-repeat 0 0;text-align:center;position:relative} /* 20150303 수정 */
+.contents_5 .portfolio-area .portfolio .info-img .board2 .text-info{width:100%;height:253px;background:url(../img/portfolio/portfolio-04-2bg.jpg)no-repeat 0 0;text-align:center;position:relative} /* 20150303 수정 */
 .contents_5 .portfolio-area .portfolio .info-img .board2 .text-info h2{font:23px/1.5em 'Nanum Gothic';color:#fff;font-weight:700;padding:25px 0 30px}
 .contents_5 .portfolio-area .portfolio .info-img .board2 .text-info p:first-of-type{font:11px/1.5em 'Nanum Gothic';color:#fff;letter-spacing:-0.5px}
 .contents_5 .portfolio-area .portfolio .info-img .board2 .text-info p:last-of-type{font:23px/1.5em 'Nanum Gothic';color:#fff;font-weight:600;margin-top:25px;}
@@ -210,7 +210,7 @@ b{font-weight:800;}
 .contents_5 .portfolio-area .portfolio .info-img>div>div.portfolio-date{width:100%;height:208px;background:#f3f3f3}
 .contents_5 .portfolio-area .portfolio .info-img>div>div.portfolio-date .today-date{text-align:center;padding-top:30px;font-size:20px;color:#777;font-weight:800;}
 .contents_5 .portfolio-area .portfolio .info-img>div>div.portfolio-date .weather{margin-top:5px;margin-bottom:10px;line-height:1.2em;height:60px;}
-.contents_5 .portfolio-area .portfolio .info-img>div>div.portfolio-date .weather .temp{text-align:right;float:left;color:#999;margin-top:15px; padding-left: 25px;}
+.contents_5 .portfolio-area .portfolio .info-img>div>div.portfolio-date .weather .temp{text-align:right;float:left;color:#999;margin-top:20px; padding-left: 25px;}
 /*.contents_5 .portfolio-area .portfolio .info-img>div>div.portfolio-date .weather .weather-area{width:48%;float:left;margin-left:1%}*/
 /*.contents_5 .portfolio-area .portfolio .info-img>div>div.portfolio-date .weather .weather-area .weather-box{width:30px;height:30px;position:relative;}*/
 .contents_5 .portfolio-area .portfolio .info-img>div>div.portfolio-date .clock{}

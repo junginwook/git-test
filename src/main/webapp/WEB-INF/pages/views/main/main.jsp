@@ -150,9 +150,9 @@
                                 <div class="img-board">
                                     <div id="slide" class="wrap">
                                         <ul class="img-list">
-                                            <li><img src="${contextPath}/resources/img/portfolio/device1-img-01.jpg" alt="카페"/></li>
-                                            <li><img src="${contextPath}/resources/img/portfolio/device1-img-01.jpg" alt=""/></li>
-                                            <li><img src="${contextPath}/resources/img/portfolio/device1-img-01.jpg" alt=""/></li>
+                                            <li><img src="${contextPath}/resources/img/portfolio/device1-img-01.png" alt="카페"/></li>
+                                            <li><img src="${contextPath}/resources/img/portfolio/device1-img-02.png" alt=""/></li>
+                                            <li><img src="${contextPath}/resources/img/portfolio/device1-img-03.png" alt=""/></li>
                                         </ul>
                                     </div>
                                     <img src="${contextPath}/resources/img/portfolio/bg-deviec1-img-01.png" alt="프레임"/>
@@ -262,9 +262,9 @@
                                 <div class="img-board">
                                     <div id="slide2" class="wrap">
                                         <ul class="img-list">
-                                            <li><img src="${contextPath}/resources/img/portfolio/device1-img-01.jpg" alt=""/></li>
-                                            <li><img src="${contextPath}/resources/img/portfolio/device1-img-01.jpg" alt=""/></li>
-                                            <li><img src="${contextPath}/resources/img/portfolio/device1-img-01.jpg" alt=""/></li>
+                                            <li><img src="${contextPath}/resources/img/portfolio/device1-img-01.png" alt=""/></li>
+                                            <li><img src="${contextPath}/resources/img/portfolio/device1-img-02.png" alt=""/></li>
+                                            <li><img src="${contextPath}/resources/img/portfolio/device1-img-03.png" alt=""/></li>
                                         </ul>
                                     </div>
                                     <img src="${contextPath}/resources/img/portfolio/bg-deviec1-img-01.png" alt="프레임"/>
@@ -322,7 +322,7 @@
                     <div class="portfolio-info info2">
                         <div class="info-img clear_fix">
                             <div>
-                                <div class="portfolio-video"></div>
+                                <div class="portfolio-video"><img src="${contextPath}/resources/img/portfolio/portfolio-06-00.jpg" alt=""/></div>
                                 <img src="${contextPath}/resources/img/portfolio/portfolio-06-1txt.jpg" alt="병원"/>
                             </div>
                             <div class="bg-board">
@@ -365,6 +365,14 @@
 
                     <div class="portfolio-info info3">
                         <div class="info-img clear_fix">
+                            <div style="background:none;border:0px"></div>
+                            <div class="bg-board">
+                                <img src="/resources/img/portfolio/portfolio-02.png" alt="">
+                                <p class="place1 flash animated infinite"></p>
+                                <p class="place2 flash animated infinite"></p>
+                            </div>
+                            <div style="background:none;border:0px"></div>
+                            <!--
                             <div class="academy">
                                 <div class="bg-wood-side">
                                     <p class="class-title">수강료 안내</p>
@@ -382,6 +390,7 @@
                                     <p class="place2 flash animated infinite"></p>
                                 </div>
                             </div>
+                            -->
                         </div>
                         <div class="txt-info">
                             <p class="tit">자리있나요?</p>
