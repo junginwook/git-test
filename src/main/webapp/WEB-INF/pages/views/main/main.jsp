@@ -195,21 +195,47 @@
                                 </div>
                             </div>
                             <div class="board2 bg-board">
-	                            <%--analog clock--%>
-                                <div class="clock">
-	                                <ul class="analog-clock analog">
-		                                <li class="hour"></li>
-		                                <li class="min"></li>
-		                                <li class="sec"></li>
-	                                </ul>
+                                <div class="widget-top">
+                                    <div class="clock">
+                                        <ul class="analog-clock analog">
+                                            <li class="hour"></li>
+                                            <li class="min"></li>
+                                            <li class="sec"></li>
+                                        </ul>
+                                    </div>
+                                      <div id="cafe_weather">
+                                          <p class="today-date"></p>
+                                          <p class="location">서울</p>
+                                          <div class="weather"></div>
+                                      </div>
                                 </div>
-	                            <%--cafe weather--%>
-	                              <div id="cafe_weather">
-		                              <p class="location"></p>서울
-		                              <p class="today-date"></p>
-		                              <div class="weather"></div>
-	                              </div>
-	                            
+                                    <%--<div class="seoul">--%>
+                                        <%--<h2>SEOUL</h2>--%>
+                                        <%--<span class="date">2015.02.26</span>--%>
+                                        <%--<span class="time">PM 04:03:25</span>--%>
+                                        <%--<div class="weather">--%>
+                                            <%--<img src="${contextPath}/resources/img/portfolio/clear.png" alt="cloud"/>--%>
+                                            <%--<span>20&#176;C</span>--%>
+                                        <%--</div>--%>
+                                    <%--</div>--%>
+                                    <%--<div class="tokyo">--%>
+                                        <%--<h2>TOKYO</h2>--%>
+                                        <%--<span class="date">2015.02.26</span>--%>
+                                        <%--<span class="time">PM 04:03:25</span>--%>
+                                        <%--<div class="weather">--%>
+                                            <%--<img src="${contextPath}/resources/img/portfolio/clear.png" alt="cloud"/>--%>
+                                            <%--<span>20&#176;C</span>--%>
+                                        <%--</div>--%>
+                                    <%--</div>--%>
+                                    <%--<div class="newYork">--%>
+                                        <%--<h2>NEWYORK</h2>--%>
+                                        <%--<span class="date">2015.02.26</span>--%>
+                                        <%--<span class="time">PM 04:03:25</span>--%>
+                                        <%--<div class="weather">--%>
+                                            <%--<img src="${contextPath}/resources/img/portfolio/clear.png" alt="cloud"/>--%>
+                                            <%--<span>20&#176;C</span>--%>
+                                        <%--</div>--%>
+                                    <%--</div>--%>
                                 <div class="text-board clear-fix">
                                     <h2>오늘의 날씨와 잘 맞는<span>추천메뉴</span></h2>
                                     <ul>
@@ -339,13 +365,23 @@
 
                     <div class="portfolio-info info3">
                         <div class="info-img clear_fix">
-                            <div style="background:none;border:0px"></div>
-                            <div>
-                                <img src="${contextPath}/resources/img/portfolio/portfolio-02.png" alt="독서실"/>
-                                <p class="place1 flash animated infinite"></p>
-                                <p class="place2 flash animated infinite"></p>
+                            <div class="academy">
+                                <div class="bg-wood-side">
+                                    <p class="class-title">수강료 안내</p>
+                                </div>
                             </div>
-                            <div style="background:none;border:0px"></div>
+                            <div class="academy bg-board">
+                                <div class="bg-wood-center">
+
+                                </div>
+                            </div>
+                            <div class="academy">
+                                <div class="bg-wood-side">
+                                    <img src="${contextPath}/resources/img/portfolio/portfolio-02.png" alt="독서실"/>
+                                    <p class="place1 flash animated infinite"></p>
+                                    <p class="place2 flash animated infinite"></p>
+                                </div>
+                            </div>
                         </div>
                         <div class="txt-info">
                             <p class="tit">자리있나요?</p>
