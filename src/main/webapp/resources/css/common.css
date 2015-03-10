@@ -162,20 +162,28 @@ b{font-weight:800;}
 .contents_5 .portfolio-area .portfolio .info-img .board1 .text-board div ul{margin-top:7px;margin-left:7px;letter-spacing: -1px}
 .contents_5 .portfolio-area .portfolio .info-img .board1 .text-board div ul li{font:12px/1.3em 'Nanum Gothic';color:#fff;margin-bottom:2px;font-weight:600;position:relative}
 .contents_5 .portfolio-area .portfolio .info-img .board1 .text-board div ul li span{position:absolute;top:0;right:7px;}
-.contents_5 .portfolio-area .portfolio .info-img .board2 .text-board{width:100%;height:130px;background:#2a241b}
-.contents_5 .portfolio-area .portfolio .info-img .board2 .text-board h2{font:13px/1.5em 'Nanum Gothic';color:#945d23;font-weight:700;text-align:center;padding-top:6px}
+.contents_5 .portfolio-area .portfolio .info-img .board2 .text-board{width:100%;height:130px;background:#1f2028}/*20150310*/
+.contents_5 .portfolio-area .portfolio .info-img .board2 .text-board h2{font:13px/1.5em 'Nanum Gothic';color:#2cb4db;font-weight:700;text-align:center;padding-top:6px}/*20150310*/
 .contents_5 .portfolio-area .portfolio .info-img .board2 .text-board h2 span{font-size:15px;font-weight:900;margin-left:5px}
 .contents_5 .portfolio-area .portfolio .info-img .board2 .text-board ul{margin:4px auto; width:230px;}
 .contents_5 .portfolio-area .portfolio .info-img .board2 .text-board ul li{font:12px /1.5em 'Nanum Gothic';color:#fff;margin-bottom:2px; position:relative;font-weight:400;letter-spacing:-1px;}
 .contents_5 .portfolio-area .portfolio .info-img .board2 .text-board ul li span{position: absolute;right:5px;top:0}
-.contents_5 .portfolio-area .portfolio .info-img .board2 .text-board dl{width:100%;background:#221d16;padding:10px;}
+.contents_5 .portfolio-area .portfolio .info-img .board2 .text-board dl{width:100%;background:#000000;padding:10px;}/*20150310*/
 .contents_5 .portfolio-area .portfolio .info-img .board2 .text-board dl dt{display:inline-block;font:12px /1.5em 'Nanum Gothic';color:#fff;font-weight:700;margin-left:33px;}
 .contents_5 .portfolio-area .portfolio .info-img .board2 .text-board dl dd{display:inline-block;font:12px /1.5em 'Nanum Gothic';color:#fff;font-weight:700;margin-left:10px;}
-.contents_5 .portfolio-area .portfolio .info-img .board2 .text-info{width:100%;height:252.5px;background:url(../img/portfolio/coffee.png) no-repeat 0 0,url(../img/portfolio/portfolio-04-2bg.jpg)no-repeat 0 0;text-align:center;position:relative} /* 20150303 수정 */
+.contents_5 .portfolio-area .portfolio .info-img .board2 .text-info{width:100%;height:252.5px;background:url(../img/portfolio/portfolio-04-2bg.jpg)no-repeat 0 0;text-align:center;position:relative} /* 20150303 수정 */
 .contents_5 .portfolio-area .portfolio .info-img .board2 .text-info h2{font:23px/1.5em 'Nanum Gothic';color:#fff;font-weight:700;padding:25px 0 30px}
 .contents_5 .portfolio-area .portfolio .info-img .board2 .text-info p:first-of-type{font:11px/1.5em 'Nanum Gothic';color:#fff;letter-spacing:-0.5px}
 .contents_5 .portfolio-area .portfolio .info-img .board2 .text-info p:last-of-type{font:23px/1.5em 'Nanum Gothic';color:#fff;font-weight:600;margin-top:25px;}
-.contents_5 .portfolio-area .portfolio .info-img .board2 .clock {float: left;}
+
+/*20150310추가*/
+.contents_5 .portfolio-area .portfolio .info-img .board2 .widget-top{width:324px; height:190px; background:#242d3a;}
+.contents_5 .portfolio-area .portfolio .info-img .board2 .clock {float: left; margin-top:20px;}
+.contents_5 .portfolio-area .portfolio .info-img .board2 #cafe_weather{float:left; position:relative; margin:54px 20px 0 12px;}
+.contents_5 .portfolio-area .portfolio .info-img .board2 #cafe_weather p{color:#2cb4db;}
+.contents_5 .portfolio-area .portfolio .info-img .board2 #cafe_weather p.today-date{font-size:20px; font-weight:bold; text-align:center;}
+.contents_5 .portfolio-area .portfolio .info-img .board2 #cafe_weather p.location{position: absolute; top: 34px; left: 77px;}
+.contents_5 .portfolio-area .portfolio .info-img .board2 #cafe_weather .weather h2{color:#999; font-size:30px;}
 /*.contents_5 .portfolio-area .portfolio .info-img .board2 .clock{width:100%;height:190px;background:url(../img/portfolio/portfolio-04-clock.jpg)no-repeat 0 0;position:relative;text-align:center;padding-top:10px}*/
 /*.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .seoul{width:95px;margin:0 auto;}*/
 /*.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .seoul h2{font:23px/1.3em 'Nanum Gothic';color:#ddd;padding-top:10px;font-weight:800;}*/
@@ -219,7 +227,7 @@ b{font-weight:800;}
 .contents_5 .portfolio-area .portfolio .info-img>div>div.slide-wrap>div.slide-banner{width:960px;position:absolute;left:-320px;top:0}
 .contents_5 .portfolio-area .portfolio .info-img>div>div div.slide-banner img{display:block;width:320px;float:left}
 
-.contents_5 .portfolio-area .portfolio .info-img .txt-view{position:absolute;bottom:15px;left:16px;overflow-y:auto;width:326px;height:400px;}
+.contents_5 .portfolio-area .portfolio .info-img .txt-view*{position:absolute;bottom:15px;left:16px;overflow-y:auto;width:326px;height:400px;}
 .contents_5 .portfolio-area .portfolio .info-img .txt-view ul{padding:15px 10px;}
 .contents_5 .portfolio-area .portfolio .info-img .txt-view ul li{color:#fff;font-size:16px;letter-spacing:-1px;padding:5px 0;}
 
@@ -228,6 +236,12 @@ b{font-weight:800;}
 .contents_5 .portfolio-area .thumb-area ul{overflow:hidden;width:100%;max-width:762px;margin:0 auto;}
 .contents_5 .portfolio-area .thumb-area ul li{float:left;margin:20px 15px 0;}
 
+/*20150310 학원 추가*/
+.contents_5 .portfolio-area .portfolio .info-img>div>div.bg-wood-side{width:323px; height:573px; background:url(../img/portfolio/bg-wood-side.png)no-repeat 0 0; background-size:100%;}
+.contents_5 .portfolio-area .portfolio .info-img>div>div.bg-wood-side img{width:323px;}
+.contents_5 .portfolio-area .portfolio .info-img>div>div.bg-wood-center{width:323px; height:573px; background:url(../img/portfolio/bg-wood-center.png)no-repeat 0 0; background-size:100%;}
+.contents_5 .portfolio-area .portfolio .info-img .academy>div{overflow:hidden;}
+.contents_5 .portfolio-area .portfolio .info-img .academy p.class-title{margin:17px 14px 6px 14px; padding:10px 8px; font-size:14px; color:#fff; font-weight:bold; background:rgba(247,148,30,0.63); border-radius:3px;}
 
 
 .clear_fix:after{content:"";display:block;clear:both}
@@ -610,8 +624,8 @@ b{font-weight:800;}
 	.contents_5 .portfolio-area .portfolio .info-img .portfolio-04-tit img{width:80%;}
 
 	/*2015.02.26수정*/
-	.contents_5 .portfolio-area .portfolio .info-img{width:340px;margin:0 auto}
-	.contents_5 .portfolio-area .portfolio .info-img>div{width:340px;margin:0 auto;}
+	.contents_5 .portfolio-area .portfolio .info-img{width:100%;margin:0 auto}
+	.contents_5 .portfolio-area .portfolio .info-img>div{width:340px;margin:0 auto; float:none;}/*20150310*/
 	.contents_5 .portfolio-area .portfolio .info-img img{width:320px}
 	/*2015.02.26수정*/
 
