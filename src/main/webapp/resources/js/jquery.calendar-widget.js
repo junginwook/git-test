@@ -4,7 +4,7 @@
 
 		var now   = new Date();
 		var thisMonth = now.getMonth();
-		var thisYear  = now.getYear() + 1900;
+		var thisYear  = now.getFullYear();
 		var thisDay = now.getDate();
 
 		var opts = {
@@ -55,28 +55,27 @@
 
 		var i = 0;
 		firstDay = firstDay === 7 ? 0 : firstDay;
-		
-		for (var j=0; j < 42; j++){
+		// block = 7 * 6
+		for (var block = 0; block < 42; block++){
 
-				if (j < firstDay){
-					table += ('<td class="other-month"><span class="day">'+ (prev_days - firstDay + j + 1) +'</span></td>');
-				} else if (j >= (firstDay + getDaysInMonth(month, year))) {
-					i = i + 1;
-					table += ('<td class="other-month"><span class="day">'+ i +'</span></td>');
-				}else{
-					var day = j - firstDay + 1;
-					if (day === thisDay) {
-						table += ('<td class="current-month today day'+ day +'"><span class="day">'+ day +'</span></td>');
-					} else {
-						table += ('<td class="current-month day'+ day +'"><span class="day">'+ day +'</span></td>');
-					}
+			if (block < firstDay){
+				table += ('<td class="other-month"><span class="day">'+ (prev_days - firstDay + block + 1) +'</span></td>');
+			} else if (block >= (firstDay + getDaysInMonth(month, year))) {
+				i = i + 1;
+				table += ('<td class="other-month"><span class="day">'+ i +'</span></td>');
+			}else{
+				var day = block - firstDay + 1;
+				if (day === thisDay) {
+					table += ('<td class="current-month today day'+ day +'"><span class="day">'+ day +'</span></td>');
+				} else {
+					table += ('<td class="current-month day'+ day +'"><span class="day">'+ day +'</span></td>');
 				}
+			}
 
-			if (j%7==6)  table += ('</tr>');
+			if (block%7==6)  table += ('</tr>');
 		}
 
 		table += ('</table>');
-
 		el.html(table);
 	}
 
