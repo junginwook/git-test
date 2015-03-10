@@ -227,7 +227,7 @@ b{font-weight:800;}
 .contents_5 .portfolio-area .portfolio .info-img>div>div.slide-wrap>div.slide-banner{width:960px;position:absolute;left:-320px;top:0}
 .contents_5 .portfolio-area .portfolio .info-img>div>div div.slide-banner img{display:block;width:320px;float:left}
 
-.contents_5 .portfolio-area .portfolio .info-img .txt-view*{position:absolute;bottom:15px;left:16px;overflow-y:auto;width:326px;height:400px;}
+.contents_5 .portfolio-area .portfolio .info-img .txt-view{position:absolute;bottom:15px;left:16px;overflow-y:auto;width:326px;height:400px;}
 .contents_5 .portfolio-area .portfolio .info-img .txt-view ul{padding:15px 10px;}
 .contents_5 .portfolio-area .portfolio .info-img .txt-view ul li{color:#fff;font-size:16px;letter-spacing:-1px;padding:5px 0;}
 
@@ -720,7 +720,7 @@ b{font-weight:800;}
 	.contents_5 .portfolio-area .portfolio .info-img .portfolio-04-tit{width:100%;}
 
 	/*2015.02.26수정*/
-	.contents_5 .portfolio-area .portfolio .info-img{width:340px;margin:0 auto;background:#333;overflow:hidden}
+	.contents_5 .portfolio-area .portfolio .info-img{width:340px;margin:0 auto;background:#333;overflow:hidden; padding-bottom:0;}
 	.contents_5 .portfolio-area .portfolio .info-img img{width:300px}
 	.contents_5 .portfolio-area .portfolio .info-img .place1{bottom:200px;left:43px;}
 	.contents_5 .portfolio-area .portfolio .info-img .place2{bottom:126px;left:36px;}
