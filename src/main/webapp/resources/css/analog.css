@@ -6,7 +6,7 @@
 .analog {
 	position: relative;
 	width: 150px;
-  margin: auto;
+  /*margin: auto;*/
 	background: url(../img/portfolio/clock/clockface.jpg);
 	list-style: none;
 }
@@ -19,7 +19,7 @@
 	position: absolute;
 	width: 8px;
 	top: 0;
-	left: 70.5px;
+	left: 70px;
   padding: 0;
 }
 
@@ -42,12 +42,4 @@
 	font-size: 11px;
 	font-weight: bold;
 	color: #333;
-}
-
-.analog .meridiem {
-	margin-top: 90px;
-	font-size: 11px;
-	font-weight: bold;
-	color: #333333;
-  display: inline-block;
 }

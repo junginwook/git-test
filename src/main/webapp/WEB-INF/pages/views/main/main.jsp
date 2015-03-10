@@ -201,6 +201,12 @@
 		                                <li class="min"></li>
 		                                <li class="sec"></li>
 	                                </ul>
+                                </div>
+	                              <div id="cafe_weather">
+		                              <p class="location"></p>서울
+		                              <p class="today-date"></p>
+		                              <div class="weather"></div>
+	                              </div>
                                     <%--<div class="seoul">--%>
                                         <%--<h2>SEOUL</h2>--%>
                                         <%--<span class="date">2015.02.26</span>--%>
@@ -228,8 +234,7 @@
                                             <%--<span>20&#176;C</span>--%>
                                         <%--</div>--%>
                                     <%--</div>--%>
-                                </div>
-                                <div class="text-board">
+                                <div class="text-board clear-fix">
                                     <h2>오늘의 날씨와 잘 맞는<span>추천메뉴</span></h2>
                                     <ul>
                                         <li>화이트 초콜릿마끼아또 + 코코넛와플<span>10,000</span></li>

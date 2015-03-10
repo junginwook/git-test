@@ -175,6 +175,7 @@ b{font-weight:800;}
 .contents_5 .portfolio-area .portfolio .info-img .board2 .text-info h2{font:23px/1.5em 'Nanum Gothic';color:#fff;font-weight:700;padding:25px 0 30px}
 .contents_5 .portfolio-area .portfolio .info-img .board2 .text-info p:first-of-type{font:11px/1.5em 'Nanum Gothic';color:#fff;letter-spacing:-0.5px}
 .contents_5 .portfolio-area .portfolio .info-img .board2 .text-info p:last-of-type{font:23px/1.5em 'Nanum Gothic';color:#fff;font-weight:600;margin-top:25px;}
+.contents_5 .portfolio-area .portfolio .info-img .board2 .clock {float: left;}
 /*.contents_5 .portfolio-area .portfolio .info-img .board2 .clock{width:100%;height:190px;background:url(../img/portfolio/portfolio-04-clock.jpg)no-repeat 0 0;position:relative;text-align:center;padding-top:10px}*/
 /*.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .seoul{width:95px;margin:0 auto;}*/
 /*.contents_5 .portfolio-area .portfolio .info-img .board2 .clock .seoul h2{font:23px/1.3em 'Nanum Gothic';color:#ddd;padding-top:10px;font-weight:800;}*/
@@ -230,7 +231,7 @@ b{font-weight:800;}
 
 
 .clear_fix:after{content:"";display:block;clear:both}
-
+.clear-fix {clear: both;}
 
 /* SNOWY */
 .snowy {

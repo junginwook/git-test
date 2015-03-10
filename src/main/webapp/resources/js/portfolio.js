@@ -72,7 +72,7 @@ var Portfolio = (function($){
 	//***************************** 병 *****************************//
 	// 오늘 날짜
 	var now = new Date();
-	var todayHtml = now.getFullYear() +". " + now.getMonth() + ". " + now.getDay();
+	var todayHtml = now.getFullYear() +". " + (now.getMonth() + 1) + ". " + now.getDate();
 	$('.today-date').html(todayHtml);
 	// 날씨
 	$.simpleWeather({
@@ -80,13 +80,16 @@ var Portfolio = (function($){
 		woeid: '',
 		unit: 'c',
 		success: function(weather) {
-			var html = "";
-			html += '<div>';
-			html += '<p class="temp">'+ weather.low +'°C / '+ weather.high +'°C<br>seoul, korea</p>';
-			html +=	'<h2><i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
-			html += '</div>';
+			var hospitalWeather = "";
+			hospitalWeather += '<div>';
+			hospitalWeather += '<p class="temp">'+ weather.low +'°C / '+ weather.high +'°C<br>seoul, korea</p>';
+			hospitalWeather +=	'<h2><i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
+			hospitalWeather += '</div>';
 
-			$("#weather").html(html);
+			var cafeWeather = '<h2><i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
+			
+			$("#weather").html(hospitalWeather);
+			$("#cafe_weather").find(".weather").html(cafeWeather);
 		},
 		error: function(error) {
 			$("#weather").html('<p>'+error+'</p>');
