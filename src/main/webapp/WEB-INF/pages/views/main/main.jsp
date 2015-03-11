@@ -365,6 +365,7 @@
 
                     <div class="portfolio-info info3">
                         <div class="info-img clear_fix">
+                            <!--
                             <div style="background:none;border:0px"></div>
                             <div class="bg-board">
                                 <img src="/resources/img/portfolio/portfolio-02.png" alt="">
@@ -372,15 +373,52 @@
                                 <p class="place2 flash animated infinite"></p>
                             </div>
                             <div style="background:none;border:0px"></div>
-                            <!--
+                            -->
                             <div class="academy">
                                 <div class="bg-wood-side">
                                     <p class="class-title">수강료 안내</p>
+                                    <div class="class-content">
+                                        수능스쿨 모든 교육과정의 수강료는 월 48만원으로 동일합니다.  ( 3개월분 납부시 5% 할인됩니다. )<br/><br/>
+                                        1:1 개인별 맞춤식의 진도이므로 월중에도 언제든시 신청하여 들으실 수 있으며, 월말까지의 나머지 수강료만 납부하시면 됩니다.<br/><br/>
+                                        계좌이체나 현금납부의 경우, 현금영수증이 의무발행되며, 상담 또는 첫수업시 신용카드결제도 가능합니다.
+                                    </div>
+                                    <p class="class-title">강의 안내</p>
+                                    <div class="class-content">
+                                        <dl>
+                                            <dt>중등영어中等英語</dt>
+                                            <dd>교육대상/ 중학교 1~2학년<br/>수업시간/ 주 3회 1시간 30분씩 + 개별 Clinic Time</dd>
+                                            <dt>고등영어高等英語</dt>
+                                            <dd>교육대상/ 고등학교 1~2학년<br/>수업시간/ 주 3회 1시간 30분씩 + 개별 Clinic Time</dd>
+                                            <dt>중등수학中等數學</dt>
+                                            <dd>교육대상/ 중학교 1~2학년<br/>수업시간/ 주 3회 1시간 30분씩 + 개별 Clinic Time</dd>
+                                            <dt>고등수학高等數學</dt>
+                                            <dd>교육대상/ 예비 고1, 고2, 고3<br/>수업시간/ 주 2회 2time(주 4시간), 보충수업</dd>
+                                        </dl>
+                                    </div>
                                 </div>
                             </div>
                             <div class="academy bg-board">
                                 <div class="bg-wood-center">
-
+                                    <div class="class-widget">
+                                        <div class="date-box"></div>
+                                        <div class="d-day-box"></div>
+                                    </div>
+                                    <p class="class-title">공지사항</p>
+                                    <div class="class-content">
+                                        <dl class="pdL10 mgB10">
+                                            <dt>제5회 공무원 학원 자체 모의고사 실시 안내</dt>
+                                            <dd>·일시 : 1월25일(일)</dd>
+                                            <dd>·시간 : 오전 11시 ~ 오후 12시40분</dd>
+                                            <dd>·전형료 : 2,000원</dd>
+                                            <dd>·접수 : 1월24일(토)까지</dd>
+                                        </dl>
+                                        <dl class="pdL10">
+                                            <dt>2015년 국가직 시험 대비 단과반 선착순 모집</dt>
+                                            <dd>·개강일 : 2월2일(월)</dd>
+                                            <dd>·강사 : 국어(박성민 교수), 영어(다니엘배 교수), 한국사(김춘추 교수), 사회(문인수 교수)</dd>
+                                            <dd>·주의 : 시간표가 일부 변경될 수 있습니다.</dd>
+                                        </dl>
+                                    </div>
                                 </div>
                             </div>
                             <div class="academy">
@@ -390,7 +428,6 @@
                                     <p class="place2 flash animated infinite"></p>
                                 </div>
                             </div>
-                            -->
                         </div>
                         <div class="txt-info">
                             <p class="tit">자리있나요?</p>
