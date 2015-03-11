@@ -247,8 +247,8 @@ b{font-weight:800;}
 .contents_5 .portfolio-area .portfolio .info-img .academy .class-content dl dd{color:#fff; font-size:11px; line-height:14px; padding-bottom:4px;}
 .contents_5 .portfolio-area .portfolio .info-img .academy .class-content dl.pdL10 dd{padding-left:10px;}
 .contents_5 .portfolio-area .portfolio .info-img .academy .class-widget{margin:7px 7px 0 ; height:270px;background:#fff;}
-.contents_5 .portfolio-area .portfolio .info-img .academy .class-widget .date-box{background:#f2f2f2; height:182px;}
-.contents_5 .portfolio-area .portfolio .info-img .academy .class-widget .d-day-box{border-top:1px solid #b8c8c2; height:87px;}
+.contents_5 .portfolio-area .portfolio .info-img .academy .class-widget .date-box{background:url(../img/portfolio/sample-date-01.jpg)no-repeat 0 0 #f2f2f2; height:182px;}
+.contents_5 .portfolio-area .portfolio .info-img .academy .class-widget .d-day-box{border-top:1px solid #b8c8c2; height:87px;background:url(../img/portfolio/sample-date-02.jpg)no-repeat 0 0;}
 .mgB10{margin-bottom:10px;}
 
 
