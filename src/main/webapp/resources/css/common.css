@@ -227,8 +227,18 @@ b{font-weight:800;}
 .contents_5 .portfolio-area .portfolio .info-img>div>div.slide-wrap>div.slide-banner{width:960px;position:absolute;left:-320px;top:0}
 .contents_5 .portfolio-area .portfolio .info-img>div>div div.slide-banner img{display:block;width:320px;float:left}
 
-.contents_5 .portfolio-area .portfolio .info-img .txt-view{position:absolute;bottom:15px;left:16px;overflow-y:auto;width:326px;height:400px;}
-.contents_5 .portfolio-area .portfolio .info-img .txt-view ul{padding:15px 10px;}
+/*.contents_5 .portfolio-area .portfolio .info-img .txt-view{position:absolute;bottom:15px;left:16px;overflow-y:auto;width:326px;height:400px;}*/
+.contents_5 .portfolio-area .portfolio .info-img .txt-view {  
+	position: relative;
+	width: 275px;
+	height: 360px;
+	top: -390px;
+	padding: 0;
+	left: 25px;
+	overflow: hidden;
+}
+/*.contents_5 .portfolio-area .portfolio .info-img .txt-view ul{padding:15px 10px;}*/
+.contents_5 .portfolio-area .portfolio .info-img .txt-view ul{position: absolute;}
 .contents_5 .portfolio-area .portfolio .info-img .txt-view ul li{color:#fff;font-size:16px;letter-spacing:-1px;padding:5px 0;}
 
 
@@ -623,7 +633,8 @@ b{font-weight:800;}
 	.contents_5 .portfolio-area .portfolio .txt-info p{font-size:12px;line-height:16px;}
 	.contents_5 .portfolio-area .portfolio .txt-info .tit{font-size:20px;line-height:24px;}
 	.contents_5 .portfolio-area .portfolio .txt-info .sub-txt{font-size:16px;line-height:20px;padding-bottom:20px;}
-	.contents_5 .portfolio-area .portfolio .info-img .txt-view{left:50%;margin-left:-163px;text-align:left;}
+	/*.contents_5 .portfolio-area .portfolio .info-img .txt-view{left:50%;margin-left:-163px;text-align:left;}*/
+	.contents_5 .portfolio-area .portfolio .info-img .txt-view{}
 	.contents_5 .portfolio-area .portfolio .info-img .txt-view ul li{font-size:12px;}
 	.contents_5 .portfolio-area .portfolio .info-img{float:none;width:100%;}
 	.contents_5 .portfolio-area .portfolio .info-img .place1{bottom:200px;left:43px;}
@@ -732,7 +743,7 @@ b{font-weight:800;}
 	.contents_5 .portfolio-area .portfolio .info-img img{width:300px}
 	.contents_5 .portfolio-area .portfolio .info-img .place1{bottom:200px;left:43px;}
 	.contents_5 .portfolio-area .portfolio .info-img .place2{bottom:126px;left:36px;}
-    .contents_5 .portfolio-area .portfolio .info-img>div{margin:0 auto; float:none;}
+	.contents_5 .portfolio-area .portfolio .info-img>div{margin:0 auto; float:none;}
 
 	.footer .inquiry-area .area{padding:0 80px}
 }

@@ -53,7 +53,7 @@ var Portfolio = (function($){
 	var setDefaultList = function () {
 		$('.txt-input textarea').val(defaultList);
 	};
-	
+
 	setDefaultList();
 	var makeLists = function (texts) {
 		var result = '<ul>';
@@ -68,6 +68,17 @@ var Portfolio = (function($){
 		var container = $('.txt-view ul');
 		container.replaceWith(makeLists(texts));
 	}).trigger('click');
+
+	setInterval(function () {
+		var slideTop = $(".txt-view").find("ul");
+		var first = slideTop.find("li").first();
+		slideTop.animate({top : "-33px"}, {
+			duration : 600,
+			complete : function(){
+				slideTop.css("top","0").append(first);
+			}
+		});
+	}, slideDelayInMillis);
 
 	//***************************** 병 *****************************//
 	// 오늘 날짜
@@ -87,7 +98,7 @@ var Portfolio = (function($){
 			hospitalWeather += '</div>';
 
 			var cafeWeather = '<h2><i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
-			
+
 			$("#weather").html(hospitalWeather);
 			$("#cafe_weather").find(".weather").html(cafeWeather);
 		},
@@ -105,7 +116,7 @@ var Portfolio = (function($){
 			banner.css("left","-320px").append(first);
 		});
 	}, slideDelayInMillis);
-	
+
 	//병원 시계
 	var getTodayInSeconds = function () {
 		var now = new Date();
@@ -113,14 +124,14 @@ var Portfolio = (function($){
 	};
 	//reference link ==> http://flipclockjs.com/
 	var clock = $('.clockWidget', '.clock').FlipClock({
-	// ... your options here
+		// ... your options here
 	});
 	clock.setTime(getTodayInSeconds());
 	//병원 달력
 	//portfolio-calendar
 	$(".portfolio-calendar").calendarWidget();
-	
-	
+
+
 	//***************************** 카페 *****************************//
 	//시계
 	$('.analog-clock').clock({offset: '+9', type: 'analog'});
