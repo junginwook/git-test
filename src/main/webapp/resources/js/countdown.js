@@ -111,12 +111,14 @@ var CountDown = (function ($) {
 			// label
 			that.ctx.fillStyle = "#000000";
 
-			that.ctx.font = '8px Helvetica';
-			that.ctx.fillText(label, 0, 18);
-			that.ctx.fillText(label, 0, 18);
+			//hour, minutes font
+			that.ctx.font = '7px Helvetica';
+			//label x, y
+			that.ctx.fillText(label, 0, 15);
+			that.ctx.fillText(label, 0, 15);
 
-			that.ctx.font = 'bold 30px Helvetica';
-			that.ctx.fillText(Math.floor(value), 0, 10);
+			that.ctx.font = 'bold 26px Helvetica';
+			that.ctx.fillText(Math.floor(value), 0, 5);
 
 			that.ctx.restore();
 		}
