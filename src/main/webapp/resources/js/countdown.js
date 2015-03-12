@@ -28,7 +28,7 @@ var CountDown = (function ($) {
 		},
 		r_count: 4,
 		r_spacing: 6, // px
-		r_size: 60, // px
+		r_size: 46, // px
 		r_thickness: 4, // px
 		update_interval: 1000, // ms
 
@@ -112,13 +112,13 @@ var CountDown = (function ($) {
 			that.ctx.fillStyle = "#000000";
 
 			//hour, minutes font
-			that.ctx.font = '7px Helvetica';
+			that.ctx.font = '5px Nanum Gothic';
 			//label x, y
 			that.ctx.fillText(label, 0, 15);
 			that.ctx.fillText(label, 0, 15);
 
-			that.ctx.font = 'bold 26px Helvetica';
-			that.ctx.fillText(Math.floor(value), 0, 5);
+			that.ctx.font = 'bold 16px Nanum Gothic';
+			that.ctx.fillText(Math.floor(value), 0, 1);
 
 			that.ctx.restore();
 		}

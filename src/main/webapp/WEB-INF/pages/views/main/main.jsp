@@ -401,7 +401,8 @@
                                 <div class="bg-wood-center">
                                     <div class="class-widget">
                                         <div class="date-box"></div>
-                                        <div class="d-day-box" style="padding: 15px;">
+                                        <div class="d-day-box">
+                                            <p class="title">수능 D-day</p>
 	                                        <div class="countdownwrap"></div>
                                         </div>
                                     </div>
