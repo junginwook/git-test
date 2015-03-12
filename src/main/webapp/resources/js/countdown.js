@@ -121,11 +121,8 @@ var CountDown = (function ($) {
 			that.ctx.restore();
 		}
 	};
-	
 	return {
-		init : function (countdown_to, options) {
-			return ringer.init.apply(ringer, Array.prototype.slice.call(arguments));
-		}
+		init : $.proxy(ringer.init, ringer)
 	};
 
 })(jQuery);
