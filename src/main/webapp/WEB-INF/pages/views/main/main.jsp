@@ -401,7 +401,9 @@
                                 <div class="bg-wood-center">
                                     <div class="class-widget">
                                         <div class="date-box"></div>
-                                        <div class="d-day-box"></div>
+                                        <div class="d-day-box" style="padding: 15px;">
+	                                        <div class="countdownwrap"></div>
+                                        </div>
                                     </div>
                                     <p class="class-title">공지사항</p>
                                     <div class="class-content">
@@ -517,4 +519,5 @@
 <script type="text/javascript" src="${contextPath}/resources/js/flipclock.min.js"></script>
 <script type="text/javascript" src="${contextPath}/resources/js/jquery.clock.js"></script>
 <script type="text/javascript" src="${contextPath}/resources/js/jquery.calendar-widget.js"></script>
+<script type="text/javascript" src="${contextPath}/resources/js/countdown.js"></script>
 <script type="text/javascript" src="${contextPath}/resources/js/portfolio.js"></script>

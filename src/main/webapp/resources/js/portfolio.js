@@ -84,8 +84,11 @@ var Portfolio = (function($){
 	//***************************** 병 *****************************//
 	// 오늘 날짜
 	var now = new Date();
+	var days = ["일요일", "월요일", "화요일", "수요일", "목요일", "금요일", "토요일"];
 	var todayHtml = now.getFullYear() +". " + (now.getMonth() + 1) + ". " + now.getDate();
+	var day = days[now.getDay()];
 	$('.today-date').html(todayHtml);
+	$('.today-date.day').append(" " + day);
 	// 날씨
 	$.simpleWeather({
 		location: 'Seoul, KR',
@@ -154,5 +157,9 @@ var Portfolio = (function($){
 			slideTop.css("top","-192px").prepend(last);
 		});
 	}, slideDelayInMillis);
+
+	//***************************** 독서실 *****************************//
+	//countdown
+	CountDown.init("11/13/2015");
 
 })(jQuery);
