@@ -113,11 +113,13 @@ var CountDown = (function ($) {
 
 			//hour, minutes font
 			that.ctx.font = '5px Nanum Gothic';
+			that.ctx.fillStyle = 'blue';
 			//label x, y
 			that.ctx.fillText(label, 0, 15);
 			that.ctx.fillText(label, 0, 15);
 
 			that.ctx.font = 'bold 16px Nanum Gothic';
+			that.ctx.fillStyle = 'red';
 			that.ctx.fillText(Math.floor(value), 0, 1);
 
 			that.ctx.restore();
