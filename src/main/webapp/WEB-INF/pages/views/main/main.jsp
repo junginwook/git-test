@@ -203,39 +203,39 @@
                                             <li class="sec"></li>
                                         </ul>
                                     </div>
-                                      <div id="cafe_weather">
-                                          <p class="today-date"></p>
-                                          <p class="location">서울</p>
-                                          <div class="weather"></div>
-                                      </div>
+                                    <div id="cafe_weather">
+                                        <p class="today-date"></p>
+                                        <p class="location">서울</p>
+                                        <div class="weather"></div>
+                                    </div>
                                 </div>
-                                    <%--<div class="seoul">--%>
-                                        <%--<h2>SEOUL</h2>--%>
-                                        <%--<span class="date">2015.02.26</span>--%>
-                                        <%--<span class="time">PM 04:03:25</span>--%>
-                                        <%--<div class="weather">--%>
-                                            <%--<img src="${contextPath}/resources/img/portfolio/clear.png" alt="cloud"/>--%>
-                                            <%--<span>20&#176;C</span>--%>
-                                        <%--</div>--%>
-                                    <%--</div>--%>
-                                    <%--<div class="tokyo">--%>
-                                        <%--<h2>TOKYO</h2>--%>
-                                        <%--<span class="date">2015.02.26</span>--%>
-                                        <%--<span class="time">PM 04:03:25</span>--%>
-                                        <%--<div class="weather">--%>
-                                            <%--<img src="${contextPath}/resources/img/portfolio/clear.png" alt="cloud"/>--%>
-                                            <%--<span>20&#176;C</span>--%>
-                                        <%--</div>--%>
-                                    <%--</div>--%>
-                                    <%--<div class="newYork">--%>
-                                        <%--<h2>NEWYORK</h2>--%>
-                                        <%--<span class="date">2015.02.26</span>--%>
-                                        <%--<span class="time">PM 04:03:25</span>--%>
-                                        <%--<div class="weather">--%>
-                                            <%--<img src="${contextPath}/resources/img/portfolio/clear.png" alt="cloud"/>--%>
-                                            <%--<span>20&#176;C</span>--%>
-                                        <%--</div>--%>
-                                    <%--</div>--%>
+                                <%--<div class="seoul">--%>
+                                <%--<h2>SEOUL</h2>--%>
+                                <%--<span class="date">2015.02.26</span>--%>
+                                <%--<span class="time">PM 04:03:25</span>--%>
+                                <%--<div class="weather">--%>
+                                <%--<img src="${contextPath}/resources/img/portfolio/clear.png" alt="cloud"/>--%>
+                                <%--<span>20&#176;C</span>--%>
+                                <%--</div>--%>
+                                <%--</div>--%>
+                                <%--<div class="tokyo">--%>
+                                <%--<h2>TOKYO</h2>--%>
+                                <%--<span class="date">2015.02.26</span>--%>
+                                <%--<span class="time">PM 04:03:25</span>--%>
+                                <%--<div class="weather">--%>
+                                <%--<img src="${contextPath}/resources/img/portfolio/clear.png" alt="cloud"/>--%>
+                                <%--<span>20&#176;C</span>--%>
+                                <%--</div>--%>
+                                <%--</div>--%>
+                                <%--<div class="newYork">--%>
+                                <%--<h2>NEWYORK</h2>--%>
+                                <%--<span class="date">2015.02.26</span>--%>
+                                <%--<span class="time">PM 04:03:25</span>--%>
+                                <%--<div class="weather">--%>
+                                <%--<img src="${contextPath}/resources/img/portfolio/clear.png" alt="cloud"/>--%>
+                                <%--<span>20&#176;C</span>--%>
+                                <%--</div>--%>
+                                <%--</div>--%>
                                 <div class="text-board clear-fix">
                                     <h2>오늘의 날씨와 잘 맞는<span>추천메뉴</span></h2>
                                     <ul>
@@ -333,13 +333,13 @@
                                             <div id="weather"></div>
                                         </div>
                                     </div>
-	                                <%--digital clock--%>
+                                    <%--digital clock--%>
                                     <div class="clock">
                                         <div class="clockWidget"></div>
                                     </div>
                                 </div>
                                 <img src="${contextPath}/resources/img/portfolio/portfolio-06-2txt.jpg" alt=""/>
-	                              <%--calendar--%>
+                                <%--calendar--%>
                                 <div class="portfolio-calendar"></div>
                             </div>
                             <div class="slide-viewer">
@@ -401,13 +401,21 @@
                                 <div class="bg-wood-center">
                                     <div class="class-widget">
                                         <div class="date-box">
-                                            <p class="today-date">2015.02.12 화요일</p>
-                                            <p class="location">서울</p>
-                                            <div class="weather"></div>
+                                            <p class="today-date day"></p>
+                                            <div id="reading_room">
+                                                <!--<div class="clock-area" style="width: 50%; height: 100%;float: left;"></div>-->
+                                                <div class="weather-area"">
+                                                    <p class="icon"></p>
+                                                    <p class="location">서울</p>
+                                                    <p class="today-temp"></p>
+                                                </div>
+                                            </div>
+                                            <div class="class-clock">
+                                            </div>
                                         </div>
                                         <div class="d-day-box">
                                             <p class="title">수능 D-day</p>
-	                                        <div class="countdownwrap"></div>
+                                            <div class="countdownwrap"></div>
                                         </div>
                                     </div>
                                     <p class="class-title">공지사항</p>
