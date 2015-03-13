@@ -228,14 +228,14 @@ b{font-weight:800;}
 .contents_5 .portfolio-area .portfolio .info-img>div>div div.slide-banner img{display:block;width:320px;float:left}
 
 /*.contents_5 .portfolio-area .portfolio .info-img .txt-view{position:absolute;bottom:15px;left:16px;overflow-y:auto;width:326px;height:400px;}*/
-.contents_5 .portfolio-area .portfolio .info-img .txt-view {  
-	position: relative;
-	width: 275px;
-	height: 360px;
-	top: -390px;
-	padding: 0;
-	left: 25px;
-	overflow: hidden;
+.contents_5 .portfolio-area .portfolio .info-img .txt-view {
+    position: absolute;
+    width: 275px;
+    height: 360px;
+    bottom: 38px;
+    padding: 0;
+    left: 36px;
+    overflow: hidden;
 }
 /*.contents_5 .portfolio-area .portfolio .info-img .txt-view ul{padding:15px 10px;}*/
 .contents_5 .portfolio-area .portfolio .info-img .txt-view ul{position: absolute;}
@@ -693,7 +693,7 @@ b{font-weight:800;}
 }
 
 @media only screen and (max-width:390px) {
-	.contents_5 .portfolio-area .portfolio .info-img .txt-view{bottom:30px;width:266px;height:320px;margin-left:-133px;}
+	.contents_5 .portfolio-area .portfolio .info-img .txt-view{bottom:55px;width:266px;height:320px;margin-left:0;}
 	.watch{bottom:100px;}
 }
 
