@@ -8,6 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <c:set var="contextPath" value="${pageContext.request.contextPath}" />
+<link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/class-clock.css">
 <div id="demo1" class="fullSection">
     <div class="contents_1">
         <div class="area">
@@ -411,6 +412,55 @@
                                                 </div>
                                             </div>
                                             <div class="class-clock">
+                                                <!--시계-->
+                                                <div class='clock-wrapper'>
+                                                    <div class='clock-border'>
+                                                        <div class='clock'>
+                                                            <ul class='minute-marks'>
+                                                                <li class='five'></li>
+                                                                <li></li>
+                                                                <li></li>
+                                                                <li></li>
+                                                                <li></li>
+                                                                <li class='five'></li>
+                                                                <li></li>
+                                                                <li></li>
+                                                                <li></li>
+                                                                <li></li>
+                                                                <li class='five'></li>
+                                                                <li></li>
+                                                                <li></li>
+                                                                <li></li>
+                                                                <li></li>
+                                                                <li class='five'></li>
+                                                                <li></li>
+                                                                <li></li>
+                                                                <li></li>
+                                                                <li></li>
+                                                                <li class='five'></li>
+                                                                <li></li>
+                                                                <li></li>
+                                                                <li></li>
+                                                                <li></li>
+                                                                <li class='five'></li>
+                                                                <li></li>
+                                                                <li></li>
+                                                                <li></li>
+                                                                <li></li>
+                                                            </ul>
+                                                            <div class='hour'>
+                                                                <div class='hand'></div>
+                                                            </div>
+                                                            <div class='minute'>
+                                                                <div class='hand'></div>
+                                                            </div>
+                                                            <div class='second'>
+                                                                <div class='hand'></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--시계끝-->
                                             </div>
                                         </div>
                                         <div class="d-day-box">
