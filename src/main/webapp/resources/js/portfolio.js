@@ -90,27 +90,45 @@ var Portfolio = (function($){
 	$('.today-date').html(todayHtml);
 	$('.today-date.day').append(" " + day);
 	// 날씨
+	
+	var createHospitalWeather = function (weather) {
+		var html = "";
+		html += '<div>';
+		html += '<p class="temp">'+ weather.low +'°C / '+ weather.high +'°C<br>seoul, korea</p>';
+		html +=	'<h2><i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
+		html += '</div>';
+		$("#weather").html(html);
+	};
+	var createCafeWeather = function (weather) {
+		var html = '<h2><i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
+		$("#cafe_weather").find(".weather").html(html);
+	};
+	var createReadingRoomWeather = function (weather) {
+		var icon = '<h2><i class="icon-'+weather.code+'"></i></h2>';
+		var todayTemp = '오늘 ' +weather.temp+'&deg;'+weather.units.temp;
+		var container = $("#reading_room").find('.weather-area');
+		container.find(".icon").html(icon);
+		container.find(".today-temp").html(todayTemp);
+	};
+	
 	$.simpleWeather({
 		location: 'Seoul, KR',
 		woeid: '',
 		unit: 'c',
 		success: function(weather) {
-			var hospitalWeather = "";
-			hospitalWeather += '<div>';
-			hospitalWeather += '<p class="temp">'+ weather.low +'°C / '+ weather.high +'°C<br>seoul, korea</p>';
-			hospitalWeather +=	'<h2><i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
-			hospitalWeather += '</div>';
-
-			var cafeWeather = '<h2><i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
-
-			$("#weather").html(hospitalWeather);
-			$("#cafe_weather").find(".weather").html(cafeWeather);
+			createHospitalWeather(weather);
+			createCafeWeather(weather);
+			createReadingRoomWeather(weather);
 		},
 		error: function(error) {
-			$("#weather").html('<p>'+error+'</p>');
-			$("#cafe_weather").find(".weather").html('<p>'+error+'</p>');
+			var errorTemplate = '<p>'+error+'</p>';
+			$("#weather").html(errorTemplate);
+			$("#cafe_weather").find(".weather").html(errorTemplate);
+			$("#reading_room").find(".weather-area").html(errorTemplate);
 		}
 	});
+	
+	
 
 	//병원 이미지슬라이드
 	setInterval(function () {

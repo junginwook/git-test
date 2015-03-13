@@ -400,7 +400,17 @@
                             <div class="academy bg-board">
                                 <div class="bg-wood-center">
                                     <div class="class-widget">
-                                        <div class="date-box"></div>
+                                        <div class="date-box">
+	                                        <p class="today-date day" style="height: 20px;"></p>
+                                        </div>
+	                                      <div id="reading_room" style="height: 162px; border: 1px solid red;">
+		                                      <div class="clock-area" style="width: 50%; height: 100%;float: left;"></div>
+		                                      <div class="weather-area" style="width: 50%; height: 100%;float: left;">
+			                                      <p class="icon"></p>
+			                                      <p class="location">서울</p>
+			                                      <p class="today-temp"></p>
+		                                      </div>
+	                                      </div>
                                         <div class="d-day-box">
                                             <p class="title">수능 D-day</p>
 	                                        <div class="countdownwrap"></div>
