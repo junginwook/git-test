@@ -71,11 +71,15 @@ var Portfolio = (function($){
 	}).trigger('click');
 
 	setInterval(function () {
+		//ul
 		var slideTop = $(".txt-view").find("ul");
+		//li top
 		var first = slideTop.find("li").first();
-		slideTop.animate({top : "-33px"}, {
+
+		slideTop.animate({top : (-1 * first.outerHeight()) + 'px'}, {
 			duration : 600,
 			complete : function(){
+				//완료후 li top 을 제일 밑으로 이동.
 				slideTop.css("top","0").append(first);
 			}
 		});
