@@ -118,8 +118,8 @@ b{font-weight:800;}
 .contents_5 .portfolio-area .portfolio .txt-info .txt-input input{height:100px;color:#fff;background:none;}
 .contents_5 .portfolio-area .portfolio .txt-info .txt-input textarea{height:256px;color:#fff;background:none;}
 .contents_5 .portfolio-area .portfolio .txt-info .txt-input button{float:right;width:50px;height:30px;color:#fff;margin-top:10px;border-radius:5px;background:#1d1d1d;}
-.contents_5 .portfolio-area .portfolio .info-img .place1{position:absolute;bottom:200px;left:42px;width:20px;height:14px;background:red;}
-.contents_5 .portfolio-area .portfolio .info-img .place2{position:absolute;bottom:145px;left:35px;width:15px;height:19px;background: black;}
+.contents_5 .portfolio-area .portfolio .info-img .place1{position:absolute;bottom:214px;left:35px;width:17px;height:12px;background:red;}
+.contents_5 .portfolio-area .portfolio .info-img .place2{position:absolute;bottom:155px;left:27px;width:13px;height:17px;background: black;}
 .contents_5 .portfolio-area .portfolio .info-img .portfolio-04-tit{position:absolute;top:28px;left:13px;}
 
 .contents_5 .portfolio-area .portfolio .info-img{padding-bottom:10px;margin:0 auto;width:100%;border:none;position:relative}
@@ -267,8 +267,10 @@ b{font-weight:800;}
 .contents_5 .portfolio-area .portfolio .info-img .academy .class-widget .date-box .class-clock .clock{  position: absolute; top: -16px; left: -14px;}
 .contents_5 .portfolio-area .portfolio .info-img .academy .class-widget .d-day-box{padding:10px; text-align:center;}
 .contents_5 .portfolio-area .portfolio .info-img .academy .class-widget .d-day-box .title{font-size:13px; color:#6a6a6a; padding-bottom:5px;}
-
-
+.contents_5 .portfolio-area .portfolio .info-img .academy .class-content-02{margin:0 14px 6px 14px; height: 218px;}
+.contents_5 .portfolio-area .portfolio .info-img .academy .class-content p.cont-tit{font-size:14px; color:#f57d20; padding-bottom:8px;}
+.contents_5 .portfolio-area .portfolio .info-img .academy .class-content ul{float:left; width:50%; margin-bottom:10px;}
+.contents_5 .portfolio-area .portfolio .info-img .academy .class-content dl dd span{display:inline-block; width:80px;}
 
 .d-day-box .countdown{
 	border:2px solid green;
@@ -654,8 +656,8 @@ b{font-weight:800;}
 	.contents_5 .portfolio-area .portfolio .info-img .txt-view{}
 	.contents_5 .portfolio-area .portfolio .info-img .txt-view ul li{font-size:12px;}
 	.contents_5 .portfolio-area .portfolio .info-img{float:none;width:100%;}
-	.contents_5 .portfolio-area .portfolio .info-img .place1{bottom:200px;left:43px;}
-	.contents_5 .portfolio-area .portfolio .info-img .place2{bottom:126px;left:36px;}
+	.contents_5 .portfolio-area .portfolio .info-img .place1{bottom:214px;left:35px;}
+	.contents_5 .portfolio-area .portfolio .info-img .place2{bottom:155px;left:27px;}
 	.contents_5 .portfolio-area .portfolio .info-img .portfolio-04-tit{left:0;width:100%;text-align:center}
 	.contents_5 .portfolio-area .portfolio .info-img .portfolio-04-tit img{width:80%;}
 
@@ -671,6 +673,9 @@ b{font-weight:800;}
 
 	.contents_5 .portfolio-area .thumb-area ul li{width:44%;margin:20px 3% 0;}
 	.contents_5 .portfolio-area .thumb-area ul li img{width:100%;}
+
+    .contents_5 .portfolio-area .portfolio .info-img .academy .class-content ul li{line-height:20px;}
+
 	.watch{bottom:100px;}
 
 	.footer .inquiry-area{padding:15px 0;}
@@ -708,14 +713,14 @@ b{font-weight:800;}
 }
 
 @media only screen and (max-width:330px) {
-	.contents_5 .portfolio-area .portfolio .info-img .place1{bottom:170px;left:44px}
-	.contents_5 .portfolio-area .portfolio .info-img .place2{bottom:103px;left:38px;}
+	.contents_5 .portfolio-area .portfolio .info-img .place1{bottom:214px;left:35px}
+	.contents_5 .portfolio-area .portfolio .info-img .place2{bottom:155px;left:27px;}
 	.watch{bottom:88px;margin-left:5px;}
 }
 
 @media only screen and (max-width:320px) {
-	.contents_5 .portfolio-area .portfolio .info-img .place1{bottom:188px;left:40px}
-	.contents_5 .portfolio-area .portfolio .info-img .place2{bottom:103px;left:33px;}
+	.contents_5 .portfolio-area .portfolio .info-img .place1{bottom:214px;left:35px}
+	.contents_5 .portfolio-area .portfolio .info-img .place2{bottom:155px;left:27px;}
 	.contents_5 .portfolio-area .portfolio .info-img>div{width:320px;margin:0 auto;}
 	.contents_5 .portfolio-area .portfolio .info-img img{width:300px}
 
@@ -758,9 +763,10 @@ b{font-weight:800;}
 	/*2015.02.26수정*/
 	.contents_5 .portfolio-area .portfolio .info-img{width:100%;margin:0 auto;overflow:hidden; padding-bottom:0;}
 	.contents_5 .portfolio-area .portfolio .info-img img{width:300px}
-	.contents_5 .portfolio-area .portfolio .info-img .place1{bottom:200px;left:43px;}
-	.contents_5 .portfolio-area .portfolio .info-img .place2{bottom:126px;left:36px;}
+	.contents_5 .portfolio-area .portfolio .info-img .place1{bottom:214px;left:35px;}
+	.contents_5 .portfolio-area .portfolio .info-img .place2{bottom:155px;left:27px;}
 	.contents_5 .portfolio-area .portfolio .info-img>div{margin:0 auto; float:none;}
+
 
 	.footer .inquiry-area .area{padding:0 80px}
 }

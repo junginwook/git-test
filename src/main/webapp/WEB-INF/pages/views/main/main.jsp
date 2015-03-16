@@ -448,7 +448,31 @@
                             </div>
                             <div class="academy">
                                 <div class="bg-wood-side">
-                                    <img src="${contextPath}/resources/img/portfolio/portfolio-02.png" alt="독서실"/>
+                                    <p class="class-title">독서실 이용안내</p>
+                                    <div class="class-content">
+                                        <p class="cont-tit">[Time]</p>
+                                        <ul>
+                                            <li>월~금</li>
+                                            <li>Open pm 2:00</li>
+                                            <li>Close am 2:00</li>
+                                        </ul>
+                                        <ul>
+                                            <li>주말</li>
+                                            <li>Open pm 9:00</li>
+                                            <li>Close am 2:00</li>
+                                        </ul>
+                                        <p class="cont-tit">[Price]</p>
+                                        <dl>
+                                            <dd><span>지정석</span>160,000원</dd>
+                                            <dd><span>일반석</span>130,000원</dd>
+                                            <dd><span>학원생할인</span>100,000원(월)</dd>
+                                            <dd><span>락커이용료</span>20,000원(월, 학원생무료)</dd>
+                                        </dl>
+                                    </div>
+                                    <p class="class-title">좌석안내</p>
+                                    <div class="class-content-02">
+                                        <img src="${contextPath}/resources/img/portfolio/academy-seat-info.png" alt="독서실 좌석안내"/>
+                                    </div>
                                     <p class="place1 flash animated infinite"></p>
                                     <p class="place2 flash animated infinite"></p>
                                 </div>
