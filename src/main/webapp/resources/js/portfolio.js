@@ -85,6 +85,21 @@ var Portfolio = (function($){
 		});
 	}, slideDelayInMillis);
 
+    setInterval(function () {
+        //ul
+        var slideTop = $(".class-content").find(".notice-rolling");
+        //li top
+        var first = slideTop.find("dl").first();
+
+        slideTop.animate({top : (-1 * first.outerHeight()) + 'px'}, {
+            duration : 600,
+            complete : function(){
+                //완료후 li top 을 제일 밑으로 이동.
+                slideTop.css("top","0").append(first);
+            }
+        });
+    }, slideDelayInMillis);
+
 	//***************************** 병 *****************************//
 	// 오늘 날짜
 	var now = new Date();
