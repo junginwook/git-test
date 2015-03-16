@@ -5,19 +5,19 @@ var CountDown = (function ($) {
     var ringer = {
         countdown_to: "10/12/2015",
         rings: {
-            'DAYS': {
+            'Days': {
                 s: 86400000, // mseconds in a day,
                 max: 365
             },
-            'HOURS': {
+            'Hours': {
                 s: 3600000, // mseconds per hour,
                 max: 24
             },
-            'MINUTES': {
+            'Minutes': {
                 s: 60000, // mseconds per minute
                 max: 60
             },
-            'SECONDS': {
+            'Seconds': {
                 s: 1000,
                 max: 60
             },

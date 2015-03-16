@@ -43,3 +43,39 @@
 	font-weight: bold;
 	color: #333;
 }
+
+/*학원시계*/
+.analog-02 {
+    position: relative;
+    width: 150px;
+    /*margin: auto;*/
+    background: url(../img/portfolio/clock/clockface-02.png);
+    list-style: none;
+}
+
+.analog-02,.analog-02 .hour,.analog-02 .min,.analog-02 .sec {
+    height: 150px;
+}
+
+.analog-02 .hour,.analog-02 .min,.analog-02 .sec {
+    position: absolute;
+    width: 8px;
+    top: 0;
+    left: 70px;
+    padding: 0;
+}
+
+.analog-02 .sec {
+    background: url(../img/portfolio/clock/sechand-02.png);
+    z-index: 3;
+}
+
+.analog-02 .min {
+    background: url(../img/portfolio/clock/minhand-02.png);
+    z-index: 2;
+}
+
+.analog-02 .hour {
+    background: url(../img/portfolio/clock/hourhand-02.png);
+    z-index: 1;
+}

@@ -99,6 +99,7 @@ b{font-weight:800;}
 .contents_4 dl dt{color:#fff;font-size:22px;line-height:1.4;padding-bottom:5px;}
 .contents_4 dl dd p{color:#fff;line-height:22px;padding-left:10px;}
 .contents_4 .floatL dd img{width:100%}
+.contents_4 dd.mini-txt{font-size:12px; color:#fff;}
 
 
 /* img-info, txt-info css 수정  */
@@ -262,7 +263,8 @@ b{font-weight:800;}
 .contents_5 .portfolio-area .portfolio .info-img .academy .class-widget .date-box .weather-area p.icon{position:absolute; top:50px; right:64px;}
 .contents_5 .portfolio-area .portfolio .info-img .academy .class-widget .date-box .location{position:absolute; top:114px; right:74px; font-size:14px; font-weight:bold;}
 .contents_5 .portfolio-area .portfolio .info-img .academy .class-widget .date-box .today-temp{position:absolute; top:134px; right:55px;}
-.contents_5 .portfolio-area .portfolio .info-img .academy .class-widget .date-box .class-clock{width:120px; height:120px; position:absolute; top:50px; left:28px;background:red;}
+.contents_5 .portfolio-area .portfolio .info-img .academy .class-widget .date-box .class-clock{width:120px; height:120px; position:absolute; top:50px; left:28px;}
+.contents_5 .portfolio-area .portfolio .info-img .academy .class-widget .date-box .class-clock .clock{  position: absolute; top: -16px; left: -14px;}
 .contents_5 .portfolio-area .portfolio .info-img .academy .class-widget .d-day-box{padding:10px; text-align:center;}
 .contents_5 .portfolio-area .portfolio .info-img .academy .class-widget .d-day-box .title{font-size:13px; color:#6a6a6a; padding-bottom:5px;}
 

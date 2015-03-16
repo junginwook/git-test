@@ -8,7 +8,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <c:set var="contextPath" value="${pageContext.request.contextPath}" />
-<link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/class-clock.css">
 <div id="demo1" class="fullSection">
     <div class="contents_1">
         <div class="area">
@@ -92,6 +91,7 @@
                     <dl>
                         <dt>디스플레이 사이즈 비교</dt>
                         <dd><img src="${contextPath}/resources/img/display/display-01.png" alt="디스플레이 사이즈 비교"/></dd>
+                        <dd class="mini-txt">*사이즈는 모니터 제조사 및 모델에 따라 차이가 있을 수 있습니다.</dd>
                     </dl>
                 </div>
             </div>
@@ -413,52 +413,12 @@
                                             </div>
                                             <div class="class-clock">
                                                 <!--시계-->
-                                                <div class='clock-wrapper'>
-                                                    <div class='clock-border'>
-                                                        <div class='clock'>
-                                                            <ul class='minute-marks'>
-                                                                <li class='five'></li>
-                                                                <li></li>
-                                                                <li></li>
-                                                                <li></li>
-                                                                <li></li>
-                                                                <li class='five'></li>
-                                                                <li></li>
-                                                                <li></li>
-                                                                <li></li>
-                                                                <li></li>
-                                                                <li class='five'></li>
-                                                                <li></li>
-                                                                <li></li>
-                                                                <li></li>
-                                                                <li></li>
-                                                                <li class='five'></li>
-                                                                <li></li>
-                                                                <li></li>
-                                                                <li></li>
-                                                                <li></li>
-                                                                <li class='five'></li>
-                                                                <li></li>
-                                                                <li></li>
-                                                                <li></li>
-                                                                <li></li>
-                                                                <li class='five'></li>
-                                                                <li></li>
-                                                                <li></li>
-                                                                <li></li>
-                                                                <li></li>
-                                                            </ul>
-                                                            <div class='hour'>
-                                                                <div class='hand'></div>
-                                                            </div>
-                                                            <div class='minute'>
-                                                                <div class='hand'></div>
-                                                            </div>
-                                                            <div class='second'>
-                                                                <div class='hand'></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                <div class="clock">
+                                                    <ul class="analog-clock analog-02">
+                                                        <li class="hour"></li>
+                                                        <li class="min"></li>
+                                                        <li class="sec"></li>
+                                                    </ul>
                                                 </div>
                                                 <!--시계끝-->
                                             </div>
