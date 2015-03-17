@@ -335,7 +335,7 @@
                                         </div>
                                     </div>
                                     <%--digital clock--%>
-                                    <div class="clock">
+                                    <div class="clock" style="overflow:hidden;">
                                         <div class="clockWidget"></div>
                                     </div>
                                 </div>
