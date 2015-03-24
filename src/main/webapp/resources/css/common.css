@@ -94,12 +94,16 @@ b{font-weight:800;}
 .contents_4 .w35per{width:33%;margin-right:2%;}
 .contents_4 .w25per{width:23%;margin-right:2%}
 .contents_4 .top-area{overflow:hidden;}
-.contents_4 .top-area .txt{float:left;width:50%;margin-right:5%}
 .contents_4 .top-area .img{float:left;}
 .contents_4 dl dt{color:#fff;font-size:22px;line-height:1.4;padding-bottom:5px;}
 .contents_4 dl dd p{color:#fff;line-height:22px;padding-left:10px;}
 .contents_4 .floatL dd img{width:100%}
 .contents_4 dd.mini-txt{font-size:12px; color:#fff;}
+
+.contents_4 .over-hidden div{float:left;}
+.contents_4 .over-hidden .display-size{margin:27px 107px 0 10px;}
+.contents_4 .over-hidden .display-more{position:relative; width:460px; height:330px;background:url(../img/display/display-more.png) no-repeat left top;}
+.contents_4 .over-hidden .display-more span{position:absolute; left:39px; bottom:26px; cursor: pointer;}
 
 
 /* img-info, txt-info css 수정  */
@@ -272,6 +276,24 @@ b{font-weight:800;}
 .contents_5 .portfolio-area .portfolio .info-img .academy .class-content p.cont-tit{font-size:14px; color:#f57d20; padding-bottom:8px;}
 .contents_5 .portfolio-area .portfolio .info-img .academy .class-content ul{float:left; width:50%; margin-bottom:10px;}
 .contents_5 .portfolio-area .portfolio .info-img .academy .class-content dl dd span{display:inline-block; width:80px;}
+
+/*병원 20150324*/
+.contents_5 .portfolio-area .portfolio .info-img .text-contents-01{overflow:hidden;}
+.contents_5 .portfolio-area .portfolio .info-img .text-contents-01 .title{font-weight:bold; font-size:16px; color:#fff; line-height:58px; background:#699bab; padding-bottom:0;}
+.contents_5 .portfolio-area .portfolio .info-img .text-contents-01 .txt-desc{padding:15px; font-size:11px;color:#4b7684; line-height:16px; background:#fff;}
+.contents_5 .portfolio-area .portfolio .info-img .text-contents-02{overflow:hidden; padding:10px 28px 10px 0; background:#4b7684;}
+.contents_5 .portfolio-area .portfolio .info-img .text-contents-02 dl{float:left; width:33.3%; color:#fff;}
+.contents_5 .portfolio-area .portfolio .info-img .text-contents-02 dl dt,.text-contents-02 dl dd{color:#fff; font-size:12px; font-weight:bold; line-height:20px;}
+.contents_5 .portfolio-area .portfolio .info-img .text-contents-02 .font12{font-size:16px;}
+.contents_5 .portfolio-area .portfolio .info-img .text-contents-02 dl.align-right{text-align:right;}
+.contents_5 .portfolio-area .portfolio .info-img .text-contents-02 dl.align-center{text-align:center;}
+.contents_5 .portfolio-area .portfolio .info-img .text-contents-03{overflow:hidden; padding:14px 22px; background:#699bab;}
+.contents_5 .portfolio-area .portfolio .info-img .text-contents-03 p{display:inline-block; font-size:12px; color:#fff; font-weight:bold; line-height:16px;}
+.contents_5 .portfolio-area .portfolio .info-img .text-contents-04{overflow:hidden; padding:17px 18px 14px; background:#4b7684;}
+.contents_5 .portfolio-area .portfolio .info-img .text-contents-04 .title{font-weight:bold; font-size:22px; color:#fff; padding-bottom:0;}
+.contents_5 .portfolio-area .portfolio .info-img .text-contents-04 li{padding:16px 0 0 30px; font-size:14px; color:#fff; line-height:20px;}
+.contents_5 .portfolio-area .portfolio .info-img .text-contents-04 li.bg-bedge{background:url(../img/portfolio/best-price.png) no-repeat 0 24px; }
+.contents_5 .portfolio-area .portfolio .info-img .text-contents-04 li span.point-price{font-size:24px;}
 
 .d-day-box .countdown{
 	border:2px solid green;
@@ -600,6 +622,14 @@ b{font-weight:800;}
 	border:2px solid green;
 }
 
+#Popup-display{display:none;width:100%;max-width:908px;margin-top:140px;background:#fff}
+#Popup-display .popup-box{width:908px; padding:38px 48px 70px;}
+#Popup-display .popup-box .title{position:relative; color:#696969; font-size:24px; line-height:22px;}
+#Popup-display .popup-box .title p{font-size:16px;}
+#Popup-display .popup-box .title p.orenge{font-size:12px; color:#ff7800;}
+#Popup-display .popup-box .title .btn-close{position:absolute; top:0; right:0;}
+#Popup-display .popup-box .title .btn-close button{width:88px; height:38px; background:#d4d4d4; font-size:16px; color:#fff; line-height:38px;}
+
 /***media query****/
 /* 모바일 */
 @media only screen and (max-width:767px) {
@@ -645,6 +675,8 @@ b{font-weight:800;}
 	.contents_4 .top-area .img{float:none;}
 	.contents_4 dl dt{font-size:16px;}
 	.contents_4 dl dd p{font-size:12px;line-height:18px;}
+    .contents_4 .over-hidden .display-size{float:none; margin:27px auto 0; width:50%;}
+    .contents_4 .over-hidden .display-more{float:none; margin:30px auto 0;}
 
 	.contents_5{padding:20px 0}
 	.contents_5 .title{font-size:30px;padding-bottom:20px;}
@@ -757,6 +789,8 @@ b{font-weight:800;}
 	.contents_2 .smartflat-info{padding-left:20px;padding-right:20px;}
 
 	.contents_4 .top-area .img{width:40%}
+    .contents_4 .over-hidden .display-size{float:none; margin:27px auto 0; width:50%;}
+    .contents_4 .over-hidden .display-more{float:none; margin:30px auto 0;}
 
 	.contents_5 .portfolio-area .thumb-area ul{6ax-width:508px;}
 	.contents_5 .portfolio-area .portfolio .info-img .portfolio-04-tit{width:100%;}

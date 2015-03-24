@@ -17,7 +17,18 @@
 		$("[id*='Btn']").stop(true).on('click', function (e) {
 			e.preventDefault();$(this).scrolld();
 		});
-		$('.button').click(function(){
+
+        $("#btnDisplay").unbind("click").click(function(){
+            $('#Popup-display').bPopup({
+                easing: 'easeOutBack',
+                speed: 500,
+                transition: 'slideUp',
+                closeClass:'popClose'
+
+            });
+        });//디스플레이 다양한구성 자세히 보기
+
+		$('#inquiry').click(function(){
 			$('#popup').bPopup({
 				easing: 'easeOutBack',
 				speed: 500,
@@ -78,7 +89,7 @@
 			<li><a href="#demo5" id="demo5Btn">특화된 기능</a></li>
 		</ul>
 	</div>
-	<span class="icon-inquiry button"><img src="${contextPath}/resources/img/inquiry.png" alt="친절한 견적 및 문의"/></span>
+	<span class="icon-inquiry button" id="inquiry"><img src="${contextPath}/resources/img/inquiry.png" alt="친절한 견적 및 문의"/></span>
 </div>
 <div id="popup">
 	<div class="bg-left">

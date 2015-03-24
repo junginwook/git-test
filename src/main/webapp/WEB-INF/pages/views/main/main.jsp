@@ -16,9 +16,9 @@
                     .trailer { position:relative; padding-bottom:56.25%; }
                     .trailer iframe { position:absolute; width:100%; height:100%; }
                 </style>
-                <div class="trailer">
-                    <iframe src="//player.vimeo.com/video/118569708?badge=0&amp;color=ffffff&amp;autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
-                    </iframe></div>
+                <%--<div class="trailer">--%>
+                    <%--<iframe src="//player.vimeo.com/video/118569708?badge=0&amp;color=ffffff&amp;autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>--%>
+                    <%--</iframe></div>--%>
             </div>
         </div>
     </div>
@@ -81,59 +81,31 @@
                         <dt>Smart Flat은</dt>
                         <dd>
                             <p>각 매장의 공간과 특성을 감안하여 다양한 맞춤식 디스플레이를 구성합니다. <br/>
-                                모니터는 32inch , 42inch, 55inch 의 디스플레이가 준비되며,  2단, 3단, 4단의 세로와 가로의 구성이 기본입니다.
-                                또한, 매장의 요구에 따라 변형과 조합도 가능합니다.<br/>
-                                스마트플랫으로 어디에도 없는 특별한 레이아웃으로 꾸며 보십시오.   매장을 더욱 빛나게 해 보십시오.</p>
+                                모니터는 32inch , 42inch, 55inch 의 디스플레이가 준비되며,  2단, 3단, 4단의 세로와 가로의 구성이 기본입니다.<br/>
+                                또한, 매장의 요구에 따라 변형과 조합도 가능합니다. 스마트플랫으로 어디에도 없는 특별한 레이아웃으로 꾸며 보십시오.<br/>
+                                 매장을 더욱 빛나게 해 보십시오.</p>
                         </dd>
                     </dl>
                 </div>
-                <div class="img">
-                    <dl>
-                        <dt>디스플레이 사이즈 비교</dt>
-                        <dd><img src="${contextPath}/resources/img/display/display-01.png" alt="디스플레이 사이즈 비교"/></dd>
-                        <dd class="mini-txt">*사이즈는 모니터 제조사 및 모델에 따라 차이가 있을 수 있습니다.</dd>
-                    </dl>
-                </div>
             </div>
             <div class="over-hidden">
-                <div class="floatL w25per">
-                    <dl>
-                        <dt>세로2단형</dt>
-                        <dd><img src="${contextPath}/resources/img/display/display-02.png" alt="세로2단형"/></dd>
-                    </dl>
+                <div class="display-size">
+                    <img src="${contextPath}/resources/img/display/display-size.png" alt="디스플레이 사이즈 비교"/>
                 </div>
-                <div class="floatL w35per">
-                    <dl>
-                        <dt>세로3단형</dt>
-                        <dd><img src="${contextPath}/resources/img/display/display-03.png" alt="세로3단형"/></dd>
-                    </dl>
+                <div class="display-more">
+                    <span class="button" id="btnDisplay"><img src="${contextPath}/resources/img/display/btn-display-more.png" alt="다양한 구성 자세히 보기"/></span>
                 </div>
-                <div class="floatL w40per">
-                    <dl>
-                        <dt>세로4단형</dt>
-                        <dd><img src="${contextPath}/resources/img/display/display-04.png" alt="세로4단형"/></dd>
-                    </dl>
+                <div id="Popup-display">
+                    <div class="popup-box">
+                        <div class="title">
+                            스마트플랫에서 일반적으로 많이 사용하시는 조합입니다.
+                            <p>물론 매장의 환경에 따라 다양하게 조합도 가능합니다.</p>
+                            <p class="orenge">*공급량 변동에 따라 제조사 변경 또는 모니터 모델 변경에 따라 차이가 있을 수 있습니다.</p>
+                            <p class="btn-close"><button class="popClose">닫기</button></p>
+                        </div>
+                    </div>
+                    <img src="${contextPath}/resources/img/display/img-display-view.jpg" alt="다양한 구성 자세히 보기"/>
                 </div>
-            </div>
-            <div class="over-hidden">
-                <div class="floatL w39per">
-                    <dl>
-                        <dt>가로2단형</dt>
-                        <dd><img src="${contextPath}/resources/img/display/display-05.png" alt="가로2단형"/></dd>
-                    </dl>
-                </div>
-                <div class="floatL w50per">
-                    <dl>
-                        <dt>가로3단형</dt>
-                        <dd><img src="${contextPath}/resources/img/display/display-06.png" alt="가로3단형"/></dd>
-                    </dl>
-                </div>
-            </div>
-            <div>
-                <dl>
-                    <dt>가로4단형</dt>
-                    <dd><img src="${contextPath}/resources/img/display/display-07.png" alt="가로4단형"/></dd>
-                </dl>
             </div>
         </div>
     </div>
@@ -210,33 +182,6 @@
                                         <div class="weather"></div>
                                     </div>
                                 </div>
-                                <%--<div class="seoul">--%>
-                                <%--<h2>SEOUL</h2>--%>
-                                <%--<span class="date">2015.02.26</span>--%>
-                                <%--<span class="time">PM 04:03:25</span>--%>
-                                <%--<div class="weather">--%>
-                                <%--<img src="${contextPath}/resources/img/portfolio/clear.png" alt="cloud"/>--%>
-                                <%--<span>20&#176;C</span>--%>
-                                <%--</div>--%>
-                                <%--</div>--%>
-                                <%--<div class="tokyo">--%>
-                                <%--<h2>TOKYO</h2>--%>
-                                <%--<span class="date">2015.02.26</span>--%>
-                                <%--<span class="time">PM 04:03:25</span>--%>
-                                <%--<div class="weather">--%>
-                                <%--<img src="${contextPath}/resources/img/portfolio/clear.png" alt="cloud"/>--%>
-                                <%--<span>20&#176;C</span>--%>
-                                <%--</div>--%>
-                                <%--</div>--%>
-                                <%--<div class="newYork">--%>
-                                <%--<h2>NEWYORK</h2>--%>
-                                <%--<span class="date">2015.02.26</span>--%>
-                                <%--<span class="time">PM 04:03:25</span>--%>
-                                <%--<div class="weather">--%>
-                                <%--<img src="${contextPath}/resources/img/portfolio/clear.png" alt="cloud"/>--%>
-                                <%--<span>20&#176;C</span>--%>
-                                <%--</div>--%>
-                                <%--</div>--%>
                                 <div class="text-board clear-fix">
                                     <h2>오늘의 날씨와 잘 맞는<span>추천메뉴</span></h2>
                                     <ul>
@@ -252,7 +197,6 @@
                                     </dl>
                                 </div>
                                 <div class="text-info">
-
                                     <h2>안녕하세요?</h2>
                                     <p>우리 CAFE DE MAMA를 방문해 주셔서 감사합니다.<br>2015년 을미년 새해에도 하시고자 하는 일 모두<br>성취하시고 가정과 직장에서 행복과 건강이 가득하시길<br>기원합니다. ALLWAYS는 언제나 고객님께 편안한<br>맛의 추억을 전해드리고자 노력하겠습니다.</p>
                                     <p>CAFE DE MAMA</p>
@@ -324,7 +268,17 @@
                         <div class="info-img clear_fix">
                             <div>
                                 <div class="portfolio-video"><img src="${contextPath}/resources/img/portfolio/portfolio-06-00.jpg" alt=""/></div>
-                                <img src="${contextPath}/resources/img/portfolio/portfolio-06-1txt.jpg" alt="병원"/>
+                                <div class="text-contents-01">
+                                    <p class="title">대표원장 인사말</p>
+                                    <div class="txt-desc">
+                                        손끝에 진심을 담으면 공감이 따라 옵니다.<br>
+                                        성형은 단순히 외적인 변화만을 말하는 것이 아니라 내면의 변화를 통한 생활 전체의 만족을 얻는 것입니다.<br>
+                                        병원의 일방적인 결정이 아닌 고객 개개인의 개성에 맞춘 진정성 있는 소통은 지금까지 OO이 걸어온 길이며, 또 앞으로도 변함없이 걸어가야 할 길이라고 합니다.<br>
+                                        앞으로도 진심을 담은 소통과 고객이 OO의 한 가족이라는 철학을 잃지 않고 수준 높은 서비스로 만족과 믿을을 드리는 OO성형외과의원이 되겠습니다.<br>
+                                        감사합니다.<br><br>
+                                        OO성형외과의원 대표원장 OOO
+                                    </div>
+                                </div>
                             </div>
                             <div class="bg-board">
                                 <div class="portfolio-date">
@@ -339,7 +293,27 @@
                                         <div class="clockWidget"></div>
                                     </div>
                                 </div>
-                                <img src="${contextPath}/resources/img/portfolio/portfolio-06-2txt.jpg" alt=""/>
+                                <div class="text-contents-02">
+                                    <dl class="align-right">
+                                        <dt class="font12">진료시간</dt>
+                                        <dd>OPEN</dd>
+                                        <dd>CLOSE</dd>
+                                    </dl>
+                                    <dl class="align-center">
+                                        <dt>평일</dt>
+                                        <dd class="font12">am09:00</dd>
+                                        <dd class="font12">pm07:30</dd>
+                                    </dl>
+                                    <dl class="align-center">
+                                        <dt>주말</dt>
+                                        <dd class="font12">am09:30</dd>
+                                        <dd class="font12">pm04:00</dd>
+                                    </dl>
+                                </div>
+                                <div class="text-contents-03">
+                                    <p>수,금 야간진료 pm 08:00 까지<br>일요일, 공휴일,국경일은 휴무입니다.</p>
+                                    <p class="floatR">진료문의 및 상담<br>Tel. 3277-3300</p>
+                                </div>
                                 <%--calendar--%>
                                 <div class="portfolio-calendar"></div>
                             </div>
@@ -351,7 +325,23 @@
                                         <img src="${contextPath}/resources/img/portfolio/portfolio-06-03.jpg" alt=""/>
                                     </div>
                                 </div>
-                                <div><img src="${contextPath}/resources/img/portfolio/portfolio-06-txt.jpg" alt=""/></div>
+                                <div class="text-contents-04">
+                                    <p class="title">울트라포머</p>
+                                    <ul>
+                                        <li>
+                                            <span class="point-price">79</span>만원<br>
+                                            울트라포머1회 + 실50개 + 사각턱보톡스
+                                        </li>
+                                        <li class="bg-bedge">
+                                            <span class="point-price">89</span>만원<br>
+                                            울트라포머1회 + 필러2개 + 사각턱보톡스
+                                        </li>
+                                        <li>
+                                            <span class="point-price">99</span>만원<br>
+                                            울트라포머2회 + 필러1개
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <div class="txt-info">
@@ -366,15 +356,6 @@
 
                     <div class="portfolio-info info3">
                         <div class="info-img clear_fix">
-                            <!--
-                            <div style="background:none;border:0px"></div>
-                            <div class="bg-board">
-                                <img src="/resources/img/portfolio/portfolio-02.png" alt="">
-                                <p class="place1 flash animated infinite"></p>
-                                <p class="place2 flash animated infinite"></p>
-                            </div>
-                            <div style="background:none;border:0px"></div>
-                            -->
                             <div class="academy">
                                 <div class="bg-wood-side">
                                     <p class="class-title">수강료 안내</p>
