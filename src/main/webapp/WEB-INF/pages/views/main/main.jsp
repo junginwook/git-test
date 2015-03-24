@@ -101,8 +101,8 @@
                             스마트플랫에서 일반적으로 많이 사용하시는 조합입니다.
                             <p>물론 매장의 환경에 따라 다양하게 조합도 가능합니다.</p>
                             <p class="orenge">*공급량 변동에 따라 제조사 변경 또는 모니터 모델 변경에 따라 차이가 있을 수 있습니다.</p>
-                            <p class="btn-close"><button class="popClose">닫기</button></p>
                         </div>
+                        <p class="btn-close"><button class="popClose">닫기</button></p>
                     </div>
                     <img src="${contextPath}/resources/img/display/img-display-view.jpg" alt="다양한 구성 자세히 보기"/>
                 </div>

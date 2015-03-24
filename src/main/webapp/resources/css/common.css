@@ -627,8 +627,8 @@ b{font-weight:800;}
 #Popup-display .popup-box .title{position:relative; color:#696969; font-size:24px; line-height:22px;}
 #Popup-display .popup-box .title p{font-size:16px;}
 #Popup-display .popup-box .title p.orenge{font-size:12px; color:#ff7800;}
-#Popup-display .popup-box .title .btn-close{position:absolute; top:0; right:0;}
-#Popup-display .popup-box .title .btn-close button{width:88px; height:38px; background:#d4d4d4; font-size:16px; color:#fff; line-height:38px;}
+#Popup-display .popup-box .btn-close{position:absolute; top:38px; right:48px;}
+#Popup-display .popup-box .btn-close button{width:88px; height:38px; background:#d4d4d4; font-size:16px; color:#fff; line-height:38px;}
 
 /***media query****/
 /* 모바일 */
@@ -738,6 +738,10 @@ b{font-weight:800;}
 	#popup .box table tr th{font-size:14px;padding:0 5px;padding-top:15px}
 	#popup .box table tr td{padding:5px}
 	#popup .box .btn-area{padding-bottom:30px;}
+
+    #Popup-display{width:95%;}
+    #Popup-display .popup-box{width:95%;}
+    #Popup-display .popup-box .title{padding-right:70px;}
 }
 
 @media only screen and (max-width:390px) {
