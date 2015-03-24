@@ -16,9 +16,9 @@
                     .trailer { position:relative; padding-bottom:56.25%; }
                     .trailer iframe { position:absolute; width:100%; height:100%; }
                 </style>
-                <%--<div class="trailer">--%>
-                    <%--<iframe src="//player.vimeo.com/video/118569708?badge=0&amp;color=ffffff&amp;autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>--%>
-                    <%--</iframe></div>--%>
+                <div class="trailer">
+                    <iframe src="//player.vimeo.com/video/118569708?badge=0&amp;color=ffffff&amp;autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                    </iframe></div>
             </div>
         </div>
     </div>
