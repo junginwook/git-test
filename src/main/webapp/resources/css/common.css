@@ -622,7 +622,7 @@ b{font-weight:800;}
 	border:2px solid green;
 }
 
-#Popup-display{display:none;width:100%;max-width:908px;margin-top:140px;background:#fff}
+#Popup-display{display:none;width:100%;max-width:1004px;margin-top:140px;background:#fff}
 #Popup-display .popup-box{width:908px; padding:38px 48px 70px;}
 #Popup-display .popup-box .title{position:relative; color:#696969; font-size:24px; line-height:22px;}
 #Popup-display .popup-box .title p{font-size:16px;}
