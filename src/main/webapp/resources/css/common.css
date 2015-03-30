@@ -184,7 +184,7 @@ b{font-weight:800;}
 /*20150310추가*/
 .contents_5 .portfolio-area .portfolio .info-img .board2 .widget-top{width:324px; height:190px; background:#242d3a;}
 .contents_5 .portfolio-area .portfolio .info-img .board2 .clock {float: left; margin-top:20px;}
-.contents_5 .portfolio-area .portfolio .info-img .board2 #cafe_weather{float:left; position:relative; margin:54px 20px 0 12px;}
+.contents_5 .portfolio-area .portfolio .info-img .board2 #cafe_weather{float:left; position:relative; width:155px; margin:54px auto 0;}
 .contents_5 .portfolio-area .portfolio .info-img .board2 #cafe_weather p{color:#2cb4db;}
 .contents_5 .portfolio-area .portfolio .info-img .board2 #cafe_weather p.today-date{font-size:20px; font-weight:bold; text-align:center;}
 .contents_5 .portfolio-area .portfolio .info-img .board2 #cafe_weather p.location{position: absolute; top: 34px; left: 77px;}
