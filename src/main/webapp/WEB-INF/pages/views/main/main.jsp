@@ -267,9 +267,12 @@
                     <div class="portfolio-info info2">
                         <div class="info-img clear_fix">
                             <div>
-                                <div class="portfolio-video"><img src="${contextPath}/resources/img/portfolio/portfolio-06-00.jpg" alt=""/></div>
+
                                 <div class="text-contents-01">
                                     <p class="title">대표원장 인사말</p>
+                                    <div class="portfolio-video">
+                                        <iframe src="https://player.vimeo.com/video/123921141?autoplay=1&loop=1&color=ffffff&title=0&byline=0&portrait=0" width="320" height="180" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                    </div>
                                     <div class="txt-desc">
                                         손끝에 진심을 담으면 공감이 따라 옵니다.<br>
                                         성형은 단순히 외적인 변화만을 말하는 것이 아니라 내면의 변화를 통한 생활 전체의 만족을 얻는 것입니다.<br>
