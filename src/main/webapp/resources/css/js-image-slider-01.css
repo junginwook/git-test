@@ -1,0 +1,41 @@
+/* http://www.menucool.com */
+
+#sliderFrame01, #sliderFrame01 div{
+    box-sizing: content-box;
+}
+#sliderFrame01
+{
+    position:relative;
+    width:106px;
+    margin:0 auto; /*center-aligned*/
+}
+
+#slider01, #slider01 div.sliderInner {
+    width:106px;height:109px;/* Must be the same size as the slider images */
+}
+
+#slider01{
+    background:#fff url(loading.gif) no-repeat 50% 50%;
+    position:relative;
+    margin:0 auto; /*center-aligned*/
+    transform: translate3d(0,0,0);
+    box-shadow: 0px 1px 5px #999999;
+}
+
+#slider01 div.navBulletsWrapper{
+
+    display: none;
+}
+
+/*each bullet*/
+#slider01 div.navBulletsWrapper div
+{
+    display: none;
+}
+
+#slider01 div.sliderInner{
+    overflow:hidden;
+    -webkit-transform: rotate(0.000001deg);/* fixed the Chrome not crop border-radius bug*/
+    position:absolute; top:0; left:0;
+}
+#slider01 div {-webkit-transform: translate3d(0,0,0);transform: translate3d(0,0,0);}

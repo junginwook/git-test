@@ -211,7 +211,8 @@ b{font-weight:800;}
 
 /*portfolio - 6번째 병원이미지 가로3단*/
 /*2015.02.26수정*/
-.contents_5 .portfolio-area .portfolio .info-img .portfolio-video{width:100%;height:180px;background:#fff; margin:54px 0 55px;}
+.contents_5 .portfolio-area .portfolio .info-img .portfolio-video{width:100%;height:180px;background:#fff; position:relative;}
+.contents_5 .portfolio-area .portfolio .info-img .portfolio-video iframe{position: absolute; top:0; left:0;}
 .contents_5 .portfolio-area .portfolio .info-img>div>div.portfolio-date{width:100%;height:208px;background:#f3f3f3}
 .contents_5 .portfolio-area .portfolio .info-img>div>div.portfolio-date .today-date{text-align:center;padding-top:20px;font-size:20px;color:#777;font-weight:800;}
 .contents_5 .portfolio-area .portfolio .info-img>div>div.portfolio-date .weather{;margin-bottom:10px;line-height:1.2em;height:60px;}
@@ -294,6 +295,10 @@ b{font-weight:800;}
 .contents_5 .portfolio-area .portfolio .info-img .text-contents-04 li{padding:16px 0 0 30px; font-size:14px; color:#fff; line-height:20px;}
 .contents_5 .portfolio-area .portfolio .info-img .text-contents-04 li.bg-bedge{background:url(../img/portfolio/best-price.png) no-repeat 0 24px; }
 .contents_5 .portfolio-area .portfolio .info-img .text-contents-04 li span.point-price{font-size:24px;}
+
+.contents_5 .portfolio-area .portfolio .info-img .small-img{overflow: hidden;}
+.contents_5 .portfolio-area .portfolio .info-img .small-img div{float:left;}
+.contents_5 .portfolio-area .portfolio .info-img .small-img div img{width:100%;}
 
 .d-day-box .countdown{
 	border:2px solid green;

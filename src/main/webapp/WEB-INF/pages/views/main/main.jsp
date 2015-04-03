@@ -281,6 +281,29 @@
                                         감사합니다.<br><br>
                                         OO성형외과의원 대표원장 OOO
                                     </div>
+                                    <div class="small-img">
+                                        <div class="small-01" id="sliderFrame01">
+                                            <div id="slider01">
+                                                <img src="${contextPath}/resources/img/portfolio/slide-img-08-106.png" alt=""/>
+                                                <img src="${contextPath}/resources/img/portfolio/slide-img-09-106.png" alt=""/>
+                                                <img src="${contextPath}/resources/img/portfolio/slide-img-10-106.png" alt=""/>
+                                            </div>
+                                        </div>
+                                        <div class="small-02" id="sliderFrame02">
+                                            <div id="slider02">
+                                                <img src="${contextPath}/resources/img/portfolio/slide-img-10-107.png" alt=""/>
+                                                <img src="${contextPath}/resources/img/portfolio/slide-img-08-107.png" alt=""/>
+                                                <img src="${contextPath}/resources/img/portfolio/slide-img-09-107.png" alt=""/>
+                                            </div>
+                                        </div>
+                                        <div class="small-03" id="sliderFrame03">
+                                            <div id="slider03">
+                                                <img src="${contextPath}/resources/img/portfolio/slide-img-09-107.png" alt=""/>
+                                                <img src="${contextPath}/resources/img/portfolio/slide-img-10-107.png" alt=""/>
+                                                <img src="${contextPath}/resources/img/portfolio/slide-img-08-107.png" alt=""/>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="bg-board">
@@ -560,3 +583,6 @@
 <script type="text/javascript" src="${contextPath}/resources/js/jquery.calendar-widget.js"></script>
 <script type="text/javascript" src="${contextPath}/resources/js/countdown.js"></script>
 <script type="text/javascript" src="${contextPath}/resources/js/portfolio.js"></script>
+<script type="text/javascript" src="${contextPath}/resources/js/js-image-slider-01.js"></script>
+<script type="text/javascript" src="${contextPath}/resources/js/js-image-slider-02.js"></script>
+<script type="text/javascript" src="${contextPath}/resources/js/js-image-slider-03.js"></script>
