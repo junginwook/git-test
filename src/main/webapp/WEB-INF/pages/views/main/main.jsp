@@ -56,18 +56,66 @@
                     <dt>Smart Flat</dt>
                     <dd>LED나 LCD를 활용한 신개념 디스플레이 광고게시판으로, <br/>
                         소형PC가 내장돼있어 컨텐츠 편집이 자유롭고 다양한 파일을 선명하고 다양하게 극적으로 표현할 수 있습니다.
-                        소규모 점포에서부터 효과적인 홍보수단이 필요한 체인가맹점 까지 저렴한 비용과 쉬운 유지 보수가 가능한 <span>스마트플랫</span>으로 <span>드라마틱한 효과</span>를 만나보십시오.</dd>
+                        소규모 점포에서부터 효과적인 홍보수단이 필요한 체인가맹점 까지 저렴한 비용과 쉬운 유지 보수가 가능한 <span class="point">스마트플랫</span>으로 <span class="point">드라마틱한 효과</span>를 만나보십시오.</dd>
                     <dt>다시 말해서 이런 효과가 있습니다</dt>
-                    <dd>기업 또는 개인이 고객에게 맞는 광고를 구현하여 <br/>홍보효과 극대화<br/>
-                        시선을 끄는 디스플레이와 광고 효과<br/>
-                        편리하고 다양한 마케팅 채널제공<br/>
-                        독립적, 중앙집중, 분산구조 등 어떤 환경에서의 적용 가능<br/>
-                        인력과 시간, 비용의 획기적인 감소와 광고 관리의 용이<br/>
-                        네트워크 기반의 실시간 정보 제공<br/>
-                        신속하고 정확한 정보 및 공지사항 전달</dd>
+                    <dd><span>기업 또는 개인이 고객에게 맞는 광고를 구현하여</span><span>홍보효과 극대화</span>
+                        <span>시선을 끄는 디스플레이와 광고 효과</span>
+                        <span>편리하고 다양한 마케팅 채널제공</span>
+                        <span>독립적, 중앙집중, 분산구조 등 어떤 환경에서의 적용 가능</span>
+                        <span>인력과 시간, 비용의 획기적인 감소와 광고 관리의 용이</span>
+                        <span>네트워크 기반의 실시간 정보 제공</span>
+                        <span>신속하고 정확한 정보 및 공지사항 전달</span>
+                    </dd>
                 </dl>
             </div>
-            <div class="smartflat-img"><img src="${contextPath}/resources/img/smartflat/bg.png" alt="스마트플랫 소개"/></div>
+            <div class="smartflat-img">
+                <div class="smart-slider-box">
+                    <div class="slide-box">
+                        <div id="smartFrame01" class="wrap">
+                            <div id="smartslider01">
+                                <img src="${contextPath}/resources/img/smartflat/sm-slide-img-01.jpg" alt=""/>
+                                <img src="${contextPath}/resources/img/smartflat/sm-slide-img-02.jpg" alt=""/>
+                                <img src="${contextPath}/resources/img/smartflat/sm-slide-img-03.jpg" alt=""/>
+                            </div>
+                        </div>
+                        <div class="price">19,000</div>
+                    </div>
+                    <div class="slide-box">
+                        <div id="smartFrame02" class="wrap">
+                            <div id="smartslider02">
+                                <img src="${contextPath}/resources/img/smartflat/sm-slide-img-04.jpg" alt=""/>
+                                <img src="${contextPath}/resources/img/smartflat/sm-slide-img-03.jpg" alt=""/>
+                                <img src="${contextPath}/resources/img/smartflat/sm-slide-img-02.jpg" alt=""/>
+                                <img src="${contextPath}/resources/img/smartflat/sm-slide-img-01.jpg" alt=""/>
+                            </div>
+                        </div>
+                        <div class="price">17,500</div>
+                    </div>
+                    <div class="slide-box">
+                        <div id="smartFrame03" class="wrap">
+                            <div id="smartslider03">
+                                <img src="${contextPath}/resources/img/smartflat/sm-slide-img-03.jpg" alt=""/>
+                                <img src="${contextPath}/resources/img/smartflat/sm-slide-img-04.jpg" alt=""/>
+                                <img src="${contextPath}/resources/img/smartflat/sm-slide-img-01.jpg" alt=""/>
+                                <img src="${contextPath}/resources/img/smartflat/sm-slide-img-02.jpg" alt=""/>
+                            </div>
+                        </div>
+                        <div class="price">18,500</div>
+                    </div>
+                    <div class="slide-box">
+                        <div id="smartFrame04" class="wrap">
+                            <div id="smartslider04">
+                                <img src="${contextPath}/resources/img/smartflat/sm-slide-img-02.jpg" alt=""/>
+                                <img src="${contextPath}/resources/img/smartflat/sm-slide-img-01.jpg" alt=""/>
+                                <img src="${contextPath}/resources/img/smartflat/sm-slide-img-03.jpg" alt=""/>
+                            </div>
+                        </div>
+                        <div class="price">16,000</div>
+                    </div>
+                </div>
+                <div class="smartflat-mv"><img src="${contextPath}/resources/img/smartflat/bg_02.png" alt="스마트플랫 소개"/></div>
+                <div class="img-disc"><img src="${contextPath}/resources/img/smartflat/bg.png" alt="스마트플랫 소개"/></div>
+            </div>
         </div>
     </div>
 </div>
@@ -586,3 +634,7 @@
 <script type="text/javascript" src="${contextPath}/resources/js/js-image-slider-01.js"></script>
 <script type="text/javascript" src="${contextPath}/resources/js/js-image-slider-02.js"></script>
 <script type="text/javascript" src="${contextPath}/resources/js/js-image-slider-03.js"></script>
+<script type="text/javascript" src="${contextPath}/resources/js/smartflat/js-image-slider-01.js"></script>
+<script type="text/javascript" src="${contextPath}/resources/js/smartflat/js-image-slider-02.js"></script>
+<script type="text/javascript" src="${contextPath}/resources/js/smartflat/js-image-slider-03.js"></script>
+<script type="text/javascript" src="${contextPath}/resources/js/smartflat/js-image-slider-04.js"></script>

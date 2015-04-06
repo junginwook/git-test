@@ -39,6 +39,7 @@
     <link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/js-image-slider-01.css"/>
     <link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/js-image-slider-02.css"/>
     <link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/js-image-slider-03.css"/>
+    <link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/smartflat/js-image-slider.css"/>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="${contextPath}/resources/js/jquery.simpleWeather.min.js"></script>
