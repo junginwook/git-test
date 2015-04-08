@@ -17,8 +17,8 @@
                     .trailer iframe { position:absolute; width:100%; height:100%; }
                 </style>
                 <div class="trailer">
-                    <iframe src="//player.vimeo.com/video/118569708?badge=0&amp;color=ffffff&amp;autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
-                    </iframe></div>
+                    <iframe src="//player.vimeo.com/video/118569708?badge=0&amp;color=ffffff&amp;autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
             </div>
         </div>
     </div>
@@ -113,7 +113,9 @@
                         <div class="price">16,000</div>
                     </div>
                 </div>
-                <div class="smartflat-mv"><img src="${contextPath}/resources/img/smartflat/bg_02.png" alt="스마트플랫 소개"/></div>
+                <div class="smartflat-mv">
+                    <iframe width="386" height="217" src="https://www.youtube.com/embed/I3-wqmAIJFE?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;playlist=I3-wqmAIJFE" frameborder="0" allowfullscreen></iframe>
+                </div>
                 <div class="img-disc"><img src="${contextPath}/resources/img/smartflat/bg.png" alt="스마트플랫 소개"/></div>
             </div>
         </div>

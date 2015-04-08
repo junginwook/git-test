@@ -681,6 +681,8 @@ b{font-weight:800;}
     .contents_3 .smartflat-img{margin:0 auto;padding-top:10px;}
     .contents_3 .smartflat-img .smart-slider-box{margin:0 auto; width:197px; height:422px; margin-bottom:7px;}
     .contents_3 .smartflat-img .smart-slider-box .slide-box{position:relative;float:left; margin:10px 0 0 10px; width:90%; height:93px;}
+    .contents_3 .smartflat-img .smartflat-mv{margin:0 auto;}
+    .contents_3 .smartflat-img .smartflat-mv iframe{width:100%;}
 
 
 	.contents_4 .area{padding:30px 10px;}
