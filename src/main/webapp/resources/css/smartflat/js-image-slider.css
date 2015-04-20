@@ -1,0 +1,40 @@
+/* http://www.menucool.com */
+
+#smartFrame01, #smartFrame01 div, #smartFrame02, #smartFrame02 div, #smartFrame03, #smartFrame03 div, #smartFrame04, #smartFrame04 div{
+    box-sizing: content-box;
+}
+#smartFrame01, #smartFrame02, #smartFrame03, #smartFrame04
+{
+    position:relative;
+    width:177px;
+    /*margin:0 auto; *//*center-aligned*/
+}
+
+#smartslider01, #smartslider01 div.sliderInner, #smartslider02, #smartslider02 div.sliderInner,#smartslider03, #smartslider03 div.sliderInner,#smartslider04, #smartslider04 div.sliderInner {
+    width:177px;height:93px;/* Must be the same size as the slider images */
+}
+
+#smartslider01, #smartslider02, #smartslider03, #smartslider04{
+    background:#fff url(loading.gif) no-repeat 50% 50%;
+    position:relative;
+    margin:0 auto; /*center-aligned*/
+    transform: translate3d(0,0,0);
+}
+
+#smartslider01 div.navBulletsWrapper, #smartslider02 div.navBulletsWrapper, #smartslider03 div.navBulletsWrapper, #smartslider04 div.navBulletsWrapper{
+
+    display: none;
+}
+
+/*each bullet*/
+#smartslider01 div.navBulletsWrapper div, #smartslider02 div.navBulletsWrapper div, #smartslider03 div.navBulletsWrapper div, #smartslider04 div.navBulletsWrapper div
+{
+    display: none;
+}
+
+#smartslider01 div.sliderInner, #smartslider02 div.sliderInner, #smartslider03 div.sliderInner, #smartslider04 div.sliderInner{
+    overflow:hidden;
+    -webkit-transform: rotate(0.000001deg);/* fixed the Chrome not crop border-radius bug*/
+    position:absolute; top:0; left:0;
+}
+#smartslider01 div, #smartslider02 div, #smartslider03 div, #smartslider04 div {-webkit-transform: translate3d(0,0,0);transform: translate3d(0,0,0);}
