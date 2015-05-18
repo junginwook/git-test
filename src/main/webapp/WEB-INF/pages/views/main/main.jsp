@@ -121,6 +121,77 @@
         </div>
     </div>
 </div>
+
+<script>
+    $(function(){
+        $(".photos .reflection").reflect();
+    });
+</script>
+<div id="demo6" class="fullSection">
+    <div class="contents_6">
+        <div class="area">
+            <h1 class="title"><b>다양한 디자인</b>  Designs</h1>
+            <div class="clear_fix top-area">
+                <div class="video floatL"></div>
+                <div class="txt floatL">
+                    <h2 class="txt-tit">
+                        다양한 분야에 다양한 디자인
+                    </h2>
+                    <p>
+                        어떻게 메뉴판과 게시판을 만들까 고민하시나요?<br/>
+                        스마트플랫에서 꾸준하게 업데이트되는 다양한 디자인 템플릿에서
+                        원하시는 디자인을 골라보세요. 아니면 독특한 아이디어를 말씀해보십시오.
+                        <br/>어디에서 만날 수 없었던 멋진 디지털광고 게시판을
+                        스마트플랫과 함께 만들어보십시오.
+                    </p>
+                </div>
+            </div>
+            <div class="photos clear_fix">
+                <div class="cover">
+                    <span>치킨01 가로3단</span>
+                    <img src="${contextPath}/resources/img/design/chicken01.gif" alt="치킨01 가로3단" class="reflection" id="btnTheme1"/>
+                    <div id="PopupTheme1" class="theme-popup">
+                        <div class="popup-box">
+                            <div class="title">
+                                치킨01 가로3단
+                            </div>
+                            <p class="btn-close"><button class="popClose">닫기</button></p>
+                        </div>
+                        <img src="${contextPath}/resources/img/design/b-chicken01.png" alt="치킨01 가로3단"/>
+
+                    </div>
+                </div>
+                <div class="cover">
+                    <span>카페02 가로3단</span>
+                    <img src="${contextPath}/resources/img/design/cafe02.gif" alt="카페02 가로3단" class="reflection" id="btnTheme2"/>
+                    <div id="PopupTheme2" class="theme-popup">
+                        <div class="popup-box">
+                            <div class="title">
+                                카페02 가로3단
+                            </div>
+                            <p class="btn-close"><button class="popClose">닫기</button></p>
+                        </div>
+                        <img src="${contextPath}/resources/img/design/cafe02.gif" alt="카페02 가로3단"/>
+                    </div>
+                </div>
+                <div class="cover">
+                    <span>카페03 가로3단</span>
+                    <img src="${contextPath}/resources/img/design/cafe03.gif" alt="카페03 가로3단" class="reflection" id="btnTheme3"/>
+                    <div id="PopupTheme3" class="theme-popup">
+                        <div class="popup-box">
+                            <div class="title">
+                                카페03 가로3단
+                            </div>
+                            <p class="btn-close"><button class="popClose">닫기</button></p>
+                        </div>
+                        <img src="${contextPath}/resources/img/design/b-cafe03.png" alt="카페03 가로3단"/>
+                    </div>
+                </div>
+            </div>
+            <div class="people"></div>
+        </div>
+    </div>
+</div>
 <div id="demo4" class="fullSection">
     <div class="contents_4">
         <div class="area">

@@ -18,6 +18,35 @@
 			e.preventDefault();$(this).scrolld();
 		});
 
+        $("#btnTheme1").click(function(){
+            $('#PopupTheme1').bPopup({
+                easing: 'easeOutBack',
+                speed: 500,
+                transition: 'slideUp',
+                closeClass:'popClose'
+
+            });
+        }); //다양한디자인팝업1
+        $("#btnTheme2").click(function(){
+            $('#PopupTheme2').bPopup({
+                easing: 'easeOutBack',
+                speed: 500,
+                transition: 'slideUp',
+                closeClass:'popClose'
+
+            });
+        }); //다양한디자인팝업2
+        $("#btnTheme3").click(function(){
+            $('#PopupTheme3').bPopup({
+                easing: 'easeOutBack',
+                speed: 500,
+                transition: 'slideUp',
+                closeClass:'popClose'
+
+            });
+        }); //다양한디자인팝업3
+
+
         $("#btnDisplay").unbind("click").click(function(){
             $('#Popup-display').bPopup({
                 easing: 'easeOutBack',
@@ -84,9 +113,10 @@
 	<div class="nav">
 		<ul>
 			<li><a href="#demo2" id="demo2Btn">스마트플랫<span class="inline-block">소개</span></a></li>
-			<li><a href="#demo3" id="demo3Btn">스마트플랫?</a></li>
+			<li><a href="#demo3" id="demo3Btn">스마트<span class="inline-block">플랫?</span></a></li>
+            <li><a href="#demo6" id="demo6Btn">다양한<span class="inline-block">디자인</span></a></li>
 			<li><a href="#demo4" id="demo4Btn">디스플레이<span class="inline-block">구성도</span></a></li>
-			<li><a href="#demo5" id="demo5Btn">특화된 기능</a></li>
+			<li><a href="#demo5" id="demo5Btn">특화된 <span class="inline-block">기능</span></a></li>
 		</ul>
 	</div>
 	<span class="icon-inquiry button" id="inquiry"><img src="${contextPath}/resources/img/inquiry.png" alt="친절한 견적 및 문의"/></span>
