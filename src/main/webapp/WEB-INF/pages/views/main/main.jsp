@@ -13,34 +13,45 @@
         var height = $('.img-list li').innerHeight();
         $('.img-wrap').css('height',height);
 
-//        var slideDelayInMillisMain = 400;
-//        setInterval(function () {
-//            var slideLeft = $("#main-slider").find(".img-list");
-//            var first= slideLeft.find("li").first();
-//
-//            slideLeft.animate({marginLeft:"-200%"}, 1200, function(){
-//                slideLeft.css("margin-left","-100%").append(first);
-//            });
-//        }, slideDelayInMillisMain);
+        var slideDelayInMillisMain = 5000;
+        var indexNum = 1;
+
+        setInterval(function () {
+            var slideLeft = $("#main-slider").find(".img-list");
+            var first= slideLeft.find("li").first();
+
+            $('.img-carousel li').removeClass('on');
+            $('.img-carousel li').eq(indexNum).addClass('on');
+            indexNum ++;
+            indexNum = indexNum % 3;
+
+            slideLeft.animate({marginLeft:"-200%"}, 550, function(){
+                slideLeft.css("margin-left","-100%").append(first);
+            });
+        }, slideDelayInMillisMain);
+
+
+
+
     });
 </script>
 <div id="demo1" class="fullSection">
     <div class="contents_1">
         <div class="img-wrap" id="main-slider">
             <ul class="img-list">
-                <li class="first">
+                <li class="img1 on">
                     <div class="area">
                         <img src="${contextPath}/resources/img/intro-slide/text-img1.png" alt=""/>
                     </div>
                 </li>
-                <li class="second">
-                    <div class="area">
-                        <img src="${contextPath}/resources/img/intro-slide/text-img3.png" alt=""/>
-                    </div>
-                </li>
-                <li class="third">
+                <li class="img2">
                     <div class="area">
                         <img src="${contextPath}/resources/img/intro-slide/text-img2.png" alt=""/>
+                    </div>
+                </li>
+                <li class="img3">
+                    <div class="area">
+                        <img src="${contextPath}/resources/img/intro-slide/text-img3.png" alt=""/>
                     </div>
                 </li>
             </ul>
