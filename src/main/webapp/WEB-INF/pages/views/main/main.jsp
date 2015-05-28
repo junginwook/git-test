@@ -8,19 +8,65 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <c:set var="contextPath" value="${pageContext.request.contextPath}" />
+<script type="text/javascript">
+    $(function(){
+        var height = $('.img-list li').innerHeight();
+        $('.img-wrap').css('height',height);
+
+//        var slideDelayInMillisMain = 400;
+//        setInterval(function () {
+//            var slideLeft = $("#main-slider").find(".img-list");
+//            var first= slideLeft.find("li").first();
+//
+//            slideLeft.animate({marginLeft:"-200%"}, 1200, function(){
+//                slideLeft.css("margin-left","-100%").append(first);
+//            });
+//        }, slideDelayInMillisMain);
+    });
+</script>
 <div id="demo1" class="fullSection">
     <div class="contents_1">
-        <div class="area">
-            <div class="video-area">
-                <style>
-                    .trailer { position:relative; padding-bottom:56.25%; }
-                    .trailer iframe { position:absolute; width:100%; height:100%; }
-                </style>
-                <div class="trailer">
-                    <iframe src="//player.vimeo.com/video/118569708?badge=0&amp;color=ffffff&amp;autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <div class="img-wrap" id="main-slider">
+            <ul class="img-list">
+                <li class="first">
+                    <div class="area">
+                        <img src="${contextPath}/resources/img/intro-slide/text-img1.png" alt=""/>
+                    </div>
+                </li>
+                <li class="second">
+                    <div class="area">
+                        <img src="${contextPath}/resources/img/intro-slide/text-img3.png" alt=""/>
+                    </div>
+                </li>
+                <li class="third">
+                    <div class="area">
+                        <img src="${contextPath}/resources/img/intro-slide/text-img2.png" alt=""/>
+                    </div>
+                </li>
+            </ul>
+            <ul class="img-carousel">
+                <li class="on"><a href="javascript:">1</a></li>
+                <li><a href="javascript:">2</a></li>
+                <li><a href="javascript:">3</a></li>
+            </ul>
+            <div class="img-position">
+                <div class="area">
+                    <a href="javascript:" class="prev"></a>
+                    <a href="javascript:" class="next"></a>
                 </div>
             </div>
         </div>
+        <%--<div class="area">--%>
+            <%--<div class="video-area">--%>
+                <%--<style>--%>
+                    <%--.trailer { position:relative; padding-bottom:56.25%; }--%>
+                    <%--.trailer iframe { position:absolute; width:100%; height:100%; }--%>
+                <%--</style>--%>
+                <%--<div class="trailer">--%>
+                    <%--<iframe src="//player.vimeo.com/video/118569708?badge=0&amp;color=ffffff&amp;autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>--%>
+                <%--</div>--%>
+            <%--</div>--%>
+        <%--</div>--%>
     </div>
 </div>
 <div id="demo2" class="fullSection">
@@ -148,8 +194,10 @@
             </div>
             <div class="photos clear_fix">
                 <div class="cover">
-                    <span>치킨01 가로3단</span>
-                    <img src="${contextPath}/resources/img/design/chicken01.gif" alt="치킨01 가로3단" class="reflection" id="btnTheme1"/>
+                    <div id="btnTheme1" class="wrap">
+                        <span>치킨01 가로3단</span>
+                        <img src="${contextPath}/resources/img/design/chicken01.gif" alt="치킨01 가로3단" class="reflection"/>
+                    </div>
                     <div id="PopupTheme1" class="theme-popup">
                         <div class="popup-box">
                             <div class="title">
@@ -162,8 +210,10 @@
                     </div>
                 </div>
                 <div class="cover">
-                    <span>카페02 가로3단</span>
-                    <img src="${contextPath}/resources/img/design/cafe02.gif" alt="카페02 가로3단" class="reflection" id="btnTheme2"/>
+                    <div id="btnTheme2" class="wrap">
+                        <span>카페02 가로3단</span>
+                        <img src="${contextPath}/resources/img/design/cafe02.gif" alt="카페02 가로3단" class="reflection"/>
+                    </div>
                     <div id="PopupTheme2" class="theme-popup">
                         <div class="popup-box">
                             <div class="title">
@@ -171,12 +221,14 @@
                             </div>
                             <p class="btn-close"><button class="popClose">닫기</button></p>
                         </div>
-                        <img src="${contextPath}/resources/img/design/cafe02.gif" alt="카페02 가로3단"/>
+                        <img src="${contextPath}/resources/img/design/b-cafe03.png" alt="카페02 가로3단"/>
                     </div>
                 </div>
                 <div class="cover">
-                    <span>카페03 가로3단</span>
-                    <img src="${contextPath}/resources/img/design/cafe03.gif" alt="카페03 가로3단" class="reflection" id="btnTheme3"/>
+                    <div id="btnTheme3" class="wrap">
+                        <span>카페03 가로3단</span>
+                        <img src="${contextPath}/resources/img/design/cafe03.gif" alt="카페03 가로3단" class="reflection"/>
+                    </div>
                     <div id="PopupTheme3" class="theme-popup">
                         <div class="popup-box">
                             <div class="title">
