@@ -18,32 +18,6 @@
 			e.preventDefault();$(this).scrolld();
 		});
 
-        $("#btnTheme1").click(function(){
-            $('#PopupTheme1').bPopup({
-                easing: 'easeOutBack',
-                speed: 500,
-                transition: 'slideUp',
-                closeClass:'popClose'
-            });
-        }); //다양한디자인팝업1
-        $("#btnTheme2").click(function(){
-            $('#PopupTheme2').bPopup({
-                easing: 'easeOutBack',
-                speed: 500,
-                transition: 'slideUp',
-                closeClass:'popClose'
-            });
-        }); //다양한디자인팝업2
-        $("#btnTheme3").click(function(){
-            $('#PopupTheme3').bPopup({
-                easing: 'easeOutBack',
-                speed: 500,
-                transition: 'slideUp',
-                closeClass:'popClose'
-            });
-        }); //다양한디자인팝업3
-
-
         $("#btnDisplay").unbind("click").click(function(){
             $('#Popup-display').bPopup({
                 easing: 'easeOutBack',

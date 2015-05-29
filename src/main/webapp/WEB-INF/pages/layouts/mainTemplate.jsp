@@ -52,6 +52,7 @@
 	<script type="text/javascript" src="${contextPath}/resources/js/jquery.bpopup.min.js"></script>
     <script type="text/javascript" src="${contextPath}/resources/js/owl.carousel.js"></script>
     <script type="text/javascript" src="${contextPath}/resources/js/reflection.js"></script>
+    <script type="text/javascript" src="${contextPath}/resources/js/designpopup.js"></script>
 	<!--[if lt IE 9]>
 	<script type="text/javascript" src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
 	<script type="text/javascript" src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
