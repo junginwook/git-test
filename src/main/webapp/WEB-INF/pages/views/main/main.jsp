@@ -8,19 +8,126 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <c:set var="contextPath" value="${pageContext.request.contextPath}" />
+<script type="text/javascript">
+    $(function(){
+        var height = $('.img-list li').innerHeight();
+        $('.img-wrap').css('height',height);
+
+        var indexNum = 0;
+        var mainSliderTimer, slideDelayInMillisMain = 5300;
+
+        var slideLeft = $("#main-slider").find(".img-list");
+
+
+        /*메인슬라이더*/
+        mainSliderTimer = setInterval(mainAutoSlider, slideDelayInMillisMain);
+
+        function mainAutoSlider(){
+            var first= slideLeft.find("li").first();
+
+
+            indexNum ++;
+            indexNum = indexNum % 3;
+            $('.img-carousel').find('li').removeClass('on');
+            $('.img-carousel').find('li').eq(indexNum).addClass('on');
+
+            slideLeft.animate({marginLeft:"-200%"}, 550, function() {
+                slideLeft.css("margin-left", "-100%").append(first);
+            });
+        }
+
+        var clickSlideNext = $('.img-position').find('.next');
+        var clickSlidePrev = $('.img-position').find('.prev');
+
+        clickSlideNext.click(function(){
+            var first= slideLeft.find("li").first();
+
+            clearInterval(mainSliderTimer);
+
+            indexNum ++;
+            indexNum = indexNum % 3;
+            $('.img-carousel').find('li').removeClass('on');
+            $('.img-carousel').find('li').eq(indexNum).addClass('on');
+
+            slideLeft.animate({marginLeft:"-200%"}, 550, function(){
+                slideLeft.css("margin-left","-100%").append(first);
+            });
+            mainSliderTimer = setInterval(mainAutoSlider, slideDelayInMillisMain);
+        });
+
+        clickSlidePrev.click(function(){
+            var last= slideLeft.find("li").last();
+
+            clearInterval(mainSliderTimer);
+
+            indexNum --;
+            indexNum = indexNum % 3;
+            $('.img-carousel').find('li').removeClass('on');
+            $('.img-carousel').find('li').eq(indexNum).addClass('on');
+
+            slideLeft.animate({marginLeft:"0"}, 550, function(){
+                slideLeft.css("margin-left","-100%").prepend(last);
+            });
+            mainSliderTimer = setInterval(mainAutoSlider, slideDelayInMillisMain);
+        });
+
+        $('#inquiry_slider').click(function(){
+            $('#popup').bPopup({
+                easing: 'easeOutBack',
+                speed: 500,
+                transition: 'slideDown'
+            });
+            return false;
+        });
+    });
+</script>
 <div id="demo1" class="fullSection">
     <div class="contents_1">
-        <div class="area">
-            <div class="video-area">
-                <style>
-                    .trailer { position:relative; padding-bottom:56.25%; }
-                    .trailer iframe { position:absolute; width:100%; height:100%; }
-                </style>
-                <div class="trailer">
-                    <iframe src="//player.vimeo.com/video/118569708?badge=0&amp;color=ffffff&amp;autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <div class="img-wrap" id="main-slider">
+            <ul class="img-list">
+                <li class="img3">
+                    <div class="area relative">
+                        <img src="${contextPath}/resources/img/intro-slide/text-img3.png" alt=""/>
+                        <%--<a class="btn-more" href="#" onclick="$('#demo6').animatescroll();">더보기</a>--%>
+                        <a class="btn-more" href="#demo6" id="demo6Btn">더보기</a>
+                    </div>
+                </li>
+                <li class="img2">
+                    <div class="area">
+                        <img src="${contextPath}/resources/img/intro-slide/text-img2.png" alt=""/>
+                    </div>
+                </li>
+                <li class="img1">
+                    <div class="area relative">
+                        <img src="${contextPath}/resources/img/intro-slide/text-img1.png" alt=""/>
+                        <span class="inquiry" id="inquiry_slider">견적문의</span>
+                    </div>
+                </li>
+            </ul>
+            <ul class="img-carousel">
+                <li class="on"><a href="javascript:">1</a></li>
+                <li><a href="javascript:">2</a></li>
+                <li><a href="javascript:">3</a></li>
+            </ul>
+            <div class="img-position">
+                <div class="area">
+                    <a href="javascript:" class="prev"></a>
+                    <a href="javascript:" class="next"></a>
                 </div>
             </div>
         </div>
+        <%--/* contents_1 동영상 버전 */--%>
+        <%--<div class="area">--%>
+            <%--<div class="video-area">--%>
+                <%--<style>--%>
+                    <%--.trailer { position:relative; padding-bottom:56.25%; }--%>
+                    <%--.trailer iframe { position:absolute; width:100%; height:100%; }--%>
+                <%--</style>--%>
+                <%--<div class="trailer">--%>
+                    <%--<iframe src="//player.vimeo.com/video/118569708?badge=0&amp;color=ffffff&amp;autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>--%>
+                <%--</div>--%>
+            <%--</div>--%>
+        <%--</div>--%>
     </div>
 </div>
 <div id="demo2" class="fullSection">
@@ -118,6 +225,130 @@
                 </div>
                 <div class="img-disc"><img src="${contextPath}/resources/img/smartflat/bg.png" alt="스마트플랫 소개"/></div>
             </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function(){
+        $(".photos .reflection").reflect();
+    });
+</script>
+<div id="demo6" class="fullSection">
+    <div class="contents_6">
+        <div class="area">
+            <h1 class="title"><b>다양한 디자인</b>  Designs</h1>
+            <div class="clear_fix top-area">
+                <div class="video floatL">
+                    <iframe src="https://www.youtube.com/embed/uW8qqSPf-k4?&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;playlist=uW8qqSPf-k4" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="txt floatL">
+                    <h2 class="txt-tit">
+                        다양한 분야에 다양한 디자인
+                    </h2>
+                    <p>
+                        어떻게 메뉴판과 게시판을 만들까 고민하시나요?<br/>
+                        스마트플랫에서 꾸준하게 업데이트되는 다양한 디자인 템플릿에서
+                        원하시는 디자인을 골라보세요. 아니면 독특한 아이디어를 말씀해보십시오.
+                        <br/>어디에서 만날 수 없었던 멋진 디지털광고 게시판을
+                        스마트플랫과 함께 만들어보십시오.
+                    </p>
+                </div>
+            </div>
+            <div class="photos clear_fix">
+                <div class="cover">
+                    <div id="btnTheme1" class="wrap btnTheme">
+                        <span>치킨01 세로3단</span>
+                        <img src="${contextPath}/resources/img/design/template-01.jpg" alt="치킨01 가로3단" class="reflection"/>
+                    </div>
+                    <div id="PopupTheme1" class="theme-popup PopupTheme">
+                        <div class="popup-box">
+                            <div class="title">
+                                치킨01 세로3단
+                            </div>
+                            <p class="btn-close"><button class="popClose">닫기</button></p>
+                        </div>
+                        <img src="${contextPath}/resources/img/design/template-01.jpg" alt="치킨01 가로3단"/>
+
+                    </div>
+                </div>
+                <div class="cover">
+                    <div id="btnTheme2" class="wrap btnTheme">
+                        <span>카페01 세로3단</span>
+                        <img src="${contextPath}/resources/img/design/template-02.jpg" alt="카페02 가로3단" class="reflection"/>
+                    </div>
+                    <div id="PopupTheme2" class="theme-popup PopupTheme">
+                        <div class="popup-box">
+                            <div class="title">
+                                카페01 세로3단
+                            </div>
+                            <p class="btn-close"><button class="popClose">닫기</button></p>
+                        </div>
+                        <img src="${contextPath}/resources/img/design/template-02.jpg" alt="카페02 가로3단"/>
+                    </div>
+                </div>
+                <div class="cover">
+                    <div id="btnTheme3" class="wrap btnTheme">
+                        <span>카페02 세로3단</span>
+                        <img src="${contextPath}/resources/img/design/template-03.jpg" alt="카페03 가로3단" class="reflection"/>
+                    </div>
+                    <div id="PopupTheme3" class="theme-popup PopupTheme">
+                        <div class="popup-box">
+                            <div class="title">
+                                카페02 세로3단
+                            </div>
+                            <p class="btn-close"><button class="popClose">닫기</button></p>
+                        </div>
+                        <img src="${contextPath}/resources/img/design/template-03.jpg" alt="카페03 가로3단"/>
+                    </div>
+                </div>
+                <div class="cover">
+                    <div id="btnTheme4" class="wrap btnTheme">
+                        <span>안경점01 세로3단</span>
+                        <img src="${contextPath}/resources/img/design/template-04.jpg" alt="카페03 가로3단" class="reflection"/>
+                    </div>
+                    <div id="PopupTheme4" class="theme-popup PopupTheme">
+                        <div class="popup-box">
+                            <div class="title">
+                                안경점01 세로3단
+                            </div>
+                            <p class="btn-close"><button class="popClose">닫기</button></p>
+                        </div>
+                        <img src="${contextPath}/resources/img/design/template-04.jpg" alt="카페03 가로3단"/>
+                    </div>
+                </div>
+                <div class="cover">
+                    <div id="btnTheme5" class="wrap btnTheme">
+                        <span>피자01 세로3단</span>
+                        <img src="${contextPath}/resources/img/design/template-05.jpg" alt="카페03 가로3단" class="reflection"/>
+                    </div>
+                    <div id="PopupTheme5" class="theme-popup PopupTheme">
+                        <div class="popup-box">
+                            <div class="title">
+                                피자01 세로3단
+                            </div>
+                            <p class="btn-close"><button class="popClose">닫기</button></p>
+                        </div>
+                        <img src="${contextPath}/resources/img/design/template-05.jpg" alt="카페03 가로3단"/>
+                    </div>
+                </div>
+                <div class="cover">
+                    <div id="btnTheme6" class="wrap btnTheme">
+                        <span>버거01 세로3단</span>
+                        <img src="${contextPath}/resources/img/design/template-06.jpg" alt="카페03 가로3단" class="reflection"/>
+                    </div>
+                    <div id="PopupTheme6" class="theme-popup PopupTheme">
+                        <div class="popup-box">
+                            <div class="title">
+                                버거01 세로3단
+                            </div>
+                            <p class="btn-close"><button class="popClose">닫기</button></p>
+                        </div>
+                        <img src="${contextPath}/resources/img/design/template-06.jpg" alt="카페03 가로3단"/>
+                    </div>
+                </div>
+            </div>
+            <div class="people"></div>
         </div>
     </div>
 </div>
