@@ -13,35 +13,82 @@
         var height = $('.img-list li').innerHeight();
         $('.img-wrap').css('height',height);
 
-        var slideDelayInMillisMain = 5000;
-        var indexNum = 1;
+        var indexNum = 0;
+        var mainSliderTimer, slideDelayInMillisMain = 5300;
 
-        setInterval(function () {
-            var slideLeft = $("#main-slider").find(".img-list");
+        var slideLeft = $("#main-slider").find(".img-list");
+
+
+        /*메인슬라이더*/
+        mainSliderTimer = setInterval(mainAutoSlider, slideDelayInMillisMain);
+
+        function mainAutoSlider(){
             var first= slideLeft.find("li").first();
 
-            $('.img-carousel li').removeClass('on');
-            $('.img-carousel li').eq(indexNum).addClass('on');
+
             indexNum ++;
             indexNum = indexNum % 3;
+            $('.img-carousel').find('li').removeClass('on');
+            $('.img-carousel').find('li').eq(indexNum).addClass('on');
+
+            slideLeft.animate({marginLeft:"-200%"}, 550, function() {
+                slideLeft.css("margin-left", "-100%").append(first);
+            });
+        }
+
+        var clickSlideNext = $('.img-position').find('.next');
+        var clickSlidePrev = $('.img-position').find('.prev');
+
+        clickSlideNext.click(function(){
+            var first= slideLeft.find("li").first();
+
+            clearInterval(mainSliderTimer);
+
+            indexNum ++;
+            indexNum = indexNum % 3;
+            $('.img-carousel').find('li').removeClass('on');
+            $('.img-carousel').find('li').eq(indexNum).addClass('on');
 
             slideLeft.animate({marginLeft:"-200%"}, 550, function(){
                 slideLeft.css("margin-left","-100%").append(first);
             });
-        }, slideDelayInMillisMain);
+            mainSliderTimer = setInterval(mainAutoSlider, slideDelayInMillisMain);
+        });
 
+        clickSlidePrev.click(function(){
+            var last= slideLeft.find("li").last();
 
+            clearInterval(mainSliderTimer);
 
+            indexNum --;
+            indexNum = indexNum % 3;
+            $('.img-carousel').find('li').removeClass('on');
+            $('.img-carousel').find('li').eq(indexNum).addClass('on');
 
+            slideLeft.animate({marginLeft:"0"}, 550, function(){
+                slideLeft.css("margin-left","-100%").prepend(last);
+            });
+            mainSliderTimer = setInterval(mainAutoSlider, slideDelayInMillisMain);
+        });
+
+        $('#inquiry_slider').click(function(){
+            $('#popup').bPopup({
+                easing: 'easeOutBack',
+                speed: 500,
+                transition: 'slideDown'
+            });
+            return false;
+        });
     });
 </script>
 <div id="demo1" class="fullSection">
     <div class="contents_1">
         <div class="img-wrap" id="main-slider">
             <ul class="img-list">
-                <li class="img1 on">
-                    <div class="area">
+                <li class="img1">
+                    <div class="area relative">
                         <img src="${contextPath}/resources/img/intro-slide/text-img1.png" alt=""/>
+                        <span class="inquiry" id="inquiry_slider">견적문의</span>
                     </div>
                 </li>
                 <li class="img2">
@@ -50,8 +97,10 @@
                     </div>
                 </li>
                 <li class="img3">
-                    <div class="area">
+                    <div class="area relative">
                         <img src="${contextPath}/resources/img/intro-slide/text-img3.png" alt=""/>
+                        <%--<a class="btn-more" href="#" onclick="$('#demo6').animatescroll();">더보기</a>--%>
+                        <a class="btn-more" href="#demo6" id="demo6Btn">더보기</a>
                     </div>
                 </li>
             </ul>
