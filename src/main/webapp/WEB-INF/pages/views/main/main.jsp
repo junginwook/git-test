@@ -85,10 +85,11 @@
     <div class="contents_1">
         <div class="img-wrap" id="main-slider">
             <ul class="img-list">
-                <li class="img1">
+                <li class="img3">
                     <div class="area relative">
-                        <img src="${contextPath}/resources/img/intro-slide/text-img1.png" alt=""/>
-                        <span class="inquiry" id="inquiry_slider">견적문의</span>
+                        <img src="${contextPath}/resources/img/intro-slide/text-img3.png" alt=""/>
+                        <%--<a class="btn-more" href="#" onclick="$('#demo6').animatescroll();">더보기</a>--%>
+                        <a class="btn-more" href="#demo6" id="demo6Btn">더보기</a>
                     </div>
                 </li>
                 <li class="img2">
@@ -96,11 +97,10 @@
                         <img src="${contextPath}/resources/img/intro-slide/text-img2.png" alt=""/>
                     </div>
                 </li>
-                <li class="img3">
+                <li class="img1">
                     <div class="area relative">
-                        <img src="${contextPath}/resources/img/intro-slide/text-img3.png" alt=""/>
-                        <%--<a class="btn-more" href="#" onclick="$('#demo6').animatescroll();">더보기</a>--%>
-                        <a class="btn-more" href="#demo6" id="demo6Btn">더보기</a>
+                        <img src="${contextPath}/resources/img/intro-slide/text-img1.png" alt=""/>
+                        <span class="inquiry" id="inquiry_slider">견적문의</span>
                     </div>
                 </li>
             </ul>
@@ -240,7 +240,7 @@
             <h1 class="title"><b>다양한 디자인</b>  Designs</h1>
             <div class="clear_fix top-area">
                 <div class="video floatL">
-                    <iframe src="https://www.youtube.com/embed/R91uyLt00ZY?&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;playlist=R91uyLt00ZY" frameborder="0" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/uW8qqSPf-k4?&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;playlist=uW8qqSPf-k4" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <div class="txt floatL">
                     <h2 class="txt-tit">
