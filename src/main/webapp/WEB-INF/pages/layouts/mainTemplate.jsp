@@ -51,6 +51,7 @@
 	<script type="text/javascript" src="${contextPath}/resources/js/deferDemo.js"></script>
 	<script type="text/javascript" src="${contextPath}/resources/js/jquery.bpopup.min.js"></script>
     <script type="text/javascript" src="${contextPath}/resources/js/owl.carousel.js"></script>
+    <script type="text/javascript" src="${contextPath}/resources/js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="${contextPath}/resources/js/reflection.js"></script>
     <script type="text/javascript" src="${contextPath}/resources/js/designpopup.js"></script>
 	<!--[if lt IE 9]>

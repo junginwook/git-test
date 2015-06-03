@@ -1,5 +1,6 @@
 $(function() {
-    $("#btnTheme1").click(function(){
+
+    $("#btnTheme1").unbind("click").click(function(){
         $('#PopupTheme1').bPopup({
             easing: 'easeOutBack',
             speed: 500,
