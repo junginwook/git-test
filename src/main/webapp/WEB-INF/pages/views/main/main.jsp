@@ -239,18 +239,55 @@
 
         var owl = $("#owl-demo");
         owl.owlCarousel({
-            items : 4
-//            loop : true
+            items : 4,
+            margin: 10,
+            mouseDrag:false,
+//            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:2,
+                    touchDrag:false
+                },
+                600:{
+                    items:3,
+                    touchDrag:false
+                },
+                1000:{
+                    items:4
+                }
+            }
         });
-
         var designNext = $('.img-position2').find('.next');
         var designPrev = $('.img-position2').find('.prev');
         // Custom Navigation Events
+
+        var first = owl.find('.owl-item').first().addClass('first');
+        var last = owl.find('.owl-item').last().addClass('last');
+
+        designPrev.css('opacity','0.5');
         designNext.click(function(){
-            owl.trigger('next.owl.carousel');
+            if(last.hasClass('active')){
+                designPrev.css('opacity','1');
+                designNext.css('opacity','0.4');
+            }else{
+                designPrev.css('opacity','1');
+                owl.trigger('next.owl.carousel');
+                if(last.hasClass('active')){
+                    designNext.css('opacity','0.4');
+                }
+            }
         });
         designPrev.click(function(){
-            owl.trigger('prev.owl.carousel');
+            if(first.hasClass('active')){
+                designNext.css('opacity','1');
+                designPrev.css('opacity','0.5');
+            }else{
+                designNext.css('opacity','1');
+                owl.trigger('prev.owl.carousel');
+                if(first.hasClass('active')){
+                    designPrev.css('opacity','0.4');
+                }
+            }
         });
     });
 </script>
@@ -276,8 +313,8 @@
                 </div>
             </div>
             <div class="design-wrap">
-                <div id="owl-demo">
-                    <div class="item">
+                <div id="owl-demo" class="slider">
+                    <div class="item slide">
                         <div id="btnTheme1" class="wrap btnTheme">
                             <span>치킨01</span>
                             <img src="${contextPath}/resources/img/design/template-01.jpg" alt="치킨01 가로3단" class="reflection"/>
@@ -292,7 +329,7 @@
                             <img src="${contextPath}/resources/img/design/template-01.jpg" alt="치킨01 가로3단"/>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item slide">
                         <div id="btnTheme2" class="wrap btnTheme">
                             <span>카페01</span>
                             <img src="${contextPath}/resources/img/design/template-02.jpg" alt="카페02 가로3단" class="reflection"/>
@@ -307,7 +344,7 @@
                             <img src="${contextPath}/resources/img/design/template-02.jpg" alt="카페02 가로3단"/>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item slide">
                         <div id="btnTheme3" class="wrap btnTheme">
                             <span>카페02</span>
                             <img src="${contextPath}/resources/img/design/template-03.jpg" alt="카페03 가로3단" class="reflection"/>
@@ -322,7 +359,7 @@
                             <img src="${contextPath}/resources/img/design/template-03.jpg" alt="카페03 가로3단"/>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item slide">
                         <div id="btnTheme4" class="wrap btnTheme">
                             <span>안경점01</span>
                             <img src="${contextPath}/resources/img/design/template-04.jpg" alt="카페03 가로3단" class="reflection"/>
@@ -337,7 +374,7 @@
                             <img src="${contextPath}/resources/img/design/template-04.jpg" alt="카페03 가로3단"/>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item slide">
                         <div id="btnTheme5" class="wrap btnTheme">
                             <span>피자01</span>
                             <img src="${contextPath}/resources/img/design/template-05.jpg" alt="카페03 가로3단" class="reflection"/>
@@ -352,7 +389,7 @@
                             <img src="${contextPath}/resources/img/design/template-05.jpg" alt="카페03 가로3단"/>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item slide">
                         <div id="btnTheme6" class="wrap btnTheme">
                             <span>버거01</span>
                             <img src="${contextPath}/resources/img/design/template-06.jpg" alt="카페03 가로3단" class="reflection"/>
