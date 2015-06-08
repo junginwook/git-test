@@ -264,28 +264,28 @@
         var first = owl.find('.owl-item').first().addClass('first');
         var last = owl.find('.owl-item').last().addClass('last');
 
-        designPrev.css('opacity','0.5');
+        designPrev.css('opacity','0');
         designNext.click(function(){
             if(last.hasClass('active')){
                 designPrev.css('opacity','1');
-                designNext.css('opacity','0.4');
+                designNext.css('opacity','0');
             }else{
                 designPrev.css('opacity','1');
                 owl.trigger('next.owl.carousel');
                 if(last.hasClass('active')){
-                    designNext.css('opacity','0.4');
+                    designNext.css('opacity','0');
                 }
             }
         });
         designPrev.click(function(){
             if(first.hasClass('active')){
                 designNext.css('opacity','1');
-                designPrev.css('opacity','0.5');
+                designPrev.css('opacity','0');
             }else{
                 designNext.css('opacity','1');
                 owl.trigger('prev.owl.carousel');
                 if(first.hasClass('active')){
-                    designPrev.css('opacity','0.4');
+                    designPrev.css('opacity','0');
                 }
             }
         });
