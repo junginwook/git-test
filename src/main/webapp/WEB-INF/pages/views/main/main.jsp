@@ -235,60 +235,70 @@
         $(".item .reflection").reflect();
     });
 
-    $(document).ready(function() {
 
-        var owl = $("#owl-demo");
-        owl.owlCarousel({
-            items : 4,
-            margin: 10,
-            mouseDrag:false,
-//            responsiveClass:true,
-            responsive:{
-                0:{
-                    items:2,
-                    touchDrag:false
-                },
-                600:{
-                    items:3,
-                    touchDrag:false
-                },
-                1000:{
-                    items:4
-                }
-            }
-        });
+    $(function() {
         var designNext = $('.img-position2').find('.next');
         var designPrev = $('.img-position2').find('.prev');
-        // Custom Navigation Events
+        var slider = $('.design-wrap').find('.slider');
+        var first = slider.find('.item').first();
+        var last = slider.find('.item').last();
+        var windowWidth = $(window).width();
 
-        var first = owl.find('.owl-item').first().addClass('first');
-        var last = owl.find('.owl-item').last().addClass('last');
 
-        designPrev.css('opacity','0');
-        designNext.click(function(){
-            if(last.hasClass('active')){
-                designPrev.css('opacity','1');
-                designNext.css('opacity','0');
-            }else{
-                designPrev.css('opacity','1');
-                owl.trigger('next.owl.carousel');
-                if(last.hasClass('active')){
-                    designNext.css('opacity','0');
-                }
-            }
-        });
-        designPrev.click(function(){
-            if(first.hasClass('active')){
-                designNext.css('opacity','1');
-                designPrev.css('opacity','0');
-            }else{
-                designNext.css('opacity','1');
-                owl.trigger('prev.owl.carousel');
-                if(first.hasClass('active')){
-                    designPrev.css('opacity','0');
-                }
-            }
-        });
+
+        if(windowWidth <= 767){
+
+            designNext.click(function(){
+                first = slider.find('.item').first();
+                slider.animate({marginLeft:"-131"}, 300, function(){
+                    slider.css("margin-left","0").append(first);
+                });
+            });
+
+            designPrev.click(function(){
+                last = slider.find('.item').last();
+                slider.prepend(last).css("margin-left","-131px");
+                slider.animate({marginLeft:"0"}, 300);
+            });
+
+            $('.design-wrap').on('swiperight',function(){
+                last = slider.find('.item').last();
+                slider.prepend(last).css("margin-left","-131px");
+                slider.animate({marginLeft:"0"}, 300);
+            });
+            $('.design-wrap').on('swipeleft',function(){
+                first = slider.find('.item').first();
+                slider.animate({marginLeft:"-131"}, 300, function(){
+                    slider.css("margin-left","0").append(first);
+                });
+            });
+
+        }else{
+            designNext.click(function(){
+                first = slider.find('.item').first();
+                slider.animate({marginLeft:"-244"}, 400, function(){
+                    slider.css("margin-left","0").append(first);
+                });
+            });
+
+            designPrev.click(function(){
+                last = slider.find('.item').last();
+                slider.prepend(last).css("margin-left","-244px");
+                slider.animate({marginLeft:"0"}, 400);
+            });
+
+            $('.design-wrap').on('swiperight',function(){
+                last = slider.find('.item').last();
+                slider.prepend(last).css("margin-left","-244px");
+                slider.animate({marginLeft:"0"}, 400);
+            });
+            $('.design-wrap').on('swipeleft',function(){
+                first = slider.find('.item').first();
+                slider.animate({marginLeft:"-244"}, 400, function(){
+                    slider.css("margin-left","0").append(first);
+                });
+            });
+        }
     });
 </script>
 <div id="demo6" class="fullSection">
@@ -313,7 +323,7 @@
                 </div>
             </div>
             <div class="design-wrap">
-                <div id="owl-demo" class="slider">
+                <div id="swipe" class="slider">
                     <div class="item slide">
                         <div id="btnTheme1" class="wrap btnTheme">
                             <span>치킨01</span>
