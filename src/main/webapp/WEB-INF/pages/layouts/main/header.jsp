@@ -91,7 +91,7 @@
 			<li><a href="#demo5" id="demo5Btn">특화된 <span class="inline-block">기능</span></a></li>
 		</ul>
 	</div>
-    <%--<span class="icon-inquiry button" id="inquiry"><img src="${contextPath}/resources/img/inquiry.png" alt="친절한 견적 및 문의"/></span>--%>
+    <span class="icon-inquiry button" id="inquiry"><img src="${contextPath}/resources/img/inquiry.png" alt="친절한 견적 및 문의"/></span>
     <span class="icon-free-design button"><img src="${contextPath}/resources/img/free-design.png" alt="디지털메뉴판광고"/></span>
 </div>
 <div id="popup">
