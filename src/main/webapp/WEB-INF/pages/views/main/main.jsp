@@ -325,93 +325,156 @@
             <div class="design-wrap">
                 <div id="swipe" class="slider">
                     <div class="item slide">
-                        <div id="btnTheme1" class="wrap btnTheme">
+                        <div class="wrap btnTheme btn-click">
                             <span>치킨01</span>
                             <img src="${contextPath}/resources/img/design/template-01.jpg" alt="치킨01 가로3단" class="reflection"/>
                         </div>
-                        <div id="PopupTheme1" class="theme-popup PopupTheme">
-                            <div class="popup-box">
-                                <div class="title">
-                                    치킨01 세로3단
+                        <div class="popup-wrap">
+                            <div class="theme-popup PopupTheme">
+                                <div class="popup-box">
+                                    <div class="title">
+                                        치킨01 세로3단
+                                    </div>
+                                    <p class="btn-close"><button class="popClose">닫기</button></p>
                                 </div>
-                                <p class="btn-close"><button class="popClose">닫기</button></p>
+                                <img src="${contextPath}/resources/img/design/template-01.jpg" alt="치킨01 가로3단"/>
                             </div>
-                            <img src="${contextPath}/resources/img/design/template-01.jpg" alt="치킨01 가로3단"/>
                         </div>
                     </div>
                     <div class="item slide">
-                        <div id="btnTheme2" class="wrap btnTheme">
+                        <div class="wrap btnTheme btn-click">
                             <span>카페01</span>
-                            <img src="${contextPath}/resources/img/design/template-02.jpg" alt="카페02 가로3단" class="reflection"/>
+                            <img src="${contextPath}/resources/img/design/template-02.jpg" alt="카페01 가로3단" class="reflection"/>
                         </div>
-                        <div id="PopupTheme2" class="theme-popup PopupTheme">
-                            <div class="popup-box">
-                                <div class="title">
-                                    카페01 세로3단
+                        <div class="popup-wrap">
+                            <div class="theme-popup PopupTheme">
+                                <div class="popup-box">
+                                    <div class="title">
+                                        카페01 세로3단
+                                    </div>
+                                    <p class="btn-close"><button class="popClose">닫기</button></p>
                                 </div>
-                                <p class="btn-close"><button class="popClose">닫기</button></p>
+                                <img src="${contextPath}/resources/img/design/template-02.jpg" alt="카페01 가로3단"/>
                             </div>
-                            <img src="${contextPath}/resources/img/design/template-02.jpg" alt="카페02 가로3단"/>
                         </div>
                     </div>
                     <div class="item slide">
-                        <div id="btnTheme3" class="wrap btnTheme">
+                        <div class="wrap btnTheme btn-click">
                             <span>카페02</span>
-                            <img src="${contextPath}/resources/img/design/template-03.jpg" alt="카페03 가로3단" class="reflection"/>
+                            <img src="${contextPath}/resources/img/design/template-03.jpg" alt="카페02 가로3단" class="reflection"/>
                         </div>
-                        <div id="PopupTheme3" class="theme-popup PopupTheme">
-                            <div class="popup-box">
-                                <div class="title">
-                                    카페02 세로3단
+                        <div class="popup-wrap">
+                            <div class="theme-popup PopupTheme">
+                                <div class="popup-box">
+                                    <div class="title">
+                                        카페02 세로3단
+                                    </div>
+                                    <p class="btn-close"><button class="popClose">닫기</button></p>
                                 </div>
-                                <p class="btn-close"><button class="popClose">닫기</button></p>
+                                <img src="${contextPath}/resources/img/design/template-03.jpg" alt="카페02 가로3단"/>
                             </div>
-                            <img src="${contextPath}/resources/img/design/template-03.jpg" alt="카페03 가로3단"/>
                         </div>
                     </div>
                     <div class="item slide">
-                        <div id="btnTheme4" class="wrap btnTheme">
+                        <div class="wrap btnTheme btn-click">
                             <span>안경점01</span>
-                            <img src="${contextPath}/resources/img/design/template-04.jpg" alt="카페03 가로3단" class="reflection"/>
+                            <img src="${contextPath}/resources/img/design/template-04.jpg" alt="안경점01 가로3단" class="reflection"/>
                         </div>
-                        <div id="PopupTheme4" class="theme-popup PopupTheme">
-                            <div class="popup-box">
-                                <div class="title">
-                                    안경점01 세로3단
+                        <div class="popup-wrap">
+                            <div class="theme-popup PopupTheme">
+                                <div class="popup-box">
+                                    <div class="title">
+                                        안경점01 세로3단
+                                    </div>
+                                    <p class="btn-close"><button class="popClose">닫기</button></p>
                                 </div>
-                                <p class="btn-close"><button class="popClose">닫기</button></p>
+                                <img src="${contextPath}/resources/img/design/template-04.jpg" alt="안경점01 가로3단"/>
                             </div>
-                            <img src="${contextPath}/resources/img/design/template-04.jpg" alt="카페03 가로3단"/>
                         </div>
                     </div>
                     <div class="item slide">
-                        <div id="btnTheme5" class="wrap btnTheme">
+                        <div class="wrap btnTheme btn-click">
                             <span>피자01</span>
-                            <img src="${contextPath}/resources/img/design/template-05.jpg" alt="카페03 가로3단" class="reflection"/>
+                            <img src="${contextPath}/resources/img/design/template-05.jpg" alt="피자01 가로3단" class="reflection"/>
                         </div>
-                        <div id="PopupTheme5" class="theme-popup PopupTheme">
-                            <div class="popup-box">
-                                <div class="title">
-                                    피자01 세로3단
+                        <div class="popup-wrap">
+                            <div class="theme-popup PopupTheme">
+                                <div class="popup-box">
+                                    <div class="title">
+                                        피자01 세로3단
+                                    </div>
+                                    <p class="btn-close"><button class="popClose">닫기</button></p>
                                 </div>
-                                <p class="btn-close"><button class="popClose">닫기</button></p>
+                                <img src="${contextPath}/resources/img/design/template-05.jpg" alt="피자01 가로3단"/>
                             </div>
-                            <img src="${contextPath}/resources/img/design/template-05.jpg" alt="카페03 가로3단"/>
                         </div>
                     </div>
                     <div class="item slide">
-                        <div id="btnTheme6" class="wrap btnTheme">
+                        <div class="wrap btnTheme btn-click">
                             <span>버거01</span>
-                            <img src="${contextPath}/resources/img/design/template-06.jpg" alt="카페03 가로3단" class="reflection"/>
+                            <img src="${contextPath}/resources/img/design/template-06.jpg" alt="버거01 가로3단" class="reflection"/>
                         </div>
-                        <div id="PopupTheme6" class="theme-popup PopupTheme">
-                            <div class="popup-box">
-                                <div class="title">
-                                    버거01 세로3단
+                        <div class="popup-wrap">
+                            <div class="theme-popup PopupTheme">
+                                <div class="popup-box">
+                                    <div class="title">
+                                        버거01 세로3단
+                                    </div>
+                                    <p class="btn-close"><button class="popClose">닫기</button></p>
                                 </div>
-                                <p class="btn-close"><button class="popClose">닫기</button></p>
+                                <img src="${contextPath}/resources/img/design/template-06.jpg" alt="버거01 가로3단"/>
                             </div>
-                            <img src="${contextPath}/resources/img/design/template-06.jpg" alt="카페03 가로3단"/>
+                        </div>
+                    </div>
+                    <div class="item slide">
+                        <div id="btnTheme7" class="wrap btnTheme btn-click">
+                            <span>초밥01</span>
+                            <img src="${contextPath}/resources/img/design/template-07.jpg" alt="초밥01" class="reflection"/>
+                        </div>
+                        <div class="popup-wrap">
+                            <div id="PopupTheme7" class="theme-popup PopupTheme">
+                                <div class="popup-box">
+                                    <div class="title">
+                                        초밥01 가로1단
+                                    </div>
+                                    <p class="btn-close"><button class="popClose">닫기</button></p>
+                                </div>
+                                <img src="${contextPath}/resources/img/design/template-07.jpg" alt="초밥01 가로1단"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item slide">
+                        <div class="wrap btnTheme btn-click">
+                            <span>아이스크림01</span>
+                            <img src="${contextPath}/resources/img/design/template-08.jpg" alt="아이스크림01" class="reflection"/>
+                        </div>
+                        <div class="popup-wrap">
+                            <div class="theme-popup PopupTheme">
+                                <div class="popup-box">
+                                    <div class="title">
+                                        아이스크림01 가로1단
+                                    </div>
+                                    <p class="btn-close"><button class="popClose">닫기</button></p>
+                                </div>
+                                <img src="${contextPath}/resources/img/design/template-08.jpg" alt="아이스크림01 가로1단"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item slide">
+                        <div class="wrap btnTheme btn-click">
+                            <span>아이스크림02</span>
+                            <img src="${contextPath}/resources/img/design/template-09.jpg" alt="아이스크림02" class="reflection"/>
+                        </div>
+                        <div class="popup-wrap">
+                            <div class="theme-popup PopupTheme">
+                                <div class="popup-box">
+                                    <div class="title">
+                                        아이스크림02 세로3단
+                                    </div>
+                                    <p class="btn-close"><button class="popClose">닫기</button></p>
+                                </div>
+                                <img src="${contextPath}/resources/img/design/template-09.jpg" alt="아이스크림02"/>
+                            </div>
                         </div>
                     </div>
                 </div>
