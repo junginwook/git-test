@@ -10,8 +10,8 @@
 <c:set var="contextPath" value="${pageContext.request.contextPath}" />
 <script type="text/javascript">
     $(function(){
-        var height = $('.img-list li').innerHeight();
-        $('.img-wrap').css('height',height);
+//        var height = $('.img-list li').autoHeight();
+//        $('.img-wrap').css('height',height);
 
         var indexNum = 0;
         var mainSliderTimer, slideDelayInMillisMain = 5300;
@@ -84,7 +84,7 @@
 <div id="demo1" class="fullSection">
     <div class="contents_1">
         <div class="img-wrap" id="main-slider">
-            <ul class="img-list">
+            <ul class="img-list clear_fix">
                 <li class="img3">
                     <div class="area relative">
                         <img src="${contextPath}/resources/img/intro-slide/text-img3.png" alt=""/>
