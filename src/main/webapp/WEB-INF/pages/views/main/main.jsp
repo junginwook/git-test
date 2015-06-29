@@ -17,6 +17,7 @@
         var mainSliderTimer, slideDelayInMillisMain = 5300;
 
         var slideLeft = $("#main-slider").find(".img-list");
+        var tem1 = slideLeft.find('.templete1');
 
 
         /*메인슬라이더*/
@@ -24,7 +25,7 @@
 
         function mainAutoSlider(){
             var first= slideLeft.find("li").first();
-
+            tem1.animate({'transform':'translateY()'})
 
             indexNum ++;
             indexNum = indexNum % 3;
@@ -87,8 +88,11 @@
             <ul class="img-list clear_fix">
                 <li class="img3">
                     <div class="area relative">
-                        <img src="${contextPath}/resources/img/intro-slide/text-img3.png" alt=""/>
+                        <img src="${contextPath}/resources/img/intro-slide/text-img3_1.png" alt=""/>
                         <%--<a class="btn-more" href="#" onclick="$('#demo6').animatescroll();">더보기</a>--%>
+                        <img src="${contextPath}/resources/img/intro-slide/seperate/templet3.png" alt="" class="templet3"/>
+                        <img src="${contextPath}/resources/img/intro-slide/seperate/templet1.png" alt="" class="templet1"/>
+                        <img src="${contextPath}/resources/img/intro-slide/seperate/templet2.png" alt="" class="templet2"/>
                         <a class="btn-more" href="#demo6" id="demo6Btn">더보기</a>
                     </div>
                 </li>
@@ -474,6 +478,40 @@
                                     <p class="btn-close"><button class="popClose">닫기</button></p>
                                 </div>
                                 <img src="${contextPath}/resources/img/design/template-09.jpg" alt="아이스크림02"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item slide">
+                        <div class="wrap btnTheme btn-click">
+                            <span>중국집01</span>
+                            <img src="${contextPath}/resources/img/design/template-10.jpg" alt="중국집01" class="reflection"/>
+                        </div>
+                        <div class="popup-wrap">
+                            <div class="theme-popup PopupTheme">
+                                <div class="popup-box">
+                                    <div class="title">
+                                        중국집01 세로2단
+                                    </div>
+                                    <p class="btn-close"><button class="popClose">닫기</button></p>
+                                </div>
+                                <img src="${contextPath}/resources/img/design/template-10.jpg" alt="중국집01"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item slide">
+                        <div class="wrap btnTheme btn-click">
+                            <span>네일샵01</span>
+                            <img src="${contextPath}/resources/img/design/template-11.jpg" alt="네일샵01" class="reflection"/>
+                        </div>
+                        <div class="popup-wrap">
+                            <div class="theme-popup PopupTheme">
+                                <div class="popup-box">
+                                    <div class="title">
+                                        네일샵01 세로3단
+                                    </div>
+                                    <p class="btn-close"><button class="popClose">닫기</button></p>
+                                </div>
+                                <img src="${contextPath}/resources/img/design/template-11.jpg" alt="네일샵01"/>
                             </div>
                         </div>
                     </div>
