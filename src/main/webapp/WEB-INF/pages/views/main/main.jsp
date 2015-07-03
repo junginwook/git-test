@@ -88,11 +88,7 @@
             <ul class="img-list clear_fix">
                 <li class="img3">
                     <div class="area relative">
-                        <img src="${contextPath}/resources/img/intro-slide/text-img3_1.png" alt=""/>
-                        <%--<a class="btn-more" href="#" onclick="$('#demo6').animatescroll();">더보기</a>--%>
-                        <img src="${contextPath}/resources/img/intro-slide/seperate/templet3.png" alt="" class="templet3"/>
-                        <img src="${contextPath}/resources/img/intro-slide/seperate/templet1.png" alt="" class="templet1"/>
-                        <img src="${contextPath}/resources/img/intro-slide/seperate/templet2.png" alt="" class="templet2"/>
+                        <img src="${contextPath}/resources/img/intro-slide/text-img3.png" alt=""/>
                         <a class="btn-more" href="#demo6" id="demo6Btn">더보기</a>
                     </div>
                 </li>
