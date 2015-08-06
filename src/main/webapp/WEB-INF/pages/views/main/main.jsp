@@ -118,15 +118,15 @@
         </div>
         <%--/* contents_1 동영상 버전 */--%>
         <%--<div class="area">--%>
-            <%--<div class="video-area">--%>
-                <%--<style>--%>
-                    <%--.trailer { position:relative; padding-bottom:56.25%; }--%>
-                    <%--.trailer iframe { position:absolute; width:100%; height:100%; }--%>
-                <%--</style>--%>
-                <%--<div class="trailer">--%>
-                    <%--<iframe src="//player.vimeo.com/video/118569708?badge=0&amp;color=ffffff&amp;autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>--%>
-                <%--</div>--%>
-            <%--</div>--%>
+        <%--<div class="video-area">--%>
+        <%--<style>--%>
+        <%--.trailer { position:relative; padding-bottom:56.25%; }--%>
+        <%--.trailer iframe { position:absolute; width:100%; height:100%; }--%>
+        <%--</style>--%>
+        <%--<div class="trailer">--%>
+        <%--<iframe src="//player.vimeo.com/video/118569708?badge=0&amp;color=ffffff&amp;autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>--%>
+        <%--</div>--%>
+        <%--</div>--%>
         <%--</div>--%>
     </div>
 </div>
@@ -134,6 +134,75 @@
     <div class="contents_2">
         <div class="area">
             <h1 class="logo"><img src="${contextPath}/resources/img/smartflat-info/logo-kr.png" alt="스마트플랫"/></h1>
+            <img src="${contextPath}/resources/img/finger_action.gif" alt="너무나도 쉽고 간편한 사용법을 보세요!" class="scroll-info"/>
+            <div class="video-area">
+                <%--<iframe src="https://player.vimeo.com/video/123921141?autoplay=1&loop=1&color=ffffff&title=0&byline=0&portrait=0" width="320" height="180" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>--%>
+                <div id="player"></div>
+                <script>
+                    // 2. This code loads the IFrame Player API code asynchronously.
+                    var tag = document.createElement('script');
+
+                    tag.src = "https://www.youtube.com/iframe_api";
+                    var firstScriptTag = document.getElementsByTagName('script')[0];
+                    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+                    // 3. This function creates an <iframe> (and YouTube player)
+                    //    after the API code downloads.
+                    var player;
+                    function onYouTubeIframeAPIReady() {
+                        player = new YT.Player('player', {
+//                            height: '437',
+//                            width: '720',
+                            videoId: '5bZttkIWytQ',
+                            events: {
+                                'onReady': onPlayerReady,
+                                'onStateChange': onPlayerStateChange
+                            }
+                        });
+                    }
+
+                    // 4. The API will call this function when the video player is ready.
+                    var retry_count = 0;
+                    // 4. The API will call this function when the video player is ready.
+                    function onPlayerReady(event) {
+                        event.target.playVideo();
+                        retry(event.target);
+                    }
+
+                    function retry(target) {
+                        if (retry_count === 5) return;
+                        retry_count ++;
+                        setTimeout(function () {
+                            target.pauseVideo();
+                            target.playVideo();
+                            retry(target);
+                        }, 2000);
+                    }
+                    // 5. The API calls this function when the player's state changes.
+                    //    The function indicates that when playing a video (state=1),
+                    //    the player should play for six seconds and then stop.
+                    var done = false;
+                    function onPlayerStateChange(event) {
+                        //		console.log(YT.PlayerState.ENDED);
+                        //		console.log(YT.PlayerState.PLAYING);
+                        //		console.log(YT.PlayerState.PAUSED);
+                        //		console.log(YT.PlayerState.BUFFERING);
+                        //		console.log(YT.PlayerState.CUED);
+                        if (event.data === YT.PlayerState.ENDED) {
+                            event.target.playVideo();
+
+                        }
+                        //		if (event.data == YT.PlayerState.PLAYING && !done) {
+                        ////			setTimeout(stopVideo, 6000);
+                        //			done = true;
+                        //		}
+                    }
+                    function stopVideo() {
+                        player.stopVideo();
+                    }
+
+                </script>
+            </div>
             <div class="smartflat-info">
                 <div class="txt-area">
                     <h1 class="title">쉽고 폼나는 <b>디지털광고게시판</b>은 없을까?</h1>
@@ -864,7 +933,7 @@
                                             <p class="today-date day"></p>
                                             <div id="reading_room">
                                                 <!--<div class="clock-area" style="width: 50%; height: 100%;float: left;"></div>-->
-                                                <div class="weather-area"">
+                                                <div class="weather-area">
                                                     <p class="icon"></p>
                                                     <p class="location">서울</p>
                                                     <p class="today-temp"></p>
