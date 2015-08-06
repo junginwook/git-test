@@ -99,7 +99,7 @@ b{font-weight:800;}
 .contents_2 .logo img{vertical-align:top;}
 .contents_2 .scroll-info{position:absolute;left:60px;top:40px;}
 .contents_2 .video-area{width:100%;padding:60px 0 40px;text-align:center;}
-.contents_2 .video-area iframe{width:640px;}
+.contents_2 .video-area iframe{width:800px;height:450px}
 .contents_2 .smartflat-info{padding:60px 0 40px 90px;}
 .contents_2 .smartflat-info .title{font-size:38px;font-weight:normal;letter-spacing:-1px;padding-bottom:10px;}
 .contents_2 .smartflat-info p{color:#fff;line-height:26px;padding-left:35px;}
