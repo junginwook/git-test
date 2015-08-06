@@ -153,7 +153,9 @@
                         player = new YT.Player('player', {
 //                            height: '437',
 //                            width: '720',
-                            videoId: '5bZttkIWytQ',
+                            muted:'muted',
+//                            voiceVolume:0,
+                            videoId: 'RWj23zommiU',
                             events: {
                                 'onReady': onPlayerReady,
                                 'onStateChange': onPlayerStateChange
