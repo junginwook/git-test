@@ -134,7 +134,7 @@
     <div class="contents_2">
         <div class="area">
             <h1 class="logo"><img src="${contextPath}/resources/img/smartflat-info/logo-kr.png" alt="스마트플랫"/></h1>
-            <img src="${contextPath}/resources/img/finger_action.gif" alt="너무나도 쉽고 간편한 사용법을 보세요!" class="scroll-info"/>
+            <a href="#demo2" id="demo2Btn"><img src="${contextPath}/resources/img/finger_action.gif" alt="너무나도 쉽고 간편한 사용법을 보세요!" class="scroll-info"/></a>
             <div class="video-area">
                 <%--<iframe src="https://player.vimeo.com/video/123921141?autoplay=1&loop=1&color=ffffff&title=0&byline=0&portrait=0" width="320" height="180" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>--%>
                 <div id="player"></div>
