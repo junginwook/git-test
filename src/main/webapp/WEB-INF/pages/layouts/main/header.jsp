@@ -34,6 +34,15 @@
 				transition: 'slideDown'
 			});
 		});
+
+        $('#property').click(function(){
+            $('#popup-property').bPopup({
+                easing: 'easeOutBack',
+                speed: 500,
+                transition: 'slideDown'
+            });
+        });
+
 		$('.submit').on('click', function() {
 			if (!$("input[name='subject']").val()){
 				alert("제목을 입력하세요");
@@ -75,7 +84,8 @@
 		});
 	});
 	function popupClose() {
-		$('#popup').bPopup().close();
+        $('#popup').bPopup().close();
+        $('#popup-property').bPopup().close();
 	}
 </script>
 <div class="area">
@@ -92,7 +102,8 @@
 		</ul>
 	</div>
     <span class="icon-inquiry button" id="inquiry"><img src="${contextPath}/resources/img/inquiry.png" alt="친절한 견적 및 문의"/></span>
-    <span class="icon-free-design button"><img src="${contextPath}/resources/img/free-design.png" alt="디지털메뉴판광고"/></span>
+    <span class="icon-property button" id="property"><img src="${contextPath}/resources/img/property-icon.png" alt="부동산 사무실을 위한 디지털전자게시판 출시! 자세히"/></span>
+    <span class="icon-free-design button"><img src="${contextPath}/resources/img/free-design.png" alt="디지털 메뉴판을 무료로 디자인 해드립니다!!!"/></span>
 </div>
 <div id="popup">
 	<div class="bg-left">
@@ -148,4 +159,63 @@
 			</div>
 		</form>
 	</div>
+</div>
+
+<div id="popup-property">
+    <div class="top-area">
+        <img src="${contextPath}/resources/img/property-topcont.jpg" alt="경쟁력이 팍팍! 공인중계사 사무실에 특화된 디지털 전자 게시판 스마트플랫 스마트플랫이 잠자는 TV를 멋진 디지털게시판으로 만들어드립니다. "/>
+        <a href="javascript:popupClose()" class="property-close"><img src="${contextPath}/resources/img/property-close.png" alt="닫기"/></a>
+    </div>
+    <div class="bottom-area clear_fix">
+        <div class="inquiry txt">
+            <h1>상담 및<br/>문의하기</h1>
+            <h2>TV의 놀라운 변신!!</h2>
+            <p>
+                장비구입이 부담스럽다구요?<br/>
+                <span class="colorR">HDMI단자가 있는 TV만 있으면 OK!</span><br/>
+                현재 <b>사용하는 TV에 스마트플랫만</b> 장착하셔도<br/>
+                멋진 디지털 전자 게시판이 됩니다.
+            </p>
+        </div>
+        <div class="inquiry form">
+            <form class="applicanForm">
+                <table>
+                    <colgroup>
+                        <col width="18%"/>
+                        <col width="82%"/>
+                    </colgroup>
+                    <tbody>
+                    <tr>
+                        <th>제목</th>
+                        <td><input type="text" name="subject" placeholder="제목"/></td>
+                    </tr>
+                    <tr>
+                        <th>이름</th>
+                        <td><input type="text" name="name" placeholder="이름"/></td>
+                    </tr>
+                    <tr>
+                        <th>연락처</th>
+                        <td><input type="tel" name="tel" placeholder="연락처"/></td>
+                    </tr>
+                    <tr>
+                        <th>이메일<span class="inline-block">주소</span></th>
+                        <td><input type="email" name="email" placeholder="이메일주소"/></td>
+                    </tr>
+                    <tr>
+                        <th>의뢰<span class="inline-block">내용</span></th>
+                        <td><textarea name="content" class="content" placeholder="의뢰내용"></textarea></td>
+                    </tr>
+                    <%--<tr>--%>
+                    <%--<th>첨부<span class="inline-block">파일</span></th>--%>
+                    <%--<td><input type="file"/></td>--%>
+                    <%--</tr>--%>
+                    </tbody>
+                </table>
+                <div class="btn-area clear_fix">
+                    <input type="button" value="전송" class="btn-black submit"/>
+                    <a href="javascript:popupClose();" class="btn-gray">취소</a>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
