@@ -43,86 +43,56 @@
             });
         });
 
-//		$('.submit').on('click', function() {
-//			if (!$("input[name='subject']").val()){
-//				alert("제목을 입력하세요");
-//				return false;
-//			}
-//			if (!$("input[name='name']").val()){
-//				alert("이름을 입력하세요");
-//				return false;
-//			}
-//			if (!$("input[name='tel']").val()){
-//				alert("연락처를 입력하세요");
-//				return false;
-//			}
-//			if (!$("input[name='email']").val()){
-//				alert("이메일을 입력하세요");
-//				return false;
-//			}
-//			if (!$('.content').val()){
-//				alert("의뢰내용을 입력하세요");
-//				return false;
-//			}
-//			$.blockUI();
-//			$.ajax({
-//				url: contextPath +'/setApplican',
-//				type: 'post',
-//				dataType: 'json',
-//				data: $('.applicanForm').serialize(),
-//				success: function(r) {
-//					$.unblockUI();
-//					if (!CommonUtils.isEmpty(r.message)) {
-//						alert(r.message);
-//						if(r.code=="Success") {
-//							popupClose();
-//						}
-//					}
-//				},
-//				error: CommonUtils.responseError
-//			});
-//		});
+	$('.submit').on('click', function() {
+        var formObj = $(this).closest('form');
+        if (!formObj.find("input[name='subject']").val()){
+            alert("제목을 입력하세요");
+            return false;
+        }
+        if (!formObj.find("input[name='name']").val()){
+            alert("이름을 입력하세요");
+            return false;
+        }
+        if (!formObj.find("input[name='tel']").val()){
+            alert("연락처를 입력하세요");
+            return false;
+        }
+        if (!formObj.find("input[name='email']").val()){
+            alert("이메일을 입력하세요");
+            return false;
+        }
+        if (!formObj.find('.content').val()){
+            alert("의뢰내용을 입력하세요");
+            return false;
+        }
+        var content = formObj.find('.content').val();
+        content = content.replace(/(?:\r\n|\r|\n)/g, '<br />');
+        formObj.find("input[name='content']").val(content);
 
-        $('.submit').on('click', function() {
-            var formObj = $(this).closest('form');
-            if (!formObj.find("input[name='subject']").val()){
-                alert("제목을 입력하세요");
-                return false;
-            }
-            if (!formObj.find("input[name='name']").val()){
-                alert("이름을 입력하세요");
-                return false;
-            }
-            if (!formObj.find("input[name='tel']").val()){
-                alert("연락처를 입력하세요");
-                return false;
-            }
-            if (!formObj.find("input[name='email']").val()){
-                alert("이메일을 입력하세요");
-                return false;
-            }
-            if (!formObj.find('.content').val()){
-                alert("의뢰내용을 입력하세요");
-                return false;
-            }
-            $.blockUI();
-            $.ajax({
-                url: contextPath +'/setApplican',
-                type: 'post',
-                dataType: 'json',
-                data: formObj.serialize(),
-                success: function(r) {
-                    $.unblockUI();
-                    if (!CommonUtils.isEmpty(r.message)) {
-                        alert(r.message);
-                        if(r.code=="Success") {
-                            popupClose();
-                        }
+        $.blockUI();
+        $.ajax({
+            url: contextPath +'/setApplican',
+            type: 'post',
+            dataType: 'json',
+            data: formObj.serialize(),
+            success: function(r) {
+                $.unblockUI();
+                if (!CommonUtils.isEmpty(r.message)) {
+                    alert(r.message);
+                    if(r.code=="Success") {
+                        formObj.find("input[name='subject']").val('');
+                        formObj.find("input[name='name']").val('');
+                        formObj.find("input[name='tel']").val('');
+                        formObj.find("input[name='email']").val('');
+                        formObj.find('.content').val('');
+                        popupClose();
                     }
-                },
-                error: CommonUtils.responseError
-            });
+                }
+            },
+            error: CommonUtils.responseError
         });
+    });
+
 
     });
 	function popupClose() {
@@ -187,7 +157,11 @@
 				</tr>
 				<tr>
 					<th>의뢰<span class="inline-block">내용</span></th>
-					<td><textarea name="content" class="content" placeholder="의뢰내용"></textarea></td>
+					<td>
+                        <textarea  class="content ui-input-text ui-shadow-inset ui-body-inherit ui-corner-all ui-textinput-autogrow" placeholder="의뢰내용" style="height: 95px;"></textarea>
+                        <input type="hidden" name="content" value="" />
+                    </td>
+
 				</tr>
 				<%--<tr>--%>
 				<%--<th>첨부<span class="inline-block">파일</span></th>--%>
@@ -245,7 +219,10 @@
                     </tr>
                     <tr>
                         <th>의뢰<span class="inline-block">내용</span></th>
-                        <td><textarea name="content" class="content" placeholder="의뢰내용"></textarea></td>
+                        <td>
+                            <textarea  class="content ui-input-text ui-shadow-inset ui-body-inherit ui-corner-all ui-textinput-autogrow" placeholder="의뢰내용" style="height: 95px;"></textarea>
+                            <input type="hidden" name="content" value="" />
+                        </td>
                     </tr>
                     <%--<tr>--%>
                     <%--<th>첨부<span class="inline-block">파일</span></th>--%>
