@@ -56,8 +56,8 @@ b{font-weight:800;}
 .header .nav ul li:nth-child(4) a{color:#f47920 }
 .header .nav ul li:nth-child(5) a{color:#848484}
 .icon-inquiry{position:absolute;bottom:-190px;right:74px;cursor:pointer;z-index:100}
-.icon-property{position:absolute;bottom:-266px;left:0;z-index:100;cursor:pointer}
-.icon-free-design{position:absolute;bottom:-420px;left:0;z-index:100;opacity:0.8;width:160px;height:160px;}
+.icon-property{position:absolute;bottom:-202px;left:10%;z-index:100;cursor:pointer}
+.icon-free-design{position:absolute;bottom:-360px;left:10%;z-index:100;opacity:0.8;width:160px;height:160px;}
 
 .header .nav ul li .img-animate{position:absolute;left:8px;bottom:21px;}
 
@@ -415,24 +415,26 @@ b{font-weight:800;}
 #popup .box .btn-area .btn-blue{float:left;width:70%;height:35px;color:#fff;font-size:16px;margin-right:1%;border-radius:5px;box-shadow: 0px 4px 0 #c3c3c3;background:#4792cc;}
 #popup .box .btn-area .btn-gray{float:left;width:29%;height:35px;color:#fff;font-size:16px;line-height:1em;text-align:center;padding-top:10px;border-radius:5px;box-shadow: 0px 4px 0 #c3c3c3;background:#acacac;}
 
-#popup-property{display:none;width:100%;max-width:1024px;margin-top:150px;background:#fff}
-#popup-property .top-area{width:100%;position:relative}
-#popup-property .top-area .property-close{position:absolute;right:0;top:0;display:inline-block;}
-#popup-property .bottom-area{width:100%;background:url('../img/property-patten.jpg') no-repeat 0 0;background-size:100% 100%;}
-#popup-property .bottom-area .inquiry{float:left;}
-#popup-property .bottom-area .inquiry.txt{width:35%;padding-left:8.5%;box-sizing:border-box}
-#popup-property .bottom-area .inquiry h1{color:#fff;font-weight:bold;font-size:40px;font-style:italic;line-height:1.2em;letter-spacing: -2px;}
-#popup-property .bottom-area .inquiry h2{font-size:20px;font-weight:bold;letter-spacing: -1px;}
-#popup-property .bottom-area .inquiry p{font-size:15px;letter-spacing: -1px;}
-#popup-property .bottom-area .inquiry .colorR{color:#ff0000;font-size:18px;font-weight: bold;}
-#popup-property .bottom-area .inquiry.form{width:65%;box-sizing: border-box;padding-right:10%;padding-left:3%}
-#popup-property .bottom-area .inquiry.form table tr th{font-size:16px;letter-spacing:-1px;text-align:left;line-height:1.2;vertical-align:top;padding:20px 10px;color:#fff}
-#popup-property .bottom-area .inquiry.form table tr td{padding:10px;}
-#popup-property .bottom-area .inquiry.form table tr td input{border:none}
-#popup-property .bottom-area .inquiry.form table tr td textarea{height:150px;overflow-y:auto}
-#popup-property .bottom-area .inquiry.form .btn-area{overflow:hidden;padding:20px 0 70px;margin:0 10px 0 18%;}
-#popup-property .bottom-area .inquiry.form .btn-area .btn-black{float:left;width:70%;height:35px;color:#fff;font-size:16px;margin-right:1%;border-radius:5px;background:#333333;border:0}
-#popup-property .bottom-area .inquiry.form .btn-area .btn-gray{float:left;width:29%;height:35px;color:#fff;font-size:16px;line-height:1em;text-align:center;padding-top:10px;border-radius:5px;background:#acacac;}
+.property{}
+/*#popup-property{display:none;width:100%;max-width:1024px;margin-top:150px;background:#fff}*/
+.property-wrap{margin:40px auto;box-shadow:9px 9px 40px rgba(0,0,0,0.5);width:1024px;}
+
+.top-area{width:1024px;position:relative}
+.bottom-area{width:1024px;background:url('../img/property-patten.jpg') no-repeat 0 0;background-size:100% 100%;}
+.bottom-area .inquiry{float:left;}
+.bottom-area .inquiry.txt{width:35%;padding-left:8.5%;box-sizing:border-box}
+.bottom-area .inquiry h1{color:#fff;font-weight:bold;font-size:40px;font-style:italic;line-height:1.2em;letter-spacing: -2px;}
+.bottom-area .inquiry h2{font-size:20px;font-weight:bold;letter-spacing: -1px;}
+.bottom-area .inquiry p{font-size:15px;letter-spacing: -1px;}
+.bottom-area .inquiry .colorR{color:#ff0000;font-size:18px;font-weight: bold;}
+.bottom-area .inquiry.form{width:65%;box-sizing: border-box;padding-right:10%;padding-left:3%}
+.bottom-area .inquiry.form table tr th{font-size:16px;letter-spacing:-1px;text-align:left;line-height:1.2;vertical-align:top;padding:20px 10px;color:#fff}
+.bottom-area .inquiry.form table tr td{padding:10px;}
+.bottom-area .inquiry.form table tr td input{border:none}
+.bottom-area .inquiry.form table tr td textarea{height:150px;overflow-y:auto}
+.bottom-area .inquiry.form .btn-area{overflow:hidden;padding:20px 0 70px;margin:0 10px 0 18%;}
+.bottom-area .inquiry.form .btn-area .btn-black{float:left;width:70%;height:35px;color:#fff;font-size:16px;margin-right:1%;border-radius:5px;background:#333333;border:0}
+.bottom-area .inquiry.form .btn-area .btn-gray{float:left;width:29%;height:35px;color:#fff;font-size:16px;line-height:1em;text-align:center;padding-top:10px;border-radius:5px;background:#acacac;}
 
 .d-day-box .countdown{border:2px solid green;}
 

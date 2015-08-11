@@ -14,5 +14,10 @@ public class MainController {
         return "main/main";
     }
 
+    @RequestMapping(value="/pro")
+    public String proMain(){
+        return "main/property";
+    }
+
 
 }
