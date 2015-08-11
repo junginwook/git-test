@@ -470,7 +470,7 @@ b{font-weight:800;}
     .header .nav ul li .img-animate{display:none;}
     .contents_1 .img-wrap .btn-more {width: 11%;height: 18%;right: 11%;bottom: 5%;}
     .contents_1 .img-wrap .inquiry {width: 11%; height: 17%; right: 22.5%; bottom: 2.5%;}
-    .icon-free-design{bottom:-100px;left:0;}
+    .icon-free-design{bottom:-100px;left:0;height:auto;width: auto;}
     .icon-free-design img{width:100px}
 
 	#fullSectionWrap{padding-top:127px}
@@ -674,6 +674,7 @@ b{font-weight:800;}
 	.header .nav ul li a{font-size:14px;text-align:center;padding:0;}
     .icon-property{display:none}
 	.icon-inquiry{bottom:-140px;right:5px}
+    .icon-free-design{bottom:-170px;}
     .header .nav ul li .img-animate{bottom:-3px;left:-20px;}
 
 	#fullSectionWrap{padding-top:120px}

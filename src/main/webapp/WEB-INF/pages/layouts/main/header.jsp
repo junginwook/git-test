@@ -43,46 +43,88 @@
             });
         });
 
-		$('.submit').on('click', function() {
-			if (!$("input[name='subject']").val()){
-				alert("제목을 입력하세요");
-				return false;
-			}
-			if (!$("input[name='name']").val()){
-				alert("이름을 입력하세요");
-				return false;
-			}
-			if (!$("input[name='tel']").val()){
-				alert("연락처를 입력하세요");
-				return false;
-			}
-			if (!$("input[name='email']").val()){
-				alert("이메일을 입력하세요");
-				return false;
-			}
-			if (!$('.content').val()){
-				alert("의뢰내용을 입력하세요");
-				return false;
-			}
-			$.blockUI();
-			$.ajax({
-				url: contextPath +'/setApplican',
-				type: 'post',
-				dataType: 'json',
-				data: $('.applicanForm').serialize(),
-				success: function(r) {
-					$.unblockUI();
-					if (!CommonUtils.isEmpty(r.message)) {
-						alert(r.message);
-						if(r.code=="Success") {
-							popupClose();
-						}
-					}
-				},
-				error: CommonUtils.responseError
-			});
-		});
-	});
+//		$('.submit').on('click', function() {
+//			if (!$("input[name='subject']").val()){
+//				alert("제목을 입력하세요");
+//				return false;
+//			}
+//			if (!$("input[name='name']").val()){
+//				alert("이름을 입력하세요");
+//				return false;
+//			}
+//			if (!$("input[name='tel']").val()){
+//				alert("연락처를 입력하세요");
+//				return false;
+//			}
+//			if (!$("input[name='email']").val()){
+//				alert("이메일을 입력하세요");
+//				return false;
+//			}
+//			if (!$('.content').val()){
+//				alert("의뢰내용을 입력하세요");
+//				return false;
+//			}
+//			$.blockUI();
+//			$.ajax({
+//				url: contextPath +'/setApplican',
+//				type: 'post',
+//				dataType: 'json',
+//				data: $('.applicanForm').serialize(),
+//				success: function(r) {
+//					$.unblockUI();
+//					if (!CommonUtils.isEmpty(r.message)) {
+//						alert(r.message);
+//						if(r.code=="Success") {
+//							popupClose();
+//						}
+//					}
+//				},
+//				error: CommonUtils.responseError
+//			});
+//		});
+
+        $('.submit').on('click', function() {
+            var formObj = $(this).closest('form');
+            if (!formObj.find("input[name='subject']").val()){
+                alert("제목을 입력하세요");
+                return false;
+            }
+            if (!formObj.find("input[name='name']").val()){
+                alert("이름을 입력하세요");
+                return false;
+            }
+            if (!formObj.find("input[name='tel']").val()){
+                alert("연락처를 입력하세요");
+                return false;
+            }
+            if (!formObj.find("input[name='email']").val()){
+                alert("이메일을 입력하세요");
+                return false;
+            }
+            if (!formObj.find('.content').val()){
+                alert("의뢰내용을 입력하세요");
+                return false;
+            }
+            $.blockUI();
+            $.ajax({
+                url: contextPath +'/setApplican',
+                type: 'post',
+                dataType: 'json',
+                data: formObj.serialize(),
+                success: function(r) {
+                    $.unblockUI();
+                    if (!CommonUtils.isEmpty(r.message)) {
+                        alert(r.message);
+                        if(r.code=="Success") {
+                            popupClose();
+                        }
+                    }
+                },
+                error: CommonUtils.responseError
+            });
+        });
+
+    });
 	function popupClose() {
         $('#popup').bPopup().close();
         $('#popup-property').bPopup().close();
