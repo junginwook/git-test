@@ -93,17 +93,27 @@
 	}
 </script>
 <div class="area">
-	<h1 class="logo"><a href="#demo1" id="demo1Btn"><img src="${contextPath}/resources/img/logo.png" alt="스마트플랫"/></a></h1>
+
+	<h1 class="logo">
+        <c:if test="${currentPage == 'main'}">
+            <a href="#demo1" id="demo1Btn"><img src="${contextPath}/resources/img/logo.png" alt="스마트플랫"/></a>
+        </c:if>
+        <c:if test="${currentPage == 'pro'}">
+            <a href="http://www.smartflat.co.kr"><img src="${contextPath}/resources/img/logo.png" alt="스마트플랫"/></a>
+        </c:if>
+    </h1>
 	<div class="nav">
-		<ul class="clear_fix">
-			<li><a href="#demo2" id="demo2Btn">스마트플랫<span class="inline-block">소개</span></a></li>
-			<li><a href="#demo3" id="demo3Btn">스마트<span class="inline-block">플랫?</span></a></li>
-            <li class="relative">
-                <img src="${contextPath}/resources/img/intro-slide/lamp.gif" alt="전구" class="img-animate"/>
-                <a href="#demo6" id="demo6Btn">다양한<span class="inline-block marL">분야와</span><span class="inline-block marL">디자인</span></a></li>
-			<li><a href="#demo4" id="demo4Btn">디스플레이<span class="inline-block">구성도</span></a></li>
-			<li><a href="#demo5" id="demo5Btn">특화된 <span class="inline-block">기능</span></a></li>
-		</ul>
+        <c:if test="${currentPage == 'main'}">
+            <ul class="clear_fix">
+                <li><a href="#demo2" id="demo2Btn">스마트플랫<span class="inline-block">소개</span></a></li>
+                <li><a href="#demo3" id="demo3Btn">스마트<span class="inline-block">플랫?</span></a></li>
+                <li class="relative">
+                    <img src="${contextPath}/resources/img/intro-slide/lamp.gif" alt="전구" class="img-animate"/>
+                    <a href="#demo6" id="demo6Btn">다양한<span class="inline-block marL">분야와</span><span class="inline-block marL">디자인</span></a></li>
+                <li><a href="#demo4" id="demo4Btn">디스플레이<span class="inline-block">구성도</span></a></li>
+                <li><a href="#demo5" id="demo5Btn">특화된 <span class="inline-block">기능</span></a></li>
+            </ul>
+        </c:if>
 	</div>
     <span class="icon-inquiry button" id="inquiry"><img src="${contextPath}/resources/img/inquiry.png" alt="친절한 견적 및 문의"/></span>
 </div>
