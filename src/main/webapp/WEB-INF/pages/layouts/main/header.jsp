@@ -117,7 +117,7 @@
 	</div>
     <span class="icon-inquiry button" id="inquiry"><img src="${contextPath}/resources/img/inquiry.png" alt="친절한 견적 및 문의"/></span>
 </div>
-<a href="http://192.168.0.47:7978/pro" class="icon-property button" id="property"><img src="${contextPath}/resources/img/property-icon.png" alt="부동산 사무실을 위한 디지털전자게시판 출시! 자세히"/></a>
+<a href="http://www.smartflat.co.kr/pro" class="icon-property button" id="property"><img src="${contextPath}/resources/img/property-icon.png" alt="부동산 사무실을 위한 디지털전자게시판 출시! 자세히"/></a>
 <span class="icon-free-design button"><img src="${contextPath}/resources/img/free-design.png" alt="디지털 메뉴판을 무료로 디자인 해드립니다!!!"/></span>
 <div id="popup">
 	<div class="bg-left">
