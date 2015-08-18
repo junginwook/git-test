@@ -14,6 +14,9 @@
     });
 </script>
 <div id="demo1" class="fullSection" style="background:#464646">
+    <div class="property-video">
+        <iframe src="https://www.youtube.com/embed/OBPNARwdBTo?&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;playlist=OBPNARwdBTo&wmode=opaque" frameborder="0" allowfullscreen></iframe>
+    </div>
     <div class="property-wrap">
         <div class="top-area">
             <img src="${contextPath}/resources/img/property-topcont.jpg" alt="경쟁력이 팍팍! 공인중계사 사무실에 특화된 디지털 전자 게시판 스마트플랫 스마트플랫이 잠자는 TV를 멋진 디지털게시판으로 만들어드립니다. "/>
