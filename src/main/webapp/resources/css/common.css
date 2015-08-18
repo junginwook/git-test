@@ -414,6 +414,8 @@ b{font-weight:800;}
 #popup .box .btn-area{overflow:hidden;padding:20px 0 70px;margin:0 10px 0 18%;}
 #popup .box .btn-area .btn-blue{float:left;width:70%;height:35px;color:#fff;font-size:16px;margin-right:1%;border-radius:5px;box-shadow: 0px 4px 0 #c3c3c3;background:#4792cc;}
 #popup .box .btn-area .btn-gray{float:left;width:29%;height:35px;color:#fff;font-size:16px;line-height:1em;text-align:center;padding-top:10px;border-radius:5px;box-shadow: 0px 4px 0 #c3c3c3;background:#acacac;}
+#popup .notice{padding:50px 0 100px; text-align:center;font-size:38px;}
+#popup .notice b{}
 
 .property{}
 /*#popup-property{display:none;width:100%;max-width:1024px;margin-top:150px;background:#fff}*/
@@ -435,6 +437,7 @@ b{font-weight:800;}
 .bottom-area .inquiry.form .btn-area{overflow:hidden;padding:20px 0 70px;margin:0 10px 0 18%;}
 .bottom-area .inquiry.form .btn-area .btn-black{float:left;width:70%;height:35px;color:#fff;font-size:16px;margin-right:1%;border-radius:5px;background:#333333;border:0}
 .bottom-area .inquiry.form .btn-area .btn-gray{float:left;width:29%;height:35px;color:#fff;font-size:16px;line-height:1em;text-align:center;padding-top:10px;border-radius:5px;background:#acacac;}
+.bottom-area .inquiry.form .notice{padding:50px 0 100px; text-align:center;font-size:38px;color:#fff}
 
 .d-day-box .countdown{border:2px solid green;}
 
