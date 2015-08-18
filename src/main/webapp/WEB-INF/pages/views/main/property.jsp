@@ -13,7 +13,7 @@
         $('.icon-inquiry, .icon-property, .icon-free-design').hide();
     });
 </script>
-<div id="demo1" class="fullSection" style="background:#464646">
+<div id="demo1" class="fullSection" style="background:#333">
     <div class="property-video">
         <iframe src="https://www.youtube.com/embed/OBPNARwdBTo?&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;playlist=OBPNARwdBTo&wmode=opaque" frameborder="0" allowfullscreen></iframe>
     </div>
