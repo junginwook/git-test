@@ -33,50 +33,50 @@
                 </p>
             </div>
             <div class="inquiry form">
-                <div class="notice">
-                    현재 서버 점검중입니다.<br/>
-                    <b>상담 및 견적문의</b>는<br/> <b>전화</b>부탁드립니다.
-                </div>
-                <%--<form class="applicanForm">--%>
-                    <%--<table>--%>
-                        <%--<colgroup>--%>
-                            <%--<col width="18%"/>--%>
-                            <%--<col width="82%"/>--%>
-                        <%--</colgroup>--%>
-                        <%--<tbody>--%>
+                <%--<div class="notice">--%>
+                    <%--현재 서버 점검중입니다.<br/>--%>
+                    <%--<b>상담 및 견적문의</b>는<br/> <b>전화</b>부탁드립니다.--%>
+                <%--</div>--%>
+                <form class="applicanForm">
+                    <table>
+                        <colgroup>
+                            <col width="18%"/>
+                            <col width="82%"/>
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <th>제목</th>
+                            <td><input type="text" name="subject" placeholder="제목"/></td>
+                        </tr>
+                        <tr>
+                            <th>이름</th>
+                            <td><input type="text" name="name" placeholder="이름"/></td>
+                        </tr>
+                        <tr>
+                            <th>연락처</th>
+                            <td><input type="tel" name="tel" placeholder="연락처"/></td>
+                        </tr>
+                        <tr>
+                            <th>이메일<span class="inline-block">주소</span></th>
+                            <td><input type="email" name="email" placeholder="이메일주소"/></td>
+                        </tr>
+                        <tr>
+                            <th>의뢰<span class="inline-block">내용</span></th>
+                            <td>
+                                <textarea  class="content ui-input-text ui-shadow-inset ui-body-inherit ui-corner-all ui-textinput-autogrow" placeholder="의뢰내용" style="height: 95px;"></textarea>
+                                <input type="hidden" name="content" value="" />
+                            </td>
+                        </tr>
                         <%--<tr>--%>
-                            <%--<th>제목</th>--%>
-                            <%--<td><input type="text" name="subject" placeholder="제목"/></td>--%>
+                        <%--<th>첨부<span class="inline-block">파일</span></th>--%>
+                        <%--<td><input type="file"/></td>--%>
                         <%--</tr>--%>
-                        <%--<tr>--%>
-                            <%--<th>이름</th>--%>
-                            <%--<td><input type="text" name="name" placeholder="이름"/></td>--%>
-                        <%--</tr>--%>
-                        <%--<tr>--%>
-                            <%--<th>연락처</th>--%>
-                            <%--<td><input type="tel" name="tel" placeholder="연락처"/></td>--%>
-                        <%--</tr>--%>
-                        <%--<tr>--%>
-                            <%--<th>이메일<span class="inline-block">주소</span></th>--%>
-                            <%--<td><input type="email" name="email" placeholder="이메일주소"/></td>--%>
-                        <%--</tr>--%>
-                        <%--<tr>--%>
-                            <%--<th>의뢰<span class="inline-block">내용</span></th>--%>
-                            <%--<td>--%>
-                                <%--<textarea  class="content ui-input-text ui-shadow-inset ui-body-inherit ui-corner-all ui-textinput-autogrow" placeholder="의뢰내용" style="height: 95px;"></textarea>--%>
-                                <%--<input type="hidden" name="content" value="" />--%>
-                            <%--</td>--%>
-                        <%--</tr>--%>
-                        <%--&lt;%&ndash;<tr>&ndash;%&gt;--%>
-                        <%--&lt;%&ndash;<th>첨부<span class="inline-block">파일</span></th>&ndash;%&gt;--%>
-                        <%--&lt;%&ndash;<td><input type="file"/></td>&ndash;%&gt;--%>
-                        <%--&lt;%&ndash;</tr>&ndash;%&gt;--%>
-                        <%--</tbody>--%>
-                    <%--</table>--%>
-                    <%--<div class="btn-area clear_fix">--%>
-                        <%--<input type="button" value="전송" class="btn-black submit"/>--%>
-                    <%--</div>--%>
-                <%--</form>--%>
+                        </tbody>
+                    </table>
+                    <div class="btn-area clear_fix">
+                        <input type="button" value="전송" class="btn-black submit"/>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
