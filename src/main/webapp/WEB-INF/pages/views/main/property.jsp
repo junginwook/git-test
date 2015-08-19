@@ -23,7 +23,7 @@
         </div>
         <div class="bottom-area clear_fix">
             <div class="inquiry txt">
-                <h1>상담 및<br/>문의하기</h1>
+                <h1>상담 및<span class="block">문의하기</span></h1>
                 <h2>TV의 놀라운 변신!!</h2>
                 <p>
                     장비구입이 부담스럽다구요?<br/>
