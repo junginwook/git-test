@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:tx="http://www.springframework.org/schema/tx"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
 
   <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
@@ -22,15 +23,19 @@
     <property name="configLocation" value="classpath:configs/sqlMapConfig.xml" />
     <property name="mapperLocations" value="classpath:sqlMaps/**/*.xml" />
   </bean>
-    <bean id="samspleDao" class="org.mybatis.spring.mapper.MapperFactoryBean" >
-        <property name="mapperInterface" value="kr.co.digigroove.smartflat.dao.ApplicantDAO" />
-        <property name="sqlSessionFactory" ref="sessionFactory" />
-    </bean>
-  <!-- Sample DAO -->
-  <!--<bean id="samspleDao" class="org.mybatis.spring.mapper.MapperFactoryBean" >
-    <property name="mapperInterface" value="kr.co.digigroove.sample.sampleDao" />
+
+  <bean id="UserDAO" class="org.mybatis.spring.mapper.MapperFactoryBean">
+    <property name="mapperInterface" value="kr.co.digigroove.smartflat.dao.UserDAO" />
     <property name="sqlSessionFactory" ref="sessionFactory" />
-  </bean>-->
-  <!-- Sample DAO End -->
+  </bean>
+
+  <bean id="RequireDAO" class="org.mybatis.spring.mapper.MapperFactoryBean">
+    <property name="mapperInterface" value="kr.co.digigroove.smartflat.dao.RequireDAO" />
+    <property name="sqlSessionFactory" ref="sessionFactory" />
+  </bean>
+  <bean id="RepleDAO" class="org.mybatis.spring.mapper.MapperFactoryBean">
+    <property name="mapperInterface" value="kr.co.digigroove.smartflat.dao.RepleDAO" />
+    <property name="sqlSessionFactory" ref="sessionFactory" />
+  </bean>
 
 </beans>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.co.digigroove.smartflat.dao.RequireDAO">
+
+    <insert id="insertRequireEntity" parameterType="requireEntity">
+        INSERT INTO
+          requires(
+            title
+            , name
+            , store_name
+            , phone
+            , email
+            , content
+            , state
+            , regist_datetime
+          )
+        VALUES(
+          #{title}
+          , #{name}
+          , #{storeName}
+          , #{phone}
+          , #{email}
+          , #{content}
+          , 0
+          , now()
+        )
+    </insert>
+
+  <sql id="searchRequireList">
+    <if test="(startDate != '' and startDate != null) and (endDate != '' and endDate != null)">
+      AND (regist_datetime BETWEEN DATE_FORMAT(#{startDate}, '%Y-%m-%d')
+      AND DATE_FORMAT(ADDDATE(#{endDate}, +1), '%Y-%m-%d'))
+    </if>
+    <if test="title != '' and title != null">
+      AND title LIKE TRIM(CONCAT('%', #{title}, '%'))
+    </if>
+    <if test="name != '' and name != null">
+      AND name LIKE TRIM(CONCAT('%', #{name}, '%'))
+    </if>
+    <if test="storeName != '' and storeName != null">
+      AND store_name LIKE TRIM(CONCAT('%', #{storeName}, '%'))
+    </if>
+    <if test="phone != '' and phone != null">
+      AND phone LIKE TRIM(CONCAT('%', #{phone}, '%'))
+    </if>
+    <if test="email != '' and email != null">
+      AND email LIKE TRIM(CONCAT('%', #{email}, '%'))
+    </if>
+    <if test="state != '' and state != null">
+      AND state LIKE TRIM(CONCAT('%', #{state}, '%'))
+    </if>
+    <if test="(searchKey != '' and searchKey != null) and (searchValue != '' and searchValue != null)">
+      <if test="searchKey == 'title'">
+        AND title LIKE TRIM(CONCAT('%', #{searchValue}, '%'))
+      </if>
+      <if test="searchKey == 'name'">
+        AND name LIKE TRIM(CONCAT('%', #{searchValue}, '%'))
+      </if>
+      <if test="searchKey == 'storeName'">
+        AND store_name LIKE TRIM(CONCAT('%', #{searchValue}, '%'))
+      </if>
+      <if test="searchKey == 'phone'">
+        AND phone LIKE TRIM(CONCAT('%', #{searchValue}, '%'))
+      </if>
+      <if test="searchKey == 'email'">
+        AND email LIKE TRIM(CONCAT('%', #{searchValue}, '%'))
+      </if>
+      <if test="searchKey == 'state'">
+        AND state LIKE TRIM(CONCAT('%', #{searchValue}, '%'))
+      </if>
+    </if>
+  </sql>
+
+  <select id="selectRequireEntityListCount" parameterType="requirePageEntity" resultType="int">
+    SELECT
+      COUNT(require_key)
+    FROM
+      requires
+    WHERE
+      withdraw_datetime IS NULL
+      <include refid="searchRequireList" />
+  </select>
+
+  <select id="selectRequireEntityList" resultType="requirePageEntity">
+    SELECT
+      require_key
+      , title
+      , name
+      , store_name
+      , phone
+      , email
+      , state
+      , regist_datetime
+    FROM
+      requires
+    WHERE
+      withdraw_datetime IS NULL
+      <include refid="searchRequireList" />
+    ORDER BY regist_datetime DESC
+      LIMIT #{rowStartNumber}, #{pageListSize}
+  </select>
+
+  <select id="selectRequireEntity" parameterType="requireEntity" resultType="requireEntity">
+    SELECT
+      *
+    FROM
+      requires
+    WHERE
+      require_key = #{requireKey}
+  </select>
+
+  <update id="updateRequireEntity" parameterType="requireEntity">
+    UPDATE
+      requires
+    SET
+      title = #{title}
+      , name = #{name}
+      , store_name = #{storeName}
+      , phone = #{phone}
+      , email = #{email}
+      , state = #{state}
+      , modify_datetime = now()
+    WHERE
+      require_key = #{requireKey}
+  </update>
+
+</mapper>

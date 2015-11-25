@@ -14,4 +14,24 @@
         <put-attribute name="body" value="/WEB-INF/pages/views/main/{1}.jsp" />
     </definition>
 
+  <!-- admin -->
+  <definition name="adminDef" template="/WEB-INF/pages/layouts/admin/adminTemp.jsp">
+    <put-attribute name="header" value="/WEB-INF/pages/layouts/admin/header.jsp" />
+    <put-attribute name="left" value="/WEB-INF/pages/layouts/admin/left.jsp" />
+    <put-attribute name="body" value="/WEB-INF/pages/layouts/admin/body.jsp" />
+  </definition>
+  <definition name="admin/*/*" extends="adminDef">
+    <put-attribute name="body" value="/WEB-INF/pages/views/admin/{1}/{2}.jsp" />
+  </definition>
+  <definition name="admin/*/*/*" extends="adminDef">
+    <put-attribute name="body" value="/WEB-INF/pages/views/admin/{1}/{2}/{3}.jsp" />
+  </definition>
+
+  <definition name="loginDef" template="/WEB-INF/pages/layouts/admin/loginTemp.jsp">
+    <put-attribute name="body" value="/WEB-INF/pages/layouts/admin/body.jsp" />
+  </definition>
+  <definition name="admin/login" extends="loginDef">
+    <put-attribute name="body" value="/WEB-INF/pages/views/admin/login.jsp" />
+  </definition>
+
 </tiles-definitions>

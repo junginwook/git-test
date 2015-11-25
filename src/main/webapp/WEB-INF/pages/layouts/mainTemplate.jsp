@@ -45,7 +45,9 @@
     <script type="text/javascript" src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="${contextPath}/resources/js/jquery.simpleWeather.js"></script>
+	<script type="text/javascript" src="${contextPath}/resources/js/jquery.form.js"></script>
 	<script type="text/javascript" src="${contextPath}/resources/js/jquery.blockUI.js"></script>
+
 	<script type="text/javascript" src="${contextPath}/resources/js/common.js"></script>
 	<script type="text/javascript" src="${contextPath}/resources/js/scrolld.min.js"></script>
 	<script type="text/javascript" src="${contextPath}/resources/js/animatescroll.min.js"></script>

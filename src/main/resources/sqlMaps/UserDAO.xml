@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.co.digigroove.smartflat.dao.UserDAO">
+
+        <!-- 로그인 유저 조회 -->
+        <select id="selectLoginUserCheck" parameterType="userEntity" resultType="userEntity">
+                SELECT
+                  *
+                FROM
+                  user
+                WHERE
+                  id = #{id}
+        </select>
+
+  <select id="selectUserEntity" parameterType="userEntity" resultType="userEntity">
+    SELECT
+      *
+    FROM
+      user
+    WHERE
+      user_key = #{userKey}
+  </select>
+
+</mapper>

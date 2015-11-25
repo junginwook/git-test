@@ -21,6 +21,12 @@
         </dependency>
 
         <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.0</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.apache.tiles</groupId>
             <artifactId>tiles-extras</artifactId>
             <version>3.0.5</version>
@@ -64,7 +70,16 @@
             </exclusions>
         </dependency>
         <!-- Database End -->
+
+        <dependency>
+            <groupId>com.github.fernandospr</groupId>
+            <artifactId>javapns-jdk16</artifactId>
+            <version>2.2.1</version>
+        </dependency>
+
     </dependencies>
+
+
 
     <build>
         <finalName>ROOT</finalName>
@@ -91,6 +106,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
+                <version>2.5</version>
                 <configuration>
                     <warName>ROOT</warName>
                 </configuration>

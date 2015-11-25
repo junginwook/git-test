@@ -37,7 +37,7 @@
 
 	$('.submit').on('click', function() {
         var formObj = $(this).closest('form');
-        if (!formObj.find("input[name='subject']").val()){
+        if (!formObj.find("input[name='title']").val()){
             alert("제목을 입력하세요");
             return false;
         }
@@ -45,7 +45,7 @@
             alert("이름을 입력하세요");
             return false;
         }
-        if (!formObj.find("input[name='tel']").val()){
+        if (!formObj.find("input[name='phone']").val()){
             alert("연락처를 입력하세요");
             return false;
         }
@@ -62,26 +62,48 @@
         formObj.find("input[name='content']").val(content);
 
         $.blockUI();
-        $.ajax({
-            url: contextPath +'/setApplican',
-            type: 'post',
-            dataType: 'json',
-            data: formObj.serialize(),
-            success: function(r) {
-                $.unblockUI();
-                if (!CommonUtils.isEmpty(r.message)) {
-                    alert(r.message);
-                    if(r.code=="Success") {
-                        formObj.find("input[name='subject']").val('');
+//        $.ajax({
+//            url: contextPath +'/requireRest/registRequire',
+//            type: 'post',
+//            dataType: 'json',
+//            data: formObj.serialize(),
+//            success: function(r) {
+//                $.unblockUI();
+//                if (!CommonUtils.isEmpty(r.message)) {
+//                    alert(r.message);
+//                    if(r.code=="Success") {
+//                        formObj.find("input[name='subject']").val('');
+//                        formObj.find("input[name='name']").val('');
+//                        formObj.find("input[name='tel']").val('');
+//                        formObj.find("input[name='email']").val('');
+//                        formObj.find('.content').val('');
+//                        popupClose();
+//                    }
+//                }
+//            },
+//            error: CommonUtils.responseError
+//        });
+        $("#applicanForm").ajaxSubmit({
+            type : "POST",
+            dataType : "json",
+            url : contextPath + "/adminRest/requireRest/registRequire",
+            success : function(data){
+                alert(data.message);
+                if(data.code=="Success"){
+                    $.unblockUI();
+                        formObj.find("input[name='title']").val('');
+                        formObj.find("input[name='storeName']").val('');
                         formObj.find("input[name='name']").val('');
-                        formObj.find("input[name='tel']").val('');
+                        formObj.find("input[name='phone']").val('');
                         formObj.find("input[name='email']").val('');
                         formObj.find('.content').val('');
                         popupClose();
-                    }
+                    location.href = contextPath;
                 }
             },
-            error: CommonUtils.responseError
+            error : function(data){
+                alert(data.message);
+            }
         });
     });
 
@@ -138,7 +160,7 @@
             <%--현재 서버 점검중입니다.<br/>--%>
             <%--<b>상담 및 견적문의</b>는 <b>전화</b>부탁드립니다.--%>
         <%--</div>--%>
-		<form class="applicanForm">
+		<form id="applicanForm" class="applicanForm">
 			<table>
 				<colgroup>
 					<col width="18%"/>
@@ -147,15 +169,19 @@
 				<tbody>
 				<tr>
 					<th>제목</th>
-					<td><input type="text" name="subject" placeholder="제목"/></td>
+					<td><input type="text" name="title" placeholder="제목"/></td>
 				</tr>
+                <tr>
+                    <th>업체명</th>
+                    <td><input type="text" name="storeName" placeholder="업체명" /></td>
+                </tr>
 				<tr>
 					<th>이름</th>
 					<td><input type="text" name="name" placeholder="이름"/></td>
 				</tr>
 				<tr>
 					<th>연락처</th>
-					<td><input type="tel" name="tel" placeholder="연락처"/></td>
+					<td><input type="tel" name="phone" placeholder="연락처"/></td>
 				</tr>
 				<tr>
 					<th>이메일<span class="inline-block">주소</span></th>
@@ -176,7 +202,7 @@
 				</tbody>
 			</table>
 			<div class="btn-area">
-				<input type="button" value="전송" class="btn-blue submit"/>
+				<input type="submit" value="전송" class="btn-blue submit"/>
 				<a href="javascript:popupClose();" class="btn-gray">취소</a>
 			</div>
 		</form>

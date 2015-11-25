@@ -1,7 +1,7 @@
 package kr.co.digigroove.smartflat;
 
 import kr.co.digigroove.commons.messages.Messages;
-import kr.co.digigroove.smartflat.entities.PageEntity;
+import kr.co.digigroove.smartflat.entities.common.PageEntity;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
