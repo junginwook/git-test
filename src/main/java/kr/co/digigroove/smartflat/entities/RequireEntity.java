@@ -18,6 +18,7 @@ public class RequireEntity {
 	private Date registDatetime;
 	private Date modifyDatetime;
 	private Date withdrawDatetime;
+	private long reple;
 
 	public long getRequireKey() {
 		return requireKey;
@@ -105,5 +106,13 @@ public class RequireEntity {
 
 	public void setWithdrawDatetime(Date withdrawDatetime) {
 		this.withdrawDatetime = withdrawDatetime;
+	}
+
+	public long getReple() {
+		return reple;
+	}
+
+	public void setReple(long reple) {
+		this.reple = reple;
 	}
 }

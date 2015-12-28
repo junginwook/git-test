@@ -14,6 +14,7 @@ public class ResultEntity implements Serializable {
 	private String message;
 	private String url;
 	private String code = Default.Result.FAIL;
+	private long key;
 
 	public String getMessage() {
 		return message;
@@ -32,5 +33,13 @@ public class ResultEntity implements Serializable {
 	}
 	public void setCode(String code) {
 		this.code = code;
+	}
+
+	public long getKey() {
+		return key;
+	}
+
+	public void setKey(long key) {
+		this.key = key;
 	}
 }

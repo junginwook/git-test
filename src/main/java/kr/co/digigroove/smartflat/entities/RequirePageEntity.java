@@ -32,6 +32,7 @@ public class RequirePageEntity extends PageEntity implements Serializable{
 	private Date registDatetime;
 	private Date modifyDatetime;
 	private Date withdrawDatetime;
+	private long reple;
 
 	private List<RequirePageEntity> requirePageEntityList;
 
@@ -138,5 +139,13 @@ public class RequirePageEntity extends PageEntity implements Serializable{
 
 	public void setWithdrawDatetime(Date withdrawDatetime) {
 		this.withdrawDatetime = withdrawDatetime;
+	}
+
+	public long getReple() {
+		return reple;
+	}
+
+	public void setReple(long reple) {
+		this.reple = reple;
 	}
 }

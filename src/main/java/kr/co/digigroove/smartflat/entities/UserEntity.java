@@ -11,6 +11,13 @@ public class UserEntity {
 	private String name;
 	private String team;
 
+	private String oldPassword;
+	private String newPassword;
+
+	private int isLogin;
+	private int isAdmin;     // 로그인&아웃 관리자 여부
+	private String keepIdYn; // 아이디 기억하기 여부
+
 	public long getUserKey() {
 		return userKey;
 	}
@@ -49,5 +56,45 @@ public class UserEntity {
 
 	public void setTeam(String team) {
 		this.team = team;
+	}
+
+	public String getOldPassword() {
+		return oldPassword;
+	}
+
+	public void setOldPassword(String oldPassword) {
+		this.oldPassword = oldPassword;
+	}
+
+	public String getNewPassword() {
+		return newPassword;
+	}
+
+	public void setNewPassword(String newPassword) {
+		this.newPassword = newPassword;
+	}
+
+	public int getIsLogin() {
+		return isLogin;
+	}
+
+	public void setIsLogin(int isLogin) {
+		this.isLogin = isLogin;
+	}
+
+	public int getIsAdmin() {
+		return isAdmin;
+	}
+
+	public void setIsAdmin(int isAdmin) {
+		this.isAdmin = isAdmin;
+	}
+
+	public String getKeepIdYn() {
+		return keepIdYn;
+	}
+
+	public void setKeepIdYn(String keepIdYn) {
+		this.keepIdYn = keepIdYn;
 	}
 }

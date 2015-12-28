@@ -13,4 +13,10 @@ public interface RepleDAO {
 
 	void insertRepleEntity(RepleEntity repleEntity);
 
+	void deleteRepleEntity(long repleKey);
+
+	void deleteRepleEntityList(long requireKey);
+
+	RepleEntity selectRepleEntity(RepleEntity repleEntity);
+
 }

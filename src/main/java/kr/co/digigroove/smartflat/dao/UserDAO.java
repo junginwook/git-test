@@ -15,4 +15,6 @@ public interface UserDAO {
   UserEntity selectLoginUserCheck(UserEntity userEntity) throws Exception;
 
   UserEntity selectUserEntity(UserEntity userEntity);
+
+  void updateUserEntity(UserEntity userEntity);
 }

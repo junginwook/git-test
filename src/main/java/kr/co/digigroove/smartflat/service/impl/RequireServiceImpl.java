@@ -1,5 +1,6 @@
 package kr.co.digigroove.smartflat.service.impl;
 
+import kr.co.digigroove.smartflat.dao.RepleDAO;
 import kr.co.digigroove.smartflat.dao.RequireDAO;
 import kr.co.digigroove.smartflat.entities.RequireEntity;
 import kr.co.digigroove.smartflat.entities.RequirePageEntity;
@@ -18,10 +19,19 @@ public class RequireServiceImpl implements RequireService{
 	@Autowired
 	private RequireDAO requireDAO;
 
+	@Autowired
+	private RepleDAO repleDAO;
+
 	@Override
 	@Transactional(readOnly = false)
 	public void registRequireEntity(RequireEntity requireEntity) throws Exception {
 		requireDAO.insertRequireEntity(requireEntity);
+	}
+
+	@Override
+	@Transactional(readOnly = false)
+	public void registRequireEntityByAdmin(RequireEntity requireEntity) throws Exception {
+		requireDAO.insertRequireEntityByAdmin(requireEntity);
 	}
 
 	@Override
@@ -41,5 +51,12 @@ public class RequireServiceImpl implements RequireService{
 	@Transactional(readOnly = false)
 	public void modifyRequireEntity(RequireEntity requireEntity) throws Exception {
 		requireDAO.updateRequireEntity(requireEntity);
+	}
+
+	@Override
+	@Transactional(readOnly = false)
+	public void removeRequireEntity(long requireKey) throws Exception {
+		requireDAO.deleteRequireEntity(requireKey);
+		repleDAO.deleteRepleEntityList(requireKey);
 	}
 }

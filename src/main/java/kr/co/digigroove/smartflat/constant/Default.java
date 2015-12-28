@@ -2,6 +2,16 @@ package kr.co.digigroove.smartflat.constant;
 
 public class Default {
 
+	/** Admin */
+	public static final int IS_USER		= 0;
+	public static final int IS_ADMIN	= 1;
+	/** ReturnResult */
+	public static final int MINUS_ONE	= -1;
+	public static final int ZERO			= 0;
+	public static final int ONE				= 1;
+	/** Y N **/
+	public static final String YES	= "Y";
+	public static final String NO		= "N";
 
 	/** Result */
 	public static final class Result {
@@ -57,8 +67,5 @@ public class Default {
 		public static final int BUYINTENTION_PAGING_NO     = 1;
 	}
 
-    /** ReturnResult */
-    public static final int ZERO = 0;
-    public static final int ONE = 1;
 
 }

@@ -1,6 +1,8 @@
 package kr.co.digigroove.smartflat.service;
 
+import kr.co.digigroove.smartflat.entities.ResultEntity;
 import kr.co.digigroove.smartflat.entities.UserEntity;
+import kr.co.digigroove.smartflat.entities.UserResultEntity;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -15,7 +17,7 @@ public interface UserService {
 	 * @param userCommon
 	 * @return
 	 */
-	UserEntity loginUserCheck(UserEntity userCommon) throws Exception;
+	UserResultEntity loginUserCheck(UserEntity userCommon) throws Exception;
 
 	/**
 	 * 아이디 기억하기
@@ -27,5 +29,8 @@ public interface UserService {
 	void rememberKeepIdValue(HttpServletRequest req, HttpServletResponse res, UserEntity userCommon) throws Exception;
 
 	UserEntity retrieveUserEntity(UserEntity userEntity) throws Exception;
+
+
+	ResultEntity modifyUserEntity(UserEntity userEntity) throws Exception;
 
 }

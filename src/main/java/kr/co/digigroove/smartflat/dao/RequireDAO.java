@@ -12,6 +12,8 @@ public interface RequireDAO {
 
 	void insertRequireEntity(RequireEntity requireEntity);
 
+	void insertRequireEntityByAdmin(RequireEntity requireEntity);
+
 	int selectRequireEntityListCount(RequirePageEntity requirePageEntity);
 
 	List<RequirePageEntity> selectRequireEntityList(RequirePageEntity requirePageEntity);
@@ -19,4 +21,10 @@ public interface RequireDAO {
 	RequireEntity selectRequireEntity(RequireEntity requireEntity);
 
 	void updateRequireEntity(RequireEntity requireEntity);
+
+	void deleteRequireEntity(long requireKey);
+
+	void increaseReple(long requireKey);
+
+	void decreaseReple(long requireKey);
 }

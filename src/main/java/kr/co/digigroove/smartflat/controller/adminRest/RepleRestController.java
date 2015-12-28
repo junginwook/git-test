@@ -8,6 +8,7 @@ import kr.co.digigroove.smartflat.service.RepleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -34,6 +35,23 @@ public class RepleRestController {
 			resultEntity.setCode(Default.Result.SUCCESS);
 		} catch (Exception e) {
 			resultEntity.setMessage(messages.getMessage("reple.regist.fail"));
+			resultEntity.setCode(Default.Result.FAIL);
+		}
+
+		return resultEntity;
+	}
+
+	@RequestMapping(value="/removeReple", method=RequestMethod.POST)
+	public ResultEntity removeReple(@RequestParam(value="repleKey") long repleKey) throws Exception{
+
+		ResultEntity resultEntity = new ResultEntity();
+
+		try {
+			repleService.removeRepleEntity(repleKey);
+			resultEntity.setMessage(messages.getMessage("reple.remove.success"));
+			resultEntity.setCode(Default.Result.SUCCESS);
+		} catch (Exception e) {
+			resultEntity.setMessage(messages.getMessage("reple.remove.fail"));
 			resultEntity.setCode(Default.Result.FAIL);
 		}
 

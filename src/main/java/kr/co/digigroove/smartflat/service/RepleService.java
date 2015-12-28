@@ -11,4 +11,6 @@ public interface RepleService {
 
 	void registRepleEntity(RepleEntity repleEntity) throws Exception;
 
+	void removeRepleEntity(long repleKey) throws Exception;
+
 }

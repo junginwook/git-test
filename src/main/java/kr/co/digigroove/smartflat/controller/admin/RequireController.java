@@ -1,5 +1,6 @@
 package kr.co.digigroove.smartflat.controller.admin;
 
+import com.google.gson.Gson;
 import kr.co.digigroove.smartflat.entities.RepleEntity;
 import kr.co.digigroove.smartflat.entities.RequireEntity;
 import kr.co.digigroove.smartflat.entities.RequirePageEntity;
@@ -28,8 +29,13 @@ public class RequireController {
 	@RequestMapping(value="/requireList", method= RequestMethod.GET)
 	public String requireList(final Model model, RequirePageEntity requirePageEntity) throws Exception {
 
+		requirePageEntity = requireService.retrieveRequireEntityList(requirePageEntity);
+
 		model.addAttribute("currentMenu", "requireList");
-		model.addAttribute("requireEntityList", requireService.retrieveRequireEntityList(requirePageEntity));
+		model.addAttribute("requireEntityList", requirePageEntity);
+
+		Gson gson = new Gson();
+		model.addAttribute("jsonList", gson.toJson(requirePageEntity.getRequirePageEntityList()));
 
 		return "admin/require/requireList";
 	}
@@ -53,7 +59,10 @@ public class RequireController {
 	}
 
 	@RequestMapping(value="/requireRegistForm", method=RequestMethod.GET)
-	public String requireRegistForm() throws Exception{
+	public String requireRegistForm(final Model model) throws Exception{
+
+		model.addAttribute("currentMenu", "requireList");
+
 		return "admin/require/requireRegist";
 	}
 }

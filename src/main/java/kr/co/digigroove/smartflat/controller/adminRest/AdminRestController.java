@@ -16,7 +16,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.security.InvalidParameterException;
-import java.util.InputMismatchException;
 
 /**
  * Created by changjo on 15. 11. 24.
@@ -46,33 +45,26 @@ public class AdminRestController {
 	@RequestMapping(value="/loginRest/loginSubmit")
 	public UserResultEntity loginSubmitForWeb(UserEntity userCommon, HttpSession session,
 	                                          HttpServletRequest req, HttpServletResponse res) {
+
 		UserResultEntity result = new UserResultEntity();
 		try {
-			UserEntity userEntity = userService.loginUserCheck(userCommon);
-			String loginName;
-			loginName = Default.Session.ADMIN;
-			result.setUrl("/admin/require/requireList");
-//			if (userEntity.getGrade() == Default.Grade.ADMIN) {
-//				loginName = Default.Session.ADMIN;
-//				result.setUrl("/admin/userManagement/userList");
-//			}else if(userEntity.getGrade() == Default.Grade.MANAGER){
-//				loginName = Default.Session.ADMIN;
-//				result.setUrl("/admin/userManagement/userDetail?userKey=" + userEntity.getUserKey());
-//			} else {
-//				loginName = Default.Session.USER;
-//				result.setUrl("/");
-//			}
-			session.setAttribute(loginName, userEntity);
-			result.setLoginInfo(userEntity);
-			result.setCode(Default.Result.SUCCESS);
-			result.setMessage(messages.getMessage("user.login.success"));
-			userService.rememberKeepIdValue(req, res, userCommon); // 아이디 기억하기
-			LOGGER.info("Welcome to SMARTFLAT! Login User ID is : {}.", userEntity.getId());
 
-		} catch (InputMismatchException e) {
-			result.setCode(PASSWORD_MISMATCHED);
-			result.setMessage(messages.getMessage("user.account.not.found"));
-			LOGGER.error("AdminRestController.loginSubmit:PasswordMismatched", e);
+			result = userService.loginUserCheck(userCommon);
+
+			if(result.getCode().equals(Default.Result.PASSWORD_MISMATCHED)){
+				result.setUrl("/admin");
+				result.setMessage(messages.getMessage("user.login.mismatch"));
+			}else if(result.getCode().equals(Default.Result.SUCCESS)){
+				result.setUrl("/admin/require/requireList");
+				session.setAttribute(Default.Session.ADMIN, result.getLoginInfo());
+				result.setCode(Default.Result.SUCCESS);
+				result.setMessage(messages.getMessage("user.login.success"));
+				result.setLoginInfo(result.getLoginInfo());
+				userService.rememberKeepIdValue(req, res, userCommon); // 아이디 기억하기
+			}else if(result.getCode().equals(Default.Result.EMPTY)){
+				result.setUrl("/admin");
+				result.setMessage(messages.getMessage("user.login.empty"));
+			}
 
 		} catch (InvalidParameterException e) {
 			String type = e.getMessage();
@@ -82,7 +74,7 @@ public class AdminRestController {
 				LOGGER.error("AdminRestController.loginSubmit:NotFoundAccount", e);
 			}
 
-		} catch (Exception e) {
+		}catch (Exception e) {
 			result.setCode(Default.Result.FAIL);
 			result.setMessage(messages.getMessage("user.login.fail"));
 			LOGGER.error("AdminRestController.loginSubmit:Failed", e);
@@ -104,7 +96,7 @@ public class AdminRestController {
 
 			String loginName;
 			loginName = Default.Session.ADMIN;
-			result.setUrl("/");
+			result.setUrl("/admin");
 
 			session.removeAttribute(loginName);
 
