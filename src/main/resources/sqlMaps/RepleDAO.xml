@@ -28,4 +28,27 @@
     )
   </insert>
 
+  <delete id="deleteRepleEntity" parameterType="long">
+    DELETE FROM
+      reple
+    WHERE
+      reple_key = #{repleKey}
+  </delete>
+
+  <delete id="deleteRepleEntityList" parameterType="long">
+    DELETE FROM
+      reple
+    WHERE
+      require_key = #{requireKey}
+  </delete>
+
+  <select id="selectRepleEntity" parameterType="repleEntity" resultType="repleEntity">
+    SELECT
+      *
+    FROM
+      reple
+    WHERE
+      reple_key = #{repleKey}
+  </select>
+
 </mapper>

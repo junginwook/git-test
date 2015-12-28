@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
-        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="kr.co.digigroove.smartflat.dao.UserDAO">
 
-        <!-- 로그인 유저 조회 -->
-        <select id="selectLoginUserCheck" parameterType="userEntity" resultType="userEntity">
-                SELECT
-                  *
-                FROM
-                  user
-                WHERE
-                  id = #{id}
-        </select>
+	<!-- 로그인 유저 조회 -->
+	<select id="selectLoginUserCheck" parameterType="userEntity" resultType="userEntity">
+    SELECT
+      *
+    FROM
+      user
+    WHERE
+      id = #{id}
+  </select>
 
-  <select id="selectUserEntity" parameterType="userEntity" resultType="userEntity">
+	<select id="selectUserEntity" parameterType="userEntity" resultType="userEntity">
     SELECT
       *
     FROM
@@ -21,5 +21,14 @@
     WHERE
       user_key = #{userKey}
   </select>
+
+	<update id="updateUserEntity" parameterType="userEntity">
+    UPDATE
+      user
+    SET
+      password = #{password}
+    WHERE
+      user_key = #{userKey}
+  </update>
 
 </mapper>

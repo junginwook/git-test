@@ -3,12 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
 
-    <!--<util:properties id="dbConfig">-->
-        <!--<prop key="url">jdbc:mysql://localhost:3306/intranet?useUnicode=true&amp;characterEncoding=utf8</prop>-->
-        <!--<prop key="username">digigroove</prop>-->
-        <!--<prop key="password">going20!@</prop>-->
-        <!--<prop key="db_driver">com.mysql.jdbc.Driver</prop>-->
-    <!--</util:properties>-->
+
 	<!--<util:properties id="dbConfig">-->
 		<!--<prop key="url">jdbc:mysql://smartflat.co.kr:3306/smartflat2?useUnicode=true&amp;characterEncoding=utf8</prop>-->
 		<!--<prop key="username">smartflat2</prop>-->
@@ -25,6 +20,10 @@
 
 	<util:properties id="fileConfig">
 		<prop key="filePath">/home/web/data/</prop>
+	</util:properties>
+
+	<util:properties id="serviceProp">
+		<prop key="hash_salt">sM@RtF1@tH@ShS@1t</prop>
 	</util:properties>
 
 	<util:properties id="mailConfig">

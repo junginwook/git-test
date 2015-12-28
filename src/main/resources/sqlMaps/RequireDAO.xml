@@ -14,6 +14,8 @@
             , content
             , state
             , regist_datetime
+            , modify_datetime
+            , reple
           )
         VALUES(
           #{title}
@@ -24,8 +26,41 @@
           , #{content}
           , 0
           , now()
+          , now()
+          , 0
         )
     </insert>
+
+  <insert id="insertRequireEntityByAdmin" parameterType="requireEntity">
+    INSERT INTO
+          requires(
+            title
+            , name
+            , store_name
+            , phone
+            , email
+            , content
+            , state
+            , regist_datetime
+            , modify_datetime
+            , reple
+          )
+        VALUES(
+          #{title}
+          , #{name}
+          , #{storeName}
+          , #{phone}
+          , #{email}
+          , #{content}
+          , 0
+          , now()
+          , now()
+          , 0
+        )
+        <selectKey keyProperty="requireKey" resultType="int">
+          SELECT LAST_INSERT_ID()
+        </selectKey>
+  </insert>
 
   <sql id="searchRequireList">
     <if test="(startDate != '' and startDate != null) and (endDate != '' and endDate != null)">
@@ -92,12 +127,14 @@
       , email
       , state
       , regist_datetime
+      , modify_datetime
+      , reple
     FROM
       requires
     WHERE
       withdraw_datetime IS NULL
       <include refid="searchRequireList" />
-    ORDER BY regist_datetime DESC
+    ORDER BY modify_datetime DESC
       LIMIT #{rowStartNumber}, #{pageListSize}
   </select>
 
@@ -119,8 +156,35 @@
       , store_name = #{storeName}
       , phone = #{phone}
       , email = #{email}
+      , content = #{content}
       , state = #{state}
       , modify_datetime = now()
+    WHERE
+      require_key = #{requireKey}
+  </update>
+
+  <delete id="deleteRequireEntity" parameterType="long">
+    DELETE FROM
+      requires
+    WHERE
+      require_key = #{requireKey}
+  </delete>
+
+  <update id="increaseReple" parameterType="long">
+    UPDATE
+      requires
+    SET
+      reple = reple+1
+      , modify_datetime = now()
+    WHERE
+    require_key = #{requireKey}
+  </update>
+
+  <update id="decreaseReple" parameterType="long">
+    UPDATE
+      requires
+    SET
+      reple = reple-1
     WHERE
       require_key = #{requireKey}
   </update>
