@@ -2,7 +2,12 @@
 <%@ taglib prefix="tiles"  uri="http://tiles.apache.org/tags-tiles" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:set var="contextPath" value="${pageContext.request.contextPath}" />
-
+<script type="text/javascript">
+    $(function(){
+        var height = $(".contents").height()+250;
+        $("body").height(height);
+    });
+</script>
 <div class="logo left">
     <a href="${contextPath}/admin/require/requireList">
         <img src="${contextPath}/resources/img/logo.png" alt="smartflat"/>

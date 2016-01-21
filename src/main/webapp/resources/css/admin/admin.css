@@ -77,18 +77,19 @@ table { border-collapse:collapse;}
 #wrap-area{position: relative;overflow: visible;height: 100%;}
 
 /* 로그인 페이지 */
-.login-area{
+#login-area{
     width:100%;
     height:100%;
     background:url('../../img/admin/bg-pattern.gif') repeat 0 0;
 }
 .login-bg{
-    width:80%;
+    width:100%;
     max-width:380px;
-    height:480px;
     text-align:center;
     margin:0 auto;
-    /*background:url('../../img/admin/bg-login.png') no-repeat 0 200px;*/
+    position:relative;
+    top:50%;
+    transform:translate(0px, -50%);
 }
 .backWrap{
     padding:40px 20px;
@@ -167,7 +168,18 @@ table tbody tr .borL{border-left:1px solid #d0d0d0;}
 
 /* 버튼 */
 .btn-area{overflow:hidden;padding-top:20px;text-align:center;}
-.btn-area .btn{display:inline-block;width:73px;color:#fff;font-weight:bold;text-align:center;padding:6px 0;margin-left:5px;background:#9c9d9f;*display:inline;zoom:1;}
+.btn-area .btn{
+    display:inline-block;
+    width:73px;
+    color:#fff;
+    font-weight:bold;
+    text-align:center;
+    padding:6px 0;
+    margin-left:5px;
+    background:#9c9d9f;
+    *display:inline;
+    zoom:1;
+}
 a.add-button{display:inline-block;width:73px;color:#fff;font-weight:bold;text-align:center;padding:6px 0;margin-left:5px;background:#9c9d9f;*display:inline;zoom:1;margin-top:20px;}
 a.register{display:inline-block;color:#fff;font-weight:bold;text-align:center;padding:6px 15px;margin-left:5px;background:#9c9d9f;*display:inline;zoom:1;margin-top:20px;}
 .text-underline{text-decoration:underline;}
@@ -356,17 +368,39 @@ a.register{display:inline-block;color:#fff;font-weight:bold;text-align:center;pa
 .th-border-left{
     border-left:1px solid #ddd;
 }
-.reple-content{
-    width:800px;
-    height:50px;
+#repleRegistForm{
+    width:960px;
 }
-.reple-btn{
-    width:130px;
-    height:72px;
-    background:#9c9d9f;
-    color: #fff;
-    font-weight:bold;
-    border-radius:3px;
-    line-height:72px;
+#repleRegistForm .repleZone{
+    width:960px;
+
+}
+.clearPadding{
+    padding:0px;
+}
+.search-select{
+    margin-top:10px;
+}
+.overflowZone{
+    width:315px;
+    margin:0 auto;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+.noticeModal{
+    background:#363845;
+    border:1px solid #2e303c;
+    border-radius: 5px;
+    color:#FFFFFF;
+    width:300px;
+    height:30px;
     text-align:center;
+    line-height:30px;
+    position:absolute;
+    top:0;
+    left:0;
+}
+#dialog-confirm{
+    display:none;
 }

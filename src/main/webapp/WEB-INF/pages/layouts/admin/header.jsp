@@ -9,6 +9,6 @@
     });
 </script>
 <span>
-    <span class="bold">${sessionScope.adminSession.name}</span> 님! 환영합니다.
+    <span class="bold"><a href="${contextPath}/admin/user/userDetail">${sessionScope.adminSession.name}</a></span> 님! 환영합니다.
 </span>
 <a href="#" class="btn logout"><span>로그아웃</span></a>

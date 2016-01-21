@@ -46,7 +46,11 @@
                         <tbody>
                         <tr>
                             <th>제목</th>
-                            <td><input type="text" name="subject" placeholder="제목"/></td>
+                            <td><input type="text" name="title" placeholder="제목"/></td>
+                        </tr>
+                        <tr>
+                            <th>업체명</th>
+                            <td><input type="text" name="storeName" placeholder="업체명"/></td>
                         </tr>
                         <tr>
                             <th>이름</th>
@@ -54,7 +58,7 @@
                         </tr>
                         <tr>
                             <th>연락처</th>
-                            <td><input type="tel" name="tel" placeholder="연락처"/></td>
+                            <td><input type="tel" name="phone" placeholder="연락처"/></td>
                         </tr>
                         <tr>
                             <th>이메일<span class="inline-block">주소</span></th>

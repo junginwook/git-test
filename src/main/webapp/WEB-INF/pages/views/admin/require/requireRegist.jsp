@@ -19,25 +19,13 @@
 
 <div class="sub-content">
 
-  <form id="requireUpdateForm">
+  <form id="requireRegistForm">
     <table class="board-write box-pd">
       <colgroup>
         <col width="150px" />
         <col width="830px" />
       </colgroup>
       <tbody>
-      <%--<tr>--%>
-        <%--<th>상태</th>--%>
-        <%--<td>--%>
-          <%--<select name="state">--%>
-            <%--<option <c:if test="${requireEntity.state == 0}">selected="selected"</c:if> value="0">접수</option>--%>
-            <%--<option <c:if test="${requireEntity.state == 1}">selected="selected"</c:if> value="1">상담중</option>--%>
-            <%--<option <c:if test="${requireEntity.state == 2}">selected="selected"</c:if> value="2">상담완료</option>--%>
-            <%--<option <c:if test="${requireEntity.state == 3}">selected="selected"</c:if> value="3">계약진행중</option>--%>
-            <%--<option <c:if test="${requireEntity.state == 4}">selected="selected"</c:if> value="4">계약완료</option>--%>
-          <%--</select>--%>
-        <%--</td>--%>
-      <%--</tr>--%>
       <tr>
         <th>제목</th>
         <td><input type="text" name="title" value="" /></td>
@@ -58,14 +46,10 @@
         <th>이메일</th>
         <td><input type="text" name="email" value="" /></td>
       </tr>
-      <%--<tr>--%>
-        <%--<th>등록일</th>--%>
-        <%--<td><fmt:formatDate value="${requireEntity.registDatetime}" pattern="yyyy-MM-dd"/></td>--%>
-      <%--</tr>--%>
       <tr>
         <th>문의내용</th>
         <td>
-          <textarea class="content" class="reple-content"></textarea>
+          <textarea id="requireContent" rows="10" cols="120" class="requireContent" name="content"></textarea>
         </td>
       </tr>
       </tbody>
@@ -80,66 +64,13 @@
   </div>
 
 </div>
-
-<h3 class="contents-title marT-50">기록</h3>
-
-<div class="sub-content">
-
-  <table class="board-write">
-    <colgroup>
-      <col width="175px" />
-      <col width="465px" />
-      <col width="175px" />
-      <col width="465px" />
-    </colgroup>
-    <tbody>
-    <c:choose>
-      <c:when test="${fn:length(repleEntityList.repleEntityList) == 0}">
-        <tr>
-          <td colspan="4" class="font-align-center">등록된 기록이 없습니다.</td>
-        </tr>
-      </c:when>
-      <c:otherwise>
-        <c:forEach var="repleEntity" items="${repleEntityList.repleEntityList}" varStatus="i">
-          <c:if test="${i.index > 0}">
-            <tr>
-              <td colspan="4"></td>
-            </tr>
-          </c:if>
-          <tr>
-            <th>작성자</th>
-            <td>${repleEntity.name}</td>
-            <th class="th-border-left">등록일</th>
-            <td><fmt:formatDate value="${repleEntity.registDatetime}" pattern="yyyy-MM-dd"/></td>
-          </tr>
-          <tr>
-            <th>
-              내용
-            </th>
-            <td colspan="3">
-              ${repleEntity.reple}
-            </td>
-          </tr>
-        </c:forEach>
-      </c:otherwise>
-    </c:choose>
-    <tr>
-      <td colspan="4"></td>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <form id="repleRegistForm">
-          <div class="reple-btn-area">
-            <textarea class="reple-content floatL"></textarea>
-            <input type="hidden" name="requireKey" value="${requireEntity.requireKey}" />
-            <input type="hidden" name="name" value="${sessionScope.adminSession.name}" />
-            <input type="hidden" name="reple" class="reple" value="" />
-            <a class="floatR reple-btn" onclick="RequireUtils.registReple(${requireEntity.requireKey})">기록남기기</a>
-          </div>
-        </form>
-      </td>
-    </tr>
-    </tbody>
-  </table>
-
-</div>
+<script type="text/javascript" src="${contextPath}/resources/js/se/js/HuskyEZCreator.js"></script>
+<script type="text/javascript">
+  var oEditors = [];
+  nhn.husky.EZCreator.createInIFrame({
+    oAppRef : oEditors
+    , elPlaceHolder : "requireContent"
+    , sSkinURI : "${contextPath}/resources/js/se/SmartEditor2Skin.html"
+    , fCreator : "createSEditor2"
+  });
+</script>

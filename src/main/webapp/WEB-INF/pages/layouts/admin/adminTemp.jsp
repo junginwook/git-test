@@ -18,8 +18,8 @@
     </script>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="shortcut icon" type="image/x-icon" href="${contextPath}/resources/img/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/admin/admin.css"/>
     <link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/admin/admin.css"/>
     <script type="text/javascript" src="${contextPath}/resources/js/jquery-1.10.1.js"></script>
     <script type="text/javascript" src="${contextPath}/resources/js/common.js"></script>
     <script type="text/javascript" src="${contextPath}/resources/js/jquery.blockUI.js"></script>

@@ -12,8 +12,9 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
-
+<%--<script type="text/javascript" src="${contextPath}/resources/js/common.js"></script>--%>
 <script type="text/javascript" src="${contextPath}/resources/js/admin/require.js"></script>
+<script type="text/javascript" src="${contextPath}/resources/js/admin/requireDomScript.js"></script>
 
 <h3 class="contents-title">문의내역 상세보기</h3>
 
@@ -60,13 +61,12 @@
       </tr>
       <tr>
         <th>등록일</th>
-        <td><fmt:formatDate value="${requireEntity.registDatetime}" pattern="yyyy-MM-dd"/></td>
+        <td><fmt:formatDate value="${requireEntity.registDatetime}" pattern="yyyy-MM-dd HH:mm:ss"/></td>
       </tr>
       <tr>
         <th>문의내용</th>
         <td>
-          ${requireEntity.content}
-          <%--<textarea class="content" name="content">${requireEntity.content}</textarea>--%>
+          <textarea id="content" cols="120" rows="10" class="content" name="content">${requireEntity.content}</textarea>
         </td>
       </tr>
       </tbody>
@@ -77,10 +77,15 @@
     <a href="${contextPath}/admin/require/requireList" class=" floatL btn">목록</a>
 
     <div class="floatR">
-      <a class="floatL btn" onclick="RequireUtils.modifyRequire(${requireEntity.requireKey})">저장</a>
+      <a class="floatL btn" onclick="RequireUtils.removeRequire(${requireEntity.requireKey})">삭제</a>
+      <a class="floatR btn" onclick="RequireUtils.modifyRequire(${requireEntity.requireKey})">저장</a>
     </div>
   </div>
 
+</div>
+
+<div id="dialog-confirm" title="문의내역 삭제">
+  <p>해당 문의내역이 삭제됩니다. 계속하시겠습니까?</p>
 </div>
 
 <h3 class="contents-title marT-50">기록</h3>
@@ -112,7 +117,7 @@
             <th>작성자</th>
             <td>${repleEntity.name}</td>
             <th class="th-border-left">등록일</th>
-            <td><fmt:formatDate value="${repleEntity.registDatetime}" pattern="yyyy-MM-dd"/></td>
+            <td><fmt:formatDate value="${repleEntity.registDatetime}" pattern="yyyy-MM-dd HH:mm:ss"/></td>
           </tr>
           <tr>
             <th>
@@ -122,6 +127,17 @@
               ${repleEntity.reple}
             </td>
           </tr>
+          <c:if test="${repleEntity.name == sessionScope.adminSession.name}">
+            <tr>
+              <td colspan="4">
+                <div class="btn-area clearPadding">
+                  <div class="floatR">
+                    <a class="btn" onclick="RequireUtils.removeReple(${repleEntity.repleKey}, ${requireEntity.requireKey})">내기록삭제</a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </c:if>
         </c:forEach>
       </c:otherwise>
     </c:choose>
@@ -131,12 +147,17 @@
     <tr>
       <td colspan="4">
         <form id="repleRegistForm">
-          <div class="reple-btn-area">
-            <textarea class="reple-content floatL"></textarea>
+          <div class="repleZone">
+            <textarea id="repleContent" cols="153" rows="5" class="repleContent floatL" name="reple" ></textarea>
             <input type="hidden" name="requireKey" value="${requireEntity.requireKey}" />
             <input type="hidden" name="name" value="${sessionScope.adminSession.name}" />
-            <input type="hidden" name="reple" class="reple" value="" />
-            <a class="floatR reple-btn" onclick="RequireUtils.registReple(${requireEntity.requireKey})">기록남기기</a>
+          </div>
+          <div class="repleBtnZone">
+            <div class="btn-area">
+              <div class="floatR">
+                <a class="btn" onclick="RequireUtils.registReple(${requireEntity.requireKey})">기록남기기</a>
+              </div>
+            </div>
           </div>
         </form>
       </td>
@@ -145,3 +166,13 @@
   </table>
 
 </div>
+<script type="text/javascript" src="${contextPath}/resources/js/se/js/HuskyEZCreator.js"></script>
+<script type="text/javascript">
+  var oEditors = [];
+  nhn.husky.EZCreator.createInIFrame({
+    oAppRef : oEditors
+    , elPlaceHolder : "repleContent"
+    , sSkinURI : "${contextPath}/resources/js/se/SmartEditor2Skin.html"
+    , fCreator : "createSEditor2"
+  });
+</script>

@@ -10,6 +10,26 @@
 <c:set var="contextPath" value="${pageContext.request.contextPath}" />
 <script type="text/javascript">
 	$(function() {
+
+//        var wWidth = 0;
+//        var w = 0;
+//        $(window).resize(function(){
+//            resizeEvent();
+//        });
+//        function resizeEvent(){
+//            wWidth = $(window).width();
+//            if(wWidth < 860){
+//                w = (860-wWidth)/2;
+//                $(".ytArea").css({
+//                    width : 640-w,
+//                    height : 360-w
+//                });
+//                $(".eventVideo").attr("width", 640-w);
+//                console.log(640-w);
+//            }
+//        }
+//        resizeEvent();
+
 		var pheight = $('.portfolio-info').height();
 		$('.portfolio').height(pheight+"px");
 		$('.info1').height(pheight+"px");
@@ -34,6 +54,20 @@
 				transition: 'slideDown'
 			});
 		});
+
+        $("#newTheme").click(function(){
+            $(".newThemeModal").bPopup({
+                easing : "easeOutBack",
+                speed : 500,
+                transition : "slideDown",
+                positionStyle : "fixed",
+                onOpen : function(){
+                    setTimeout(function(){
+                        $(".newThemeModal").css({position:"absolute"});
+                    }, 500);
+                }
+            });
+        });
 
 	$('.submit').on('click', function() {
         var formObj = $(this).closest('form');
@@ -62,27 +96,6 @@
         formObj.find("input[name='content']").val(content);
 
         $.blockUI();
-//        $.ajax({
-//            url: contextPath +'/requireRest/registRequire',
-//            type: 'post',
-//            dataType: 'json',
-//            data: formObj.serialize(),
-//            success: function(r) {
-//                $.unblockUI();
-//                if (!CommonUtils.isEmpty(r.message)) {
-//                    alert(r.message);
-//                    if(r.code=="Success") {
-//                        formObj.find("input[name='subject']").val('');
-//                        formObj.find("input[name='name']").val('');
-//                        formObj.find("input[name='tel']").val('');
-//                        formObj.find("input[name='email']").val('');
-//                        formObj.find('.content').val('');
-//                        popupClose();
-//                    }
-//                }
-//            },
-//            error: CommonUtils.responseError
-//        });
         $("#applicanForm").ajaxSubmit({
             type : "POST",
             dataType : "json",
@@ -138,9 +151,20 @@
         </c:if>
 	</div>
     <span class="icon-inquiry button" id="inquiry"><img src="${contextPath}/resources/img/inquiry.png" alt="친절한 견적 및 문의"/></span>
+    <span class="vari button">
+        <a target="_blank" href="http://blog.naver.com/PostThumbnailList.nhn?blogId=digigroove&amp;categoryNo=39&amp;skinType=&amp;skinId=&amp;from=menu">
+            <img src="${contextPath}/resources/img/events/vari.png" alt="크리스마스 테마 출시" />
+        </a>
+    </span>
 </div>
-<a href="http://www.smartflat.co.kr/pro" class="icon-property button" id="property"><img src="${contextPath}/resources/img/property-icon.png" alt="부동산 사무실을 위한 디지털전자게시판 출시! 자세히"/></a>
-<span class="icon-free-design button"><img src="${contextPath}/resources/img/free-design.png" alt="디지털 메뉴판을 무료로 디자인 해드립니다!!!"/></span>
+
+<%--<div class="newThemeModal">--%>
+    <%--<img src="${contextPath}/resources/img/events/newThemeBackground.jpg" alt="" />--%>
+    <%--<div class="ytArea">--%>
+        <%--<iframe class="eventVideo" src="https://www.youtube.com/embed/9WsemmPpQus?&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;playlist=9WsemmPpQus&wmode=opaque" frameborder="0" allowfullscreen></iframe>--%>
+    <%--</div>--%>
+<%--</div>--%>
+
 <div id="popup">
 	<div class="bg-left">
 		<div class="bg-right">
@@ -156,10 +180,6 @@
 		</div>
 	</div>
 	<div class="box">
-        <%--<div class="notice">--%>
-            <%--현재 서버 점검중입니다.<br/>--%>
-            <%--<b>상담 및 견적문의</b>는 <b>전화</b>부탁드립니다.--%>
-        <%--</div>--%>
 		<form id="applicanForm" class="applicanForm">
 			<table>
 				<colgroup>
@@ -195,10 +215,6 @@
                     </td>
 
 				</tr>
-				<%--<tr>--%>
-				<%--<th>첨부<span class="inline-block">파일</span></th>--%>
-				<%--<td><input type="file"/></td>--%>
-				<%--</tr>--%>
 				</tbody>
 			</table>
 			<div class="btn-area">
@@ -208,65 +224,3 @@
 		</form>
 	</div>
 </div>
-
-<%--<div id="popup-property">--%>
-    <%--<div class="top-area">--%>
-        <%--<img src="${contextPath}/resources/img/property-topcont.jpg" alt="경쟁력이 팍팍! 공인중계사 사무실에 특화된 디지털 전자 게시판 스마트플랫 스마트플랫이 잠자는 TV를 멋진 디지털게시판으로 만들어드립니다. "/>--%>
-        <%--<a href="javascript:popupClose()" class="property-close"><img src="${contextPath}/resources/img/property-close.png" alt="닫기"/></a>--%>
-    <%--</div>--%>
-    <%--<div class="bottom-area clear_fix">--%>
-        <%--<div class="inquiry txt">--%>
-            <%--<h1>상담 및<br/>문의하기</h1>--%>
-            <%--<h2>TV의 놀라운 변신!!</h2>--%>
-            <%--<p>--%>
-                <%--장비구입이 부담스럽다구요?<br/>--%>
-                <%--<span class="colorR">HDMI단자가 있는 TV만 있으면 OK!</span><br/>--%>
-                <%--현재 <b>사용하는 TV에 스마트플랫만</b> 장착하셔도<br/>--%>
-                <%--멋진 디지털 전자 게시판이 됩니다.--%>
-            <%--</p>--%>
-        <%--</div>--%>
-        <%--<div class="inquiry form">--%>
-            <%--<form class="applicanForm">--%>
-                <%--<table>--%>
-                    <%--<colgroup>--%>
-                        <%--<col width="18%"/>--%>
-                        <%--<col width="82%"/>--%>
-                    <%--</colgroup>--%>
-                    <%--<tbody>--%>
-                    <%--<tr>--%>
-                        <%--<th>제목</th>--%>
-                        <%--<td><input type="text" name="subject" placeholder="제목"/></td>--%>
-                    <%--</tr>--%>
-                    <%--<tr>--%>
-                        <%--<th>이름</th>--%>
-                        <%--<td><input type="text" name="name" placeholder="이름"/></td>--%>
-                    <%--</tr>--%>
-                    <%--<tr>--%>
-                        <%--<th>연락처</th>--%>
-                        <%--<td><input type="tel" name="tel" placeholder="연락처"/></td>--%>
-                    <%--</tr>--%>
-                    <%--<tr>--%>
-                        <%--<th>이메일<span class="inline-block">주소</span></th>--%>
-                        <%--<td><input type="email" name="email" placeholder="이메일주소"/></td>--%>
-                    <%--</tr>--%>
-                    <%--<tr>--%>
-                        <%--<th>의뢰<span class="inline-block">내용</span></th>--%>
-                        <%--<td>--%>
-                            <%--<textarea  class="content ui-input-text ui-shadow-inset ui-body-inherit ui-corner-all ui-textinput-autogrow" placeholder="의뢰내용" style="height: 95px;"></textarea>--%>
-                            <%--<input type="hidden" name="content" value="" />--%>
-                        <%--</td>--%>
-                    <%--</tr>--%>
-                    <%--&lt;%&ndash;<tr>&ndash;%&gt;--%>
-                    <%--&lt;%&ndash;<th>첨부<span class="inline-block">파일</span></th>&ndash;%&gt;--%>
-                    <%--&lt;%&ndash;<td><input type="file"/></td>&ndash;%&gt;--%>
-                    <%--&lt;%&ndash;</tr>&ndash;%&gt;--%>
-                    <%--</tbody>--%>
-                <%--</table>--%>
-                <%--<div class="btn-area clear_fix">--%>
-                    <%--<input type="button" value="전송" class="btn-black submit"/>--%>
-                    <%--<a href="javascript:popupClose();" class="btn-gray">취소</a>--%>
-                <%--</div>--%>
-            <%--</form>--%>
-        <%--</div>--%>
-    <%--</div>--%>
-<%--</div>--%>

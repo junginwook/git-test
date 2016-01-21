@@ -54,7 +54,7 @@ var HttpUtils = (function() {
 	function responseSuccess(r) {
 		$.unblockUI();
 		if (typeof r == 'string')            r = JSON.parse(r);
-		//if (!CommonUtils.isEmpty(r.message)) alert(r.message);
+		if (!CommonUtils.isEmpty(r.message)) alert(r.message);
 		if (!CommonUtils.isEmpty(r.url))     location.href = contextPath + r.url;
 	}
 
@@ -387,6 +387,10 @@ var CommonUtils = (function() {
 		});
 	}
 
+	var pToN = function(string){
+		return string.replace(/[<][/][p][>]/g, "\n");
+	};
+
 	/* HTML tag 제거 */
 	var stripHTMLtag = function (string) {
 		var objStrip = new RegExp();
@@ -414,6 +418,7 @@ var CommonUtils = (function() {
 		, cancelBtn : cancelBtn
 		, inputEnterSubmit : inputEnterSubmit
 		, stripHTMLtag : stripHTMLtag
+		, pToN : pToN
 	}
 })();
 
