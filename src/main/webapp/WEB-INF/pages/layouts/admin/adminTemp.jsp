@@ -26,7 +26,7 @@
     <script type="text/javascript" src="${contextPath}/resources/js/jquery.form.js"></script>
     <script type="text/javascript" src="${contextPath}/resources/js/jquery.placeholder.js"></script>
     <script type="text/javascript" src="${contextPath}/resources/js/jquery-ui.min.js"></script>
-    <title>관리자페이지</title>
+    <title>SF문의관리</title>
 </head>
 <body>
 
