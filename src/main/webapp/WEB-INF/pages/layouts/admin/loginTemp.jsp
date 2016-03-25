@@ -28,7 +28,7 @@
   <script src="${contextPath}/resources/js/jquery.blockUI.js"></script>
   <script src="${contextPath}/resources/js/jquery.form.js"></script>
   <script src="${contextPath}/resources/js/jquery.placeholder.js"></script>
-  <title>관리자페이지</title>
+  <title>SF문의관리</title>
 </head>
 <body>
 
