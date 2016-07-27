@@ -153,7 +153,7 @@
     <span class="icon-inquiry button" id="inquiry"><img src="${contextPath}/resources/img/inquiry.png" alt="친절한 견적 및 문의"/></span>
     <span class="vari button">
         <a target="_blank" href="http://blog.naver.com/PostThumbnailList.nhn?blogId=digigroove&amp;categoryNo=39&amp;skinType=&amp;skinId=&amp;from=menu">
-            <img src="${contextPath}/resources/img/events/vari.png" alt="크리스마스 테마 출시" />
+            <img src="${contextPath}/resources/img/events/vari2.png" alt="다양한디자인바로가기" />
         </a>
     </span>
 </div>
