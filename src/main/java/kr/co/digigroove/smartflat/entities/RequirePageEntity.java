@@ -34,6 +34,8 @@ public class RequirePageEntity extends PageEntity implements Serializable{
 	private Date withdrawDatetime;
 	private long reple;
 
+	private String excelDown;
+
 	private List<RequirePageEntity> requirePageEntityList;
 
 	public void setPageParams() {
@@ -147,5 +149,13 @@ public class RequirePageEntity extends PageEntity implements Serializable{
 
 	public void setReple(long reple) {
 		this.reple = reple;
+	}
+
+	public String getExcelDown() {
+		return excelDown;
+	}
+
+	public void setExcelDown(String excelDown) {
+		this.excelDown = excelDown;
 	}
 }

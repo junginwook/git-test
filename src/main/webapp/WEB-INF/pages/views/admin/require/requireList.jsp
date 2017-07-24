@@ -112,13 +112,20 @@
             }
         });
 
+        // 엑셀다운로드
+        $('#btnExcel').click(function () {
+            $('#searchForm').attr('action', contextPath + '/admin/require/excel/requireExcelList');
+            $('#searchForm').submit();
+            $('#searchForm').attr('action', contextPath + '/admin/require/requireList');
+            return false;
+        });
     });
 </script>
 
 <h3 class="contents-title">문의내역</h3>
 
 <div class="search-area">
-    <form name="searchForm" action="${contextPath}/admin/require/requireList">
+    <form name="searchForm" id="searchForm" action="${contextPath}/admin/require/requireList">
         <div class="search-date">
             <input type="text" onclick="DatePickerUtils.datepicker()" id="sd" class="inp-w160 btn-calendar"
                    name="startDate"
@@ -237,6 +244,7 @@
 
     <div class="btn-area">
         <%--<a href="${contextPath}/admin/require/requireList" class=" floatL btn">목록</a>--%>
+            <a class="floatL btn" id="btnExcel">엑셀다운로드</a>
         <div class="floatR">
             <a class="floatL btn" onclick="RequireUtils.registRequireForm()">등록</a>
         </div>

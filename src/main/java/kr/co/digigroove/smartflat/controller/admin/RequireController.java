@@ -29,6 +29,7 @@ public class RequireController {
 	@RequestMapping(value="/requireList", method= RequestMethod.GET)
 	public String requireList(final Model model, RequirePageEntity requirePageEntity) throws Exception {
 
+		requirePageEntity.setExcelDown("N");
 		requirePageEntity = requireService.retrieveRequireEntityList(requirePageEntity);
 
 		model.addAttribute("currentMenu", "requireList");
@@ -39,6 +40,18 @@ public class RequireController {
 
 		return "admin/require/requireList";
 	}
+
+	/**
+	 * 엑셀다운로드
+	 */
+	@RequestMapping(value = "/excel/requireExcelList", method = RequestMethod.GET)
+	public String requireExcelList(final Model model, RequirePageEntity requirePageEntity) throws Exception {
+		requirePageEntity.setExcelDown("Y");
+		model.addAttribute("excelName", "requireList");
+		model.addAttribute("requireEntityList", requireService.retrieveRequireEntityList(requirePageEntity));
+		return "excel/require/list";
+	}
+
 
 	@RequestMapping(value="/requireDetail", method=RequestMethod.GET)
 	public String requieDetail(final Model model, @RequestParam(value="requireKey") int requireKey) throws Exception{

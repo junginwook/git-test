@@ -44,4 +44,13 @@
 
   <definition name="error" template="/WEB-INF/pages/views/error.jsp" />
 
+    <!-- 엑셀 -->
+    <definition name="excelDef" template="/WEB-INF/pages/views/excel/excel.jsp">
+        <put-attribute name="body" value="/WEB-INF/pages/layouts/admin/body.jsp" />
+    </definition>
+
+    <definition name="excel/*/*" extends="excelDef">
+        <put-attribute name="body" value="/WEB-INF/pages/views/excel/{1}/{2}.jsp" />
+    </definition>
+
 </tiles-definitions>

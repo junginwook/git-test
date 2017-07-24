@@ -129,13 +129,16 @@
       , regist_datetime
       , modify_datetime
       , reple
+      , content
     FROM
       requires
     WHERE
       withdraw_datetime IS NULL
       <include refid="searchRequireList" />
     ORDER BY modify_datetime DESC
+    <if test='excelDown == "N"'>
       LIMIT #{rowStartNumber}, #{pageListSize}
+    </if>
   </select>
 
   <select id="selectRequireEntity" parameterType="requireEntity" resultType="requireEntity">
