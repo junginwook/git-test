@@ -150,6 +150,12 @@
             </ul>
         </c:if>
 	</div>
+    <span class="icon-inquiry button" style="right:-150px;bottom:-279px;">
+		<!-- Talk Talk Banner Script start -->
+		<script type="text/javascript" src="https://partner.talk.naver.com/banners/script"></script>
+		<div class="talk_banner_div" data-id="19506"></div>
+		<!-- Talk Talk Banner Script end -->
+	</span>
     <span class="icon-inquiry button" id="inquiry"><img src="${contextPath}/resources/img/inquiry.png" alt="친절한 견적 및 문의"/></span>
     <span class="vari button">
         <a target="_blank" href="http://blog.naver.com/PostThumbnailList.nhn?blogId=digigroove&amp;categoryNo=39&amp;skinType=&amp;skinId=&amp;from=menu">
