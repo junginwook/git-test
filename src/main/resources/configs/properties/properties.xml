@@ -13,6 +13,7 @@
 
 	<util:properties id="dbConfig">
 		<prop key="url">jdbc:mysql://localhost:3306/smartflat2?useUnicode=true&amp;characterEncoding=utf8</prop>
+		<!--<prop key="url">jdbc:mysql://r.erst.kr:12304/smartflat2?useUnicode=true&amp;characterEncoding=utf8</prop>-->
 		<prop key="username">smartflat2</prop>
 		<prop key="password">sM@RtF1@t20!5</prop>
 		<prop key="db_driver">com.mysql.jdbc.Driver</prop>
