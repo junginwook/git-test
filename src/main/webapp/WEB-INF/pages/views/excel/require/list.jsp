@@ -61,7 +61,7 @@
             <td style="text-align: center; vertical-align: middle;">${requireEntity.phone}</td>
             <td style="text-align: center; vertical-align: middle;">${requireEntity.email}</td>
             <td style="text-align: center; vertical-align: middle;"><fmt:formatDate value="${requireEntity.registDatetime}" pattern="yyyy-MM-dd HH:mm:ss"/></td>
-            <td style="text-align: center; vertical-align: middle;">${requireEntity.content}</td>
+            <td style="text-align: center; vertical-align: middle;">${fn:replace(requireEntity.content,"<br />","<br style='mso-data-placement:same-cell;' />")}</td>
         </tr>
     </c:forEach>
     </tfoot>
