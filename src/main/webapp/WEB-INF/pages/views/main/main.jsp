@@ -88,18 +88,18 @@
             <ul class="img-list clear_fix">
                 <li class="img3">
                     <div class="area relative">
-                        <img src="${contextPath}/resources/img/intro-slide/text-img3.png" alt=""/>
+                        <img src="${contextPath}/resources/img/intro-slide/text-img3.png" alt="" style="visibility: hidden"/>
                         <a class="btn-more" href="#demo6" id="demo6Btn">더보기</a>
                     </div>
                 </li>
                 <li class="img2">
                     <div class="area">
-                        <img src="${contextPath}/resources/img/intro-slide/text-img2.png" alt=""/>
+                        <img src="${contextPath}/resources/img/intro-slide/text-img2.png" alt="" style="visibility: hidden"/>
                     </div>
                 </li>
                 <li class="img1">
                     <div class="area relative">
-                        <img src="${contextPath}/resources/img/intro-slide/text-img1.png" alt=""/>
+                        <img src="${contextPath}/resources/img/intro-slide/text-img1.png" alt="" style="visibility: hidden"/>
                         <span class="inquiry" id="inquiry_slider">견적문의</span>
                     </div>
                 </li>
