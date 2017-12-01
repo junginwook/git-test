@@ -24,15 +24,11 @@
             <h1 class="logo"><img src="./resources/img/footer-logo.png" alt="스마트플랫"/></h1>
             <div class="address">
                 <p>
-                    <span>주식회사 스마트플랫 | 사업자번호 : 177-86-00018 | TEL : 02-577-0177 | FAX : 02-529-6217</span>
+                    <span>주식회사 스마트플랫 대표자 : 황휘장｜사업자번호 : 177-86-00010｜통신판매업신고번호 : 제2015-서울서초-1646호</span>
                 </p>
-                <p>광명사무실 : 경기도 광명시 광명로 890,7층(광명동)</p>
+                <p>광명사무실 : 경기도 광명시 광명로 890,7층(광명동)｜TEL:02-577-0177｜FAX:02-529-6217</p>
                 <p>서울사무실 : 서울시 서초구 효령로 72길 34,B1(서초동,리베빌딩)</p>
                 <p>Copyright(c) Smartflat inc. All rights reserved.</p>
-                <%--<p><span>회사명 : (주)디지그루브</span><span>주소 : 경기도 광명시 광명로 890 대명프라자 10층 Groove Bldg.</span></p>
-                <p>기술연구소 : 대전시 유성구 문지로 193(문지동, KAIST ICC A609)</p>
-                <p><span>사업자번호 : 214-88-31982</span><span>Tel : 02-577-0177</span><span>Fax : 02-529-6217</span></p>
-                <p>Copyright(c) 2015 Digigroove All rights reserved.</p>--%>
             </div>
         </div>
     </div>
