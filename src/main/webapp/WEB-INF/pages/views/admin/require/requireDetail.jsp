@@ -35,7 +35,10 @@
             <option <c:if test="${requireEntity.state == 1}">selected="selected"</c:if> value="1">상담중</option>
             <option <c:if test="${requireEntity.state == 2}">selected="selected"</c:if> value="2">상담완료</option>
             <option <c:if test="${requireEntity.state == 3}">selected="selected"</c:if> value="3">계약진행중</option>
-            <option <c:if test="${requireEntity.state == 4}">selected="selected"</c:if> value="4">계약완료</option>
+            <option <c:if test="${requireEntity.state == 4}">selected="selected"</c:if> value="4">계약(입금)완료</option>
+            <option <c:if test="${requireEntity.state == 5}">selected="selected"</c:if> value="5">배송(설치)완료</option>
+            <option <c:if test="${requireEntity.state == 6}">selected="selected"</c:if> value="6">A/S접수</option>
+            <option <c:if test="${requireEntity.state == 7}">selected="selected"</c:if> value="7">A/S완료</option>
           </select>
         </td>
       </tr>

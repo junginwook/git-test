@@ -52,8 +52,18 @@
                     계약진행중
                 </c:if>
                 <c:if test="${requireEntity.state == 4}">
-                    계약완료
+                    계약(입금)완료
                 </c:if>
+                <c:if test="${requireEntity.state == 5}">
+                    배송(설치)완료
+                </c:if>
+                <c:if test="${requireEntity.state == 6}">
+                    A/S접수
+                </c:if>
+                <c:if test="${requireEntity.state == 7}">
+                    A/S완료
+                </c:if>
+
             </td>
             <td style="text-align: center; vertical-align: middle;">[${requireEntity.reple}] ${requireEntity.title}</td>
             <td style="text-align: center; vertical-align: middle;">${requireEntity.name}</td>

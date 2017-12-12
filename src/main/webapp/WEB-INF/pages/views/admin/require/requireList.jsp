@@ -52,7 +52,10 @@
                 '<option value="1">상담중</option>' +
                 '<option value="2">상담완료</option>' +
                 '<option value="3">계약진행중</option>' +
-                '<option value="4">계약완료</option></select>';
+                '<option value="4">계약(입금)완료</option>' +
+                '<option value="5">배송(설치)완료</option>' +
+                '<option value="6">A/S접수</option>' +
+                '<option value="7">A/S완료</option></select>';
         var submitBtn = '<input type="submit" class="searchBtn icon-search" value="검색"/>';
 
         if(searchKey == 'state'){
@@ -61,7 +64,10 @@
                     '<option value="1" <c:if test="${requireEntityList.searchValue == '1'}">selected="selected"</c:if>>상담중</option>' +
                     '<option value="2" <c:if test="${requireEntityList.searchValue == '2'}">selected="selected"</c:if>>상담완료</option>' +
                     '<option value="3" <c:if test="${requireEntityList.searchValue == '3'}">selected="selected"</c:if>>계약진행중</option>' +
-                    '<option value="4" <c:if test="${requireEntityList.searchValue == '4'}">selected="selected"</c:if>>계약완료</option></select>';
+                    '<option value="4" <c:if test="${requireEntityList.searchValue == '4'}">selected="selected"</c:if>>계약(입금)완료</option>' +
+                    '<option value="5" <c:if test="${requireEntityList.searchValue == '5'}">selected="selected"</c:if>>배송(설치)완료</option>' +
+                    '<option value="6" <c:if test="${requireEntityList.searchValue == '6'}">selected="selected"</c:if>>A/S접수</option>' +
+                    '<option value="7" <c:if test="${requireEntityList.searchValue == '7'}">selected="selected"</c:if>>A/S완료</option></select>';
             $(".queryZone").append(inputSelect2+submitBtn);
         }else{
             $(".queryZone").append(inputText+submitBtn);
@@ -217,7 +223,16 @@
                                 <span class="font-color-orange">계약진행중</span>
                             </c:if>
                             <c:if test="${requireEntity.state == 4}">
-                                <span class="font-color-gray">계약완료</span>
+                                <span class="font-color-gray">계약(입금)완료</span>
+                            </c:if>
+                            <c:if test="${requireEntity.state == 5}">
+                                <span class="font-color-pink">배송(설치)완료</span>
+                            </c:if>
+                            <c:if test="${requireEntity.state == 6}">
+                                <span class="font-color-purple">A/S접수</span>
+                            </c:if>
+                            <c:if test="${requireEntity.state == 7}">
+                                <span class="font-color-darkgray">A/S완료</span>
                             </c:if>
                         </td>
                         <td class="newZone">

@@ -362,6 +362,15 @@ a.register{display:inline-block;color:#fff;font-weight:bold;text-align:center;pa
 .font-color-gray{
     color:#b8b894;
 }
+.font-color-darkgray{
+    color:#777777;
+}
+.font-color-purple{
+    color:#660066;
+}
+.font-color-pink{
+    color: #cc00ff;
+}
 .font-align-center{
     text-align:center;
 }
