@@ -57,6 +57,12 @@ var RequireUtils = (function(){
     };
 
     var registRequire = function(){
+        // 제목 빈값 체크
+        var title = $("input[name='title']").val();
+        if(title == ""){
+            alert("제목을 입력해주세요.");
+            return;
+        }
         oEditors[0].exec("UPDATE_CONTENTS_FIELD", []);
         $("#requireRegistForm").ajaxSubmit({
             type : "POST",

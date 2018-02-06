@@ -241,7 +241,9 @@
                             </c:url>
                             <div class="text-underline overflowZone">[${requireEntity.reple}] <a href="${requireDetailURL}">${requireEntity.title}</a></div>
                         </td>
-                        <td>${requireEntity.name}</td>
+                        <td>
+                            <div class="text-underline"><a href="${requireDetailURL}">${requireEntity.name}</a></div>
+                        </td>
                         <td>${requireEntity.storeName}</td>
                         <td>${requireEntity.phone}</td>
                         <%--<td>${requireEntity.email}</td>--%>
