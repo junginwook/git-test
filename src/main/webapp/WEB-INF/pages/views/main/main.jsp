@@ -87,19 +87,19 @@
         <div class="img-wrap" id="main-slider">
             <ul class="img-list clear_fix">
                 <li class="img3">
-                    <div class="area relative">
-                        <img src="${contextPath}/resources/img/intro-slide/text-img3.png" alt="" style="visibility: hidden"/>
+                    <div class="relative">
+                        <img src="${contextPath}/resources/img/intro-slide/text-img3_backup2.png" alt="" style="visibility: hidden"/>
                         <a class="btn-more" href="#demo6" id="demo6Btn">더보기</a>
                     </div>
                 </li>
                 <li class="img2">
-                    <div class="area">
-                        <img src="${contextPath}/resources/img/intro-slide/text-img2.png" alt="" style="visibility: hidden"/>
+                    <div class="">
+                        <img src="${contextPath}/resources/img/intro-slide/text-img2_backup2.png" alt="" style="visibility: hidden"/>
                     </div>
                 </li>
                 <li class="img1">
-                    <div class="area relative">
-                        <img src="${contextPath}/resources/img/intro-slide/text-img1.png" alt="" style="visibility: hidden"/>
+                    <div class="relative">
+                        <img src="${contextPath}/resources/img/intro-slide/text-img1_backup2.png" alt="" style="visibility: hidden"/>
                         <span class="inquiry" id="inquiry_slider">견적문의</span>
                     </div>
                 </li>
@@ -116,18 +116,6 @@
                 </div>
             </div>
         </div>
-        <%--/* contents_1 동영상 버전 */--%>
-        <%--<div class="area">--%>
-        <%--<div class="video-area">--%>
-        <%--<style>--%>
-        <%--.trailer { position:relative; padding-bottom:56.25%; }--%>
-        <%--.trailer iframe { position:absolute; width:100%; height:100%; }--%>
-        <%--</style>--%>
-        <%--<div class="trailer">--%>
-        <%--<iframe src="//player.vimeo.com/video/118569708?badge=0&amp;color=ffffff&amp;autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>--%>
-        <%--</div>--%>
-        <%--</div>--%>
-        <%--</div>--%>
     </div>
 </div>
 <div id="demo2" class="fullSection">
@@ -541,7 +529,7 @@
                             <p>각 매장의 공간과 특성을 감안하여 다양한 맞춤식 디스플레이를 구성합니다. <br/>
                                 모니터는 32inch , 42inch, 55inch 의 디스플레이가 준비되며,  2단, 3단, 4단의 세로와 가로의 구성이 기본입니다.<br/>
                                 또한, 매장의 요구에 따라 변형과 조합도 가능합니다. 스마트플랫으로 어디에도 없는 특별한 레이아웃으로 꾸며 보십시오.<br/>
-                                 매장을 더욱 빛나게 해 보십시오.</p>
+                                매장을 더욱 빛나게 해 보십시오.</p>
                         </dd>
                     </dl>
                 </div>
