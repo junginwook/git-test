@@ -39,6 +39,7 @@
             <option <c:if test="${requireEntity.state == 5}">selected="selected"</c:if> value="5">배송(설치)완료</option>
             <option <c:if test="${requireEntity.state == 6}">selected="selected"</c:if> value="6">A/S접수</option>
             <option <c:if test="${requireEntity.state == 7}">selected="selected"</c:if> value="7">A/S완료</option>
+            <option <c:if test="${requireEntity.state == 8}">selected="selected"</c:if> value="8"> 서비스 차단</option>
           </select>
         </td>
       </tr>

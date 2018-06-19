@@ -67,7 +67,8 @@
                     '<option value="4" <c:if test="${requireEntityList.searchValue == '4'}">selected="selected"</c:if>>계약(입금)완료</option>' +
                     '<option value="5" <c:if test="${requireEntityList.searchValue == '5'}">selected="selected"</c:if>>배송(설치)완료</option>' +
                     '<option value="6" <c:if test="${requireEntityList.searchValue == '6'}">selected="selected"</c:if>>A/S접수</option>' +
-                    '<option value="7" <c:if test="${requireEntityList.searchValue == '7'}">selected="selected"</c:if>>A/S완료</option></select>';
+                    '<option value="7" <c:if test="${requireEntityList.searchValue == '7'}">selected="selected"</c:if>>A/S완료</option></select>' +
+                    '<option value="8" <c:if test="${requireEntityList.searchValue == '8'}">selected="selected"</c:if>>서비스 차단</option></select>';
             $(".queryZone").append(inputSelect2+submitBtn);
         }else{
             $(".queryZone").append(inputText+submitBtn);
@@ -175,14 +176,14 @@
 
     <table class="board-list">
         <colgroup>
-            <col width="60px"/>
-            <col width="80px"/>
-            <col width="350px"/>
-            <col width="100px"/>
-            <col width="150px"/>
-            <col width="150px"/>
+            <col width="5%"/>
+            <col width="15%"/>
+            <col width="*"/>
+            <col width="15%"/>
+            <col width="15%"/>
+            <col width="15%"/>
             <%--<col width="150px"/>--%>
-            <col width="130px"/>
+            <col width="15%"/>
         </colgroup>
         <thead>
         <tr>
@@ -233,6 +234,9 @@
                             </c:if>
                             <c:if test="${requireEntity.state == 7}">
                                 <span class="font-color-darkgray">A/S완료</span>
+                            </c:if>
+                            <c:if test="${requireEntity.state == 8}">
+                                <span class="font-color-darkgray">서비스 차단</span>
                             </c:if>
                         </td>
                         <td class="newZone">
