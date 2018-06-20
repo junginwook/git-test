@@ -124,7 +124,7 @@
             <h1 class="logo"><img src="${contextPath}/resources/img/smartflat-info/logo-kr.png" alt="스마트플랫"/></h1>
             <a href="#demo2" id="demo2Btn"><img src="${contextPath}/resources/img/finger_action.gif" alt="너무나도 쉽고 간편한 사용법을 보세요!" class="scroll-info"/></a>
             <div class="video-area">
-                <iframe src="https://www.youtube.com/embed/JV2MkUN1Bxs?&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=RWj23zommiU&wmode=opaque" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/JV2MkUN1Bxs?&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=JV2MkUN1Bxs&wmode=opaque" frameborder="0" allowfullscreen></iframe>
 
                 <%--<iframe src="https://www.youtube.com/embed/uW8qqSPf-k4?&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;playlist=uW8qqSPf-k4&wmode=opaque" frameborder="0" allowfullscreen></iframe>--%>
             </div>
