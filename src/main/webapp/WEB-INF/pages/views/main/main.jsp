@@ -219,7 +219,7 @@
                     </div>
                 </div>
                 <div class="smartflat-mv">
-                    <iframe width="386" height="217" src="https://www.youtube.com/embed/FV7fTeZQXRQ?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=FV7fTeZQXRQ&wmode=opaque" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="386" height="217" src="https://www.youtube.com/embed/FV7fTeZQXRQ?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist&list=PLpAZ3xmxwnQpIhhdE9gXTu_iSd0EstbeG&wmode=opaque" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <div class="img-disc"><img src="${contextPath}/resources/img/smartflat/bg.png" alt="스마트플랫 소개"/></div>
             </div>
