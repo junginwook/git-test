@@ -219,7 +219,7 @@
                     </div>
                 </div>
                 <div class="smartflat-mv">
-                    <iframe width="386" height="217" src="https://www.youtube.com/embed/I3-wqmAIJFE?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=I3-wqmAIJFE&wmode=opaque" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="386" height="217" src="https://www.youtube.com/embed/FV7fTeZQXRQ?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=FV7fTeZQXRQ&wmode=opaque" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <div class="img-disc"><img src="${contextPath}/resources/img/smartflat/bg.png" alt="스마트플랫 소개"/></div>
             </div>
@@ -305,7 +305,7 @@
             <h1 class="title"><b>다양한 디자인</b>  Designs</h1>
             <div class="clear_fix top-area">
                 <div class="video floatL">
-                    <iframe src="https://www.youtube.com/embed/uW8qqSPf-k4?&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=uW8qqSPf-k4&wmode=opaque" frameborder="0" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/XI3hPaoyjI8?&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=XI3hPaoyjI8&wmode=opaque" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <div class="txt floatL">
                     <h2 class="txt-tit">
