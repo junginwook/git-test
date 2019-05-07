@@ -151,23 +151,40 @@
     </div>
 </div>
 
-<span class="icon-inquiry button" id="inquiry"><img src="${contextPath}/resources/img/inquiry.png" alt="친절한 견적 및 문의"/></span>
+<script>
+    function banner_hide(id) {
+        $("#"+id).css('display','none');
+    }
+    function banner_hidden(id) {
+        $("#"+id).css('visibility','hidden');
+    }
+</script>
+<span class="icon-rental-banner" id="rental_banner">
+    <a target="_blank" href="https://blog.naver.com/digigroove/221526343277">
+        <img class="banner" src="${contextPath}/resources/img/rental_banner.png"/>
+    </a>
+    <img class="rental_banner_close" onclick="banner_hide('rental_banner')"; src="${contextPath}/resources/img/close_black.png"/>
+</span>
+<span class="icon-rental-business" id="rental_business_banner">
+    <img class="banner" src="${contextPath}/resources/img/rental_business_banner.png"/>
+    <img class="rental_banner_business_close" onclick="banner_hide('rental_business_banner')"; src="${contextPath}/resources/img/close_blue.png"/>
+</span>
+<span class="icon-inquiry button" id="inquiry">
+    <img src="${contextPath}/resources/img/inquiry.png" alt="친절한 견적 및 문의"/>
+</span>
 <span class="vari button" style="text-align: center">
-        <a target="_blank" href="http://blog.naver.com/PostThumbnailList.nhn?blogId=digigroove&amp;categoryNo=39&amp;skinType=&amp;skinId=&amp;from=menu">
-            <img src="${contextPath}/resources/img/events/vari2.png" alt="다양한디자인바로가기" />
-        </a>
-    <!-- Talk Talk Banner Script start -->
-		<script type="text/javascript" src="https://partner.talk.naver.com/banners/script"></script>
-		<div class="talk_banner_div" data-id="19506" style="text-align:center;"></div>
-    <!-- Talk Talk Banner Script end -->
-    </span>
+    <a target="_blank" href="http://blog.naver.com/PostThumbnailList.nhn?blogId=digigroove&amp;categoryNo=39&amp;skinType=&amp;skinId=&amp;from=menu">
+        <img src="${contextPath}/resources/img/events/vari2.png" alt="다양한디자인바로가기" />
+    </a>
 
-<%--<div class="newThemeModal">--%>
-<%--<img src="${contextPath}/resources/img/events/newThemeBackground.jpg" alt="" />--%>
-<%--<div class="ytArea">--%>
-<%--<iframe class="eventVideo" src="https://www.youtube.com/embed/9WsemmPpQus?&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;playlist=9WsemmPpQus&wmode=opaque" frameborder="0" allowfullscreen></iframe>--%>
-<%--</div>--%>
-<%--</div>--%>
+</span>
+<!-- Talk Talk Banner Script start -->
+<script type="text/javascript" src="https://partner.talk.naver.com/banners/script"></script>
+<span id="talk_banner_area">
+    <img style="position: absolute; top: 5px; right: 5px; z-index: 1;" onclick="banner_hidden('talk_banner_area')" src="${contextPath}/resources/img/close_black.png"/>
+    <div class="talk_banner_div" data-id="19506" style="text-align:center;"></div>
+</span>
+<!-- Talk Talk Banner Script end -->
 
 <div id="popup">
     <div class="bg-left">
