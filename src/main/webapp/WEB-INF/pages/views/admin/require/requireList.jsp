@@ -142,16 +142,50 @@
                      <c:if test="${not empty requireEntityList.endDate}">value="${requireEntityList.endDate}"</c:if> />
         </div>
         <div class="search-select">
-            <select name="searchKey" class="searchSelector sel-w120">
-                <option value="">전체</option>
-                <option value="title" <c:if test="${requireEntityList.searchKey eq 'title'}">selected="selected"</c:if>>
-                    제목
+            <select name="searchState" class="searchSelector sel-w120">
+                <option value="">
+                    전체
                 </option>
+                <option value="0" <c:if test="${requireEntityList.searchState eq '0'}">selected="selected"</c:if>>
+                    접수
+                </option>
+                <option value="1" <c:if test="${requireEntityList.searchState eq '1'}">selected="selected"</c:if>>
+                    상담중
+                </option>
+                <option value="2" <c:if test="${requireEntityList.searchState eq '2'}">selected="selected"</c:if>>
+                    상담완료
+                </option>
+                <option value="3" <c:if test="${requireEntityList.searchState eq '3'}">selected="selected"</c:if>>
+                    계약진행중
+                </option>
+                <option value="4" <c:if test="${requireEntityList.searchState eq '4'}">selected="selected"</c:if>>
+                    계약(입금)완료
+                </option>
+                <option value="5" <c:if test="${requireEntityList.searchState eq '5'}">selected="selected"</c:if>>
+                    배송(설치)완료
+                </option>
+                <option value="6" <c:if test="${requireEntityList.searchState eq '6'}">selected="selected"</c:if>>
+                    A/S접수
+                </option>
+                <option value="7" <c:if test="${requireEntityList.searchState eq '7'}">selected="selected"</c:if>>
+                    A/S완료
+                </option>
+                <option value="8" <c:if test="${requireEntityList.searchState eq '8'}">selected="selected"</c:if>>
+                    서비스 차단
+                </option>
+                <option value="9" <c:if test="${requireEntityList.searchState eq '9'}">selected="selected"</c:if>>
+                    디자인수정중
+                </option>
+            </select>
+            <select name="searchKey" class="searchSelector sel-w120">
                 <option value="name" <c:if test="${requireEntityList.searchKey eq 'name'}">selected="selected"</c:if>>
                     이름
                 </option>
-                <option value="storeName"
-                        <c:if test="${requireEntityList.searchKey eq 'storeName'}">selected="selected"</c:if>>업체명
+                <option value="title" <c:if test="${requireEntityList.searchKey eq 'title'}">selected="selected"</c:if>>
+                    제목
+                </option>
+                <option value="storeName" <c:if test="${requireEntityList.searchKey eq 'storeName'}">selected="selected"</c:if>>
+                    업체명
                 </option>
                 <option value="phone" <c:if test="${requireEntityList.searchKey eq 'phone'}">selected="selected"</c:if>>
                     핸드폰번호
@@ -159,8 +193,8 @@
                 <option value="email" <c:if test="${requireEntityList.searchKey eq 'email'}">selected="selected"</c:if>>
                     이메일
                 </option>
-                <option value="state" <c:if test="${requireEntityList.searchKey eq 'state'}">selected="selected"</c:if>>
-                    상태
+                <option value="content" <c:if test="${requireEntityList.searchKey eq 'content'}">selected="selected"</c:if>>
+                    내용
                 </option>
             </select>
             <span class="queryZone">

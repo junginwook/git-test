@@ -10,7 +10,9 @@
       reple
     WHERE
       require_key = #{requireKey}
-  </select>
+    ORDER BY
+        regist_datetime;
+    </select>
 
   <insert id="insertRepleEntity" parameterType="repleEntity">
     INSERT INTO

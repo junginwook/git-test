@@ -22,6 +22,7 @@ public class PageEntity extends PageNavigationEntity {
 	private String searchValue;
 	private String startDate;
 	private String endDate;
+	private String searchState;
 
 	public PageEntity(final long currentPageParam, final int pageGroupSizeParam, final int pageListSizeParam) {
     super( currentPageParam, pageGroupSizeParam, pageListSizeParam );
@@ -43,10 +44,11 @@ public class PageEntity extends PageNavigationEntity {
 
 	public void setPageParams() {
 		Map<String, Object> paramsMap = new ConcurrentHashMap<String, Object>();
-		if (!StringUtils.isEmpty(searchKey))   paramsMap.put("searchKey", searchKey);
+		if (!StringUtils.isEmpty(this.searchKey))   paramsMap.put("searchKey", searchKey);
 		if (!StringUtils.isEmpty(this.getSearchValue())) paramsMap.put("searchValue", this.getSearchValue());
-		if (!StringUtils.isEmpty(startDate))   paramsMap.put("startDate", startDate);
-		if (!StringUtils.isEmpty(endDate))     paramsMap.put("endDate", endDate);
+		if (!StringUtils.isEmpty(this.startDate))   paramsMap.put("startDate", startDate);
+		if (!StringUtils.isEmpty(this.endDate))     paramsMap.put("endDate", endDate);
+		if (!StringUtils.isEmpty(this.searchState))     paramsMap.put("searchState", searchState);
 		super.setPageParams(paramsMap);
 	}
 
@@ -80,5 +82,13 @@ public class PageEntity extends PageNavigationEntity {
 
 	public void setEndDate(String endDate) {
 		this.endDate = endDate;
+	}
+
+	public String getSearchState() {
+		return searchState;
+	}
+
+	public void setSearchState(String searchState) {
+		this.searchState = searchState;
 	}
 }

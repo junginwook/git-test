@@ -67,23 +67,8 @@
       AND (regist_datetime BETWEEN DATE_FORMAT(#{startDate}, '%Y-%m-%d')
       AND DATE_FORMAT(ADDDATE(#{endDate}, +1), '%Y-%m-%d'))
     </if>
-    <if test="title != '' and title != null">
-      AND title LIKE TRIM(CONCAT('%', #{title}, '%'))
-    </if>
-    <if test="name != '' and name != null">
-      AND name LIKE TRIM(CONCAT('%', #{name}, '%'))
-    </if>
-    <if test="storeName != '' and storeName != null">
-      AND store_name LIKE TRIM(CONCAT('%', #{storeName}, '%'))
-    </if>
-    <if test="phone != '' and phone != null">
-      AND phone LIKE TRIM(CONCAT('%', #{phone}, '%'))
-    </if>
-    <if test="email != '' and email != null">
-      AND email LIKE TRIM(CONCAT('%', #{email}, '%'))
-    </if>
-    <if test="state != '' and state != null">
-      AND state LIKE TRIM(CONCAT('%', #{state}, '%'))
+    <if test="searchState != '' and searchState != null">
+        AND state LIKE TRIM(CONCAT('%', #{searchState}, '%'))
     </if>
     <if test="(searchKey != '' and searchKey != null) and (searchValue != '' and searchValue != null)">
       <if test="searchKey == 'title'">
@@ -101,8 +86,8 @@
       <if test="searchKey == 'email'">
         AND email LIKE TRIM(CONCAT('%', #{searchValue}, '%'))
       </if>
-      <if test="searchKey == 'state'">
-        AND state LIKE TRIM(CONCAT('%', #{searchValue}, '%'))
+      <if test="searchKey == 'content'">
+        AND content LIKE TRIM(CONCAT('%', #{searchValue}, '%'))
       </if>
     </if>
   </sql>

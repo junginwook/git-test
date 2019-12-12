@@ -44,6 +44,7 @@ public class RequirePageEntity extends PageEntity implements Serializable{
 		if (StringUtils.isNotEmpty(getEndDate()))   	paramsMap.put("endDate", getEndDate());
 		if (StringUtils.isNotEmpty(getSearchKey()))   paramsMap.put("searchKey", getSearchKey());
 		if (StringUtils.isNotEmpty(getSearchValue())) paramsMap.put("searchValue", getSearchValue());
+		if (StringUtils.isNotEmpty(getSearchState())) paramsMap.put("searchState", getSearchState());
 		super.setPageParams(paramsMap);
 	}
 
