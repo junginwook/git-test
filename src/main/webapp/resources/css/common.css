@@ -41,7 +41,7 @@ b{font-weight:800;}
 .area{position:relative;max-width:1024px;margin:0 auto}
 
 /* 헤더 */
-#fixedNavBar{position:fixed;top:0;left:0;width:100%;border:0;background:#ebebeb;z-index:8888}
+#fixedNavBar{position:fixed;top:0;left:0;width:100%;border:0;background:#ffffff;z-index:8888}
 .header{width:100%;padding:23px 0 15px;}
 .header .logo{float:left;margin:0 20px 0 44px;}
 .header .logo a{display:block;}
@@ -537,7 +537,7 @@ b{font-weight:800;}
 /* 모바일 */
 @media only screen and (max-width:767px) {
 	.header .logo{float:none;text-align:center;margin:0}
-	.header .logo img{width:160px}
+	.header .logo img{width:320px}
 	.header .nav{float:none;margin-top:10px}
 	.header .nav ul li{width:20%}
 	.header .nav ul li a{font-size:13px;text-align:center;line-height:1.2;padding:3px 0 0;letter-spacing:0}

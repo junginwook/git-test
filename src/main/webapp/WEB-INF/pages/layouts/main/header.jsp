@@ -130,7 +130,7 @@
 <div class="area">
     <h1 class="logo">
         <c:if test="${currentPage == 'main'}">
-            <a href="#demo1" id="demo1Btn"><img src="${contextPath}/resources/img/logo.png" alt="스마트플랫"/></a>
+            <a href="#demo1" id="demo1Btn"><img src="${contextPath}/resources/img/top_logo.png" alt="스마트플랫"/></a>
         </c:if>
         <c:if test="${currentPage == 'pro'}">
             <a href="http://www.smartflat.co.kr"><img src="${contextPath}/resources/img/logo.png" alt="스마트플랫"/></a>
