@@ -15,12 +15,12 @@ public class MainController {
     @RequestMapping(value = "/")
     public String userMain(Model model, HttpServletRequest request) {
         // https 접속유도 위한 분기처리
-        if("SSLv3".equals(request.getProtocol())) {
+//        if("SSLv3".equals(request.getProtocol())) {
             model.addAttribute("currentPage", "main");
             return "main/main";
-        } else {
-            return "redirect:" + "https://smartflat.co.kr";
-        }
+//        } else {
+//            return "redirect:" + "https://smartflat.co.kr";
+//        }
     }
 
     @RequestMapping(value="/pro")

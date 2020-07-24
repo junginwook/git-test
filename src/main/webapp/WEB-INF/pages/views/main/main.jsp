@@ -10,11 +10,11 @@
 <c:set var="contextPath" value="${pageContext.request.contextPath}" />
 <script type="text/javascript">
     $(function(){
-        // var url = window.location.href.toString();
-        // if( url.indexOf("http:") > -1){
-        //     window.location.href = 'https://smartflat.co.kr'
-        // }
-//        var height = $('.img-list li').autoHeight();
+        var url = window.location.href.toString();
+        if( url.indexOf("http:") > -1){
+            window.location.href = 'https://smartflat.co.kr'
+        }
+       // var height = $('.img-list li').autoHeight();
 //        $('.img-wrap').css('height',height);
 
         var indexNum = 0;
