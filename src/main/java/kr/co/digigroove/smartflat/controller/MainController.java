@@ -4,6 +4,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.servlet.http.HttpServletRequest;
+
 /**
  * Created by yusul on 15. 1. 30..
  */
@@ -11,9 +13,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class MainController {
 
     @RequestMapping(value = "/")
-    public String userMain(Model model) {
+    public String userMain(Model model, HttpServletRequest request) {
         model.addAttribute("currentPage", "main");
-        return "main/main";
+        // https 접속유도 위한 분기처리
+        if("SSLv3".equals(request.getProtocol())) {
+            return "main/main";
+        } else {
+            return "redirect:" + "https://smartflat.co.kr";
+        }
     }
 
     @RequestMapping(value="/pro")
