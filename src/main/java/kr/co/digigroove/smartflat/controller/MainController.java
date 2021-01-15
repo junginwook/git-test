@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
  */
 @Controller
 public class MainController {
-////
+//////
     @RequestMapping(value = "/")
     public String userMain(Model model, HttpServletRequest request) {
         // https 접속유도 위한 분기처리
