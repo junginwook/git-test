@@ -62,13 +62,17 @@ public class UserServiceImpl implements UserService{
 
 		UserEntity userInfo = userDAO.selectLoginUserCheck(userEntity);
 		String password = HashUtils.encryptSHA256(userEntity.getPassword(), hashSalt);
+//		값이 비어있는 경우 
 		if(userInfo == null) {
 			userResultEntity.setCode(Default.Result.EMPTY);
 		}else{
+//			비밀번호 일치 
 			if(userInfo.getPassword().equals(password)){
 				userResultEntity.setCode(Default.Result.SUCCESS);
 				userResultEntity.setLoginInfo(userInfo);
-			}else{
+			}
+//			비밀번호 불일치
+			else{
 				userResultEntity.setCode(Default.Result.PASSWORD_MISMATCHED);
 			}
 		}

@@ -28,5 +28,19 @@ public class MainController {
         model.addAttribute("currentPage", "pro");
         return "main/property";
     }
+    
+    //바우처 페이지 웹용
+    @RequestMapping(value="/boucher")
+    public String boucher(Model model){
+        model.addAttribute("currentPage", "boucher");
+        return "boucher/boucher";
+    }
+    
+    //바우처 페이지 모바일용 
+    @RequestMapping(value="/mboucher")
+    public String mBoucher(Model model){
+        model.addAttribute("currentPage", "mboucher");
+        return "boucher/mboucher";
+    }
 
 }

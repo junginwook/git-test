@@ -12,6 +12,7 @@
         http://www.springframework.org/schema/aop
         http://www.springframework.org/schema/aop/spring-aop.xsd">
 
+<!-- 	해당 디렉토리를 모두 스캔하겠다  -->
   <context:component-scan base-package="kr.co.digigroove.smartflat" />
 
   <aop:aspectj-autoproxy />

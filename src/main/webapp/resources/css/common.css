@@ -55,10 +55,12 @@ b{font-weight:800;}
 .header .nav ul li:nth-child(3) a{color:#3f4a5b }
 .header .nav ul li:nth-child(4) a{color:#f47920 }
 .header .nav ul li:nth-child(5) a{color:#848484}
+.header .nav ul li:nth-child(6) a{color:#5dace9}
+
 .icon-rental-banner{position:absolute;top:90px;right:400px;cursor:pointer;z-index:100;text-align: center;}
 .icon-rental-business{position:absolute;top:280px;right:428px;cursor:pointer;z-index:100;text-align: center;}
-.rental_banner_close{position: absolute;top: 145px;right: 67px; !important;}
-.rental_banner_business_close{position: absolute;top: 4px;right: 4px; !important;}
+.rental_banner_close{position: absolute;top: 145px;right: 67px; !important}
+.rental_banner_business_close{position: absolute;top: 4px;right: 4px; !important}
 .icon-inquiry{position:absolute;bottom:-190px;right:74px;cursor:pointer;z-index:100}
 .icon-property{position:absolute;bottom:-202px;left:10%;z-index:100;cursor:pointer}
 .icon-free-design{position:absolute;bottom:-360px;left:10%;z-index:100;opacity:0.8;width:160px;height:160px;}
@@ -296,7 +298,7 @@ b{font-weight:800;}
 .contents_5 .portfolio-area .portfolio .info-img .portfolio-video iframe{position: absolute; top:0; left:0;}
 .contents_5 .portfolio-area .portfolio .info-img>div>div.portfolio-date{width:100%;height:208px;background:#f3f3f3}
 .contents_5 .portfolio-area .portfolio .info-img>div>div.portfolio-date .today-date{text-align:center;padding-top:20px;font-size:20px;color:#777;font-weight:800;}
-.contents_5 .portfolio-area .portfolio .info-img>div>div.portfolio-date .weather{;margin-bottom:10px;line-height:1.2em;height:60px;}
+.contents_5 .portfolio-area .portfolio .info-img>div>div.portfolio-date .weather{margin-bottom:10px;line-height:1.2em;height:60px;}
 .contents_5 .portfolio-area .portfolio .info-img>div>div.portfolio-date .weather .temp{text-align:right;float:left;color:#999;margin-top:20px; padding-left: 25px;}
 .contents_5 .portfolio-area .portfolio .info-img>div>div.portfolio-date .clock{overflow:hidden;}
 .contents_5 .portfolio-area .portfolio .info-img>div>div.portfolio-date .clock .clockTitle{width:235px;margin:5px auto 0}

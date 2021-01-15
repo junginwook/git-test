@@ -13,6 +13,15 @@
     <definition name="main/*" extends="mainDef">
         <put-attribute name="body" value="/WEB-INF/pages/views/main/{1}.jsp" />
     </definition>
+    
+    <definition name="boucherDef" template="/WEB-INF/pages/layouts/boucherTemplate.jsp">
+        <put-attribute name="body" value="" />
+    </definition>
+   
+    
+    <definition name="boucher/*"  extends="boucherDef">
+        <put-attribute name="body" value="/WEB-INF/pages/views/main/{1}.jsp" />
+    </definition>
 
   <!-- pro -->
   <definition name="proDef" template="/WEB-INF/pages/layouts/proTemplate.jsp">

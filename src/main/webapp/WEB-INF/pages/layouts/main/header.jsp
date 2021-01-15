@@ -11,24 +11,6 @@
 <script type="text/javascript">
     $(function() {
 
-//        var wWidth = 0;
-//        var w = 0;
-//        $(window).resize(function(){
-//            resizeEvent();
-//        });
-//        function resizeEvent(){
-//            wWidth = $(window).width();
-//            if(wWidth < 860){
-//                w = (860-wWidth)/2;
-//                $(".ytArea").css({
-//                    width : 640-w,
-//                    height : 360-w
-//                });
-//                $(".eventVideo").attr("width", 640-w);
-//                console.log(640-w);
-//            }
-//        }
-//        resizeEvent();
 
         var pheight = $('.portfolio-info').height();
         $('.portfolio').height(pheight+"px");
@@ -126,6 +108,31 @@
         $('#popup').bPopup().close();
         $('#popup-property').bPopup().close();
     }
+    //비대면 서비스 바우처 페이지로 이동하기전에 클라이언트의 
+    //환경이 모바일인지 웹인지 파악한 후에 다른 url을 뿌려준다  
+    function checkClient(){
+    	var filter = "win16|win32|win64|mac|macintel";
+
+			 if ( navigator.platform )
+			 { 
+			 
+				 if ( filter.indexOf( navigator.platform.toLowerCase() ) < 0 )
+				 { 
+					 //mobile
+					 window.open('/mboucher');
+					  //console.log("모바일");
+				 } 
+				else
+				 { 
+				 	//pc 
+				 	window.open('/boucher');
+				 	console.log("웹");
+				  }
+			 	
+			 }
+    
+    }
+    
 </script>
 <div class="area">
     <h1 class="logo">
@@ -146,6 +153,8 @@
                     <a href="#demo6" id="demo6Btn">다양한<span class="inline-block marL">분야와</span><span class="inline-block marL">디자인</span></a></li>
                 <li><a href="#demo4" id="demo4Btn">디스플레이<span class="inline-block">구성도</span></a></li>
                 <li><a href="#demo5" id="demo5Btn">특화된 <span class="inline-block">기능</span></a></li>
+                <li><a href="#demo6" id="demo2Btn" onclick="checkClient()">비대면 <span class="inline-block">서비스</span> <span class="inline-block">바우처</span></a></li>
+                
             </ul>
         </c:if>
     </div>

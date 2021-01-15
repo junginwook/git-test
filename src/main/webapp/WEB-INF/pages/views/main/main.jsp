@@ -11,11 +11,14 @@
 <script type="text/javascript">
     $(function(){
         var url = window.location.href.toString();
+        
+        //http로 들어왔을 경우 https:// 로 리다이렉트 
         if( url.indexOf("http:") > -1){
             window.location.href = 'https://smartflat.co.kr'
         }
+        
        // var height = $('.img-list li').autoHeight();
-//        $('.img-wrap').css('height',height);
+	   //$('.img-wrap').css('height',height);
 
         var indexNum = 0;
         var mainSliderTimer, slideDelayInMillisMain = 5300;

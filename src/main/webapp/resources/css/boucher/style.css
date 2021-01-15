@@ -1,0 +1,441 @@
+@charset "utf-8";
+
+@import url("fonts.css");
+
+body {
+	width: 100%;
+	height: fit-content;
+}
+
+.wrap {
+	overflow: hidden;
+	min-width: 1020px;
+}
+
+.container1{
+	width:100%;
+	position: relative;
+	padding: 20px 30px;
+	margin: 0 auto;
+	letter-spacing: -.2px;
+}
+
+.fullSection {
+	height: fit-content;
+	display: flex;
+	flex-direction: horizontal;
+	justify-content: center;
+}
+
+.main {
+	background-color: #ffffff;
+	width: 100%;
+	height: fit-content;
+	color: #0054a6;
+	font-family: "BlackHanSans";
+	font-size: 55px;
+	text-align: center;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	line-height: 1.1em;
+	letter-spacing:-0.04em;
+	
+}
+
+.header {
+	background-color: #ffffff;
+	width: 100%;
+	height: fit-content;
+	color: #0054a6;
+	font-family: "BlackHanSans";
+	font-size: 65px;
+	text-align: center;
+	padding-top: 50px;
+	margin-top: 80px;
+	letter-spacing:-0.04em;
+}
+
+.content {
+	width: 100%;
+	height: 230PX;
+	background-color: #ffffff;
+	/* #ffffff */
+	color: #484848;
+	text-align: center;
+	font-size: 26px;
+	font-family: "NotoSans";
+	margin-top: 40px;
+	padding-right:80px;
+	
+}
+
+
+.content .title_1 {
+	font-size: 35px;
+	margin-bottom: 0.5em;
+}
+
+.content .content_1 {
+	font-size: 25px;
+	font-family: "NanumGothic";
+	font-weight:10;
+}
+
+.carousel .carousel-indicators li {
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	background-color: #52dcff;
+}
+
+ul {
+	line-height: 1em;
+}
+
+ul li {
+	padding: 5px;
+	list-style: none;
+	font-weight: bold;
+}
+
+
+.final {
+	
+	width:100%;
+	height: 1000px;
+	
+}
+
+.final_box{
+	background-color: #505050;
+	margin: 0 auto;
+	width: 1920px;
+	height: 1000px;
+	padding-top: 30px;
+	
+}
+
+.w_f3 {
+	margin-top: 15px;
+}
+
+.banner{
+	max-width:100%;
+	height:auto;
+	
+}
+
+
+.banner img{
+   
+   position:fixed;
+   z-index:10;
+   right:10%;
+   top:70%;
+ }
+
+
+.f1 {
+	color: #f5ca04;
+	font-family: "NanumBarunGothic";
+	font-size: 50px;
+	text-align: center;
+	margin-top: 20px;
+	font-weight: 100;
+	line-height: 1em;
+}
+
+.f3, .f4, .f5, .f6, .f7{
+	margin-top: 5px;
+	display: flex;
+	justify-content: center;
+}
+.fbox, .w_f3{
+	
+	width:100%;
+}
+
+.f2 {
+	
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #f5ca04;
+	font-family: "NanumBarunGothic";
+	font-weight: bold;
+	font-size: 65px;
+}
+
+.f3 input {
+	border-radius: 10px 10px 10px 10px;
+	width: 550px;
+	line-height: 55px;
+	font-size: 25px;
+	padding-left: 20px;
+}
+
+.f4 input {
+	border-radius: 10px 10px 10px 10px;
+	width: 550px;
+	line-height: 55px;
+	font-size: 25px;
+	padding-left: 20px;
+}
+
+.f5 input {
+	border-radius: 10px 10px 10px 10px;
+	width: 550px;
+	line-height: 55px;
+	font-size: 25px;
+	padding-left: 20px;
+}
+
+input[type="text"] {
+	font-family: FontAwesome;
+}
+
+.f6 input {
+	border-radius: 10px 10px 10px 10px;
+	width: 550px;
+    line-height: 55px;
+	font-size: 25px;
+	padding-left: 20px;
+}
+
+.f7 input{
+	margin-top: 5px;
+	border-radius: 10px 10px 10px 10px;
+	width: 550px;
+	line-height: 60px;
+	background-color: #56dafa;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	text-decoration:none;
+	display:block;
+}
+.f8 {
+	margin: 0 auto;
+	margin-top: 60px;
+	color: white;
+	text-align: center;
+}
+.f9{
+	display: flex;
+	justify-content: center;
+}
+
+
+/* 모바일 2021-01-08 */
+
+
+
+@import url("fonts.css");
+
+body {
+	width:100%;
+	height: fit-content;
+}
+
+.Mwrap {
+	overflow: hidden;
+	
+}
+
+.Mcontainer {
+	witdth:100%;
+	position: relative;
+	padding: 20px 30px;
+	margin: 0 auto;
+	letter-spacing: -.2px;
+}
+
+.MfullSection {
+	height:auto !important;
+	max-width:100%;
+	
+}
+
+.Mmain {
+	background-color: #ffffff;
+	width: 100%;
+	color: #0054a6;
+	font-family: "BlackHanSans";
+	font-size: 6vw;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	line-height: 1.1em;
+	letter-spacing:-0.04em;
+	
+}
+
+.Mheader {
+	background-color: #ffffff;
+	width: 100%;
+	color: #0054a6;
+	font-family: "BlackHanSans";
+	font-size: 6.5vw;
+	text-align: center;
+	letter-spacing:-0.04em;
+}
+
+.Mcontent {
+	width: 100%;
+	background-color: #ffffff;
+	/* #ffffff */
+	color: #484848;
+	text-align: center;
+	font-size: 13px;
+	font-family: "NotoSans";
+	margin-top: 20px;
+}
+
+.Mcontent .Mtitle_1 {
+	font-size: 4vw;
+	margin-bottom: 0.6em;
+	letter-spacing:-0.05em;
+}
+
+.Mcontent .Mcontent_1 {
+	font-size: 2.5vw;
+	font-family: "NanumGothic";
+	font-weight:10;
+}
+
+.carousel .carousel-indicators li {
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	background-color: #52dcff;
+}
+
+.Mul {
+	line-height: 1em;
+	-webkit-padding-start:0px;
+}
+
+.Mul li {
+	padding: 0.3em;
+	list-style: none;
+	font-weight: bold;
+	line-height:0.7em;
+}
+
+
+
+.Mfinal {
+	background-color: #505050;
+	width:100%;
+	margin:0 auto;
+	
+}
+
+.Mfinal_box {
+	margin: 0 auto;
+	width:100%;
+	padding-top: 30px;
+}
+
+.w_f3 {
+	margin-top: 15px;
+}
+
+
+.Mf1 {
+	color: #f5ca04;
+	font-family: "NanumBarunGothic";
+	font-size: 17px;
+	text-align: center;
+	margin-top: 20px;
+	font-weight: 100;
+	line-height: 1em;
+}
+
+.Mf3, .Mf4, .Mf5, .Mf6{
+	width:100%;
+	margin-top: 5px;
+}
+
+.Mf2 {
+	
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #f5ca04;
+	font-family: "NanumBarunGothic";
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.Mf3 input {
+	border-radius: 10px 10px 10px 10px;
+	width:100%;
+	line-height: 46px;
+	font-size: 13px;
+	padding-left: 20px;
+}
+
+.Mf4 input {
+	border-radius: 10px 10px 10px 10px;
+	width:100%;
+	line-height: 46px;
+	font-size: 13px;
+	padding-left: 20px;
+}
+
+.Mf5 input {
+	border-radius: 10px 10px 10px 10px;
+	width:100%;
+	line-height: 46px;
+	font-size: 13px;
+	padding-left: 20px;
+}
+
+input[type="text"] {
+	font-family: FontAwesome;
+}
+
+.Mf6 input {
+	border-radius:10px 10px 10px 10px;
+	width:100%;
+    line-height: 46px;
+	font-size: 13px;
+	padding-left: 20px;
+}
+
+.Mf7 input{
+	width:100%;
+	margin-top: 5px;
+	border-radius: 10px 10px 10px 10px;
+	line-height: 46px;
+	background-color: #56dafa;
+	text-align: center;
+	color: white;
+	font-size: 13px;
+	
+}
+.Mf8 {
+	font-size:12px;
+	margin: 0 auto;
+	margin-top: 60px;
+	color: white;
+	text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto !important;
+}
+
+button{
+     border: 1px solid skyblue; 
+     background-color: rgba(0,0,0,0);
+     color: skyblue; 
+     padding: 5px;
+     text-align:center;
+     width:50%; 
+}
+
+.ui-loading .ui-loader { display: block; }
+.ui-loader { display: none; position: absolute; opacity: .85; z-index: 100; left: 50%; width: 200px; margin-left: -130px; margin-top: -35px; padding: 10px 30px; }

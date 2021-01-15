@@ -36,6 +36,7 @@ public class RequireRestController {
 		} catch (Exception e) {
 			resultEntity.setCode(Default.Result.FAIL);
 			resultEntity.setMessage(messages.getMessage("applicant.save.fail"));
+		
 		}
 
 		return resultEntity;
